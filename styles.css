@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Ms+Madi&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Kaushan+Script&family=Ms+Madi&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+
+    background-image: url(
+        "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%22100%22%20height%3D%22100%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
+    ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
+    
+    /*
+                                                                                                                                                    ^^^                   ^^^                              
+    Orignal(512x512): 
+        data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
+    
+    Edited(80x80):
+    data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
+    
+    */
+
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+#name {margin: 1rem;
+
+    font-family: "Kaushan Script"; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    letter-spacing: -0.8rem;
+
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+
+#buttons {
+    display: flex;
+    justify-content: center;
+
+
+
+}#button-home-doodles, 
+#button-home-posters,
+#button-home-coding,
+#button-home-music,
+#button-home-photos,
+#button-home-thumbnails {
+
+    margin: 0.5rem;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: #00000000;
+
+    border: 1px solid #000000;
+    border-radius: 100rem;
+
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+    color: #00000000;
+    max-width: 0;
+    min-width: 0;
+    
+
+}#button-home-doodles:hover, 
+#button-home-posters:hover,
+#button-home-coding:hover,
+#button-home-music:hover,
+#button-home-photos:hover,
+#button-home-thumbnails:hover {
+    min-width: fit-content;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    font-size: 2rem;
+    color: #ffffff;
+
+    transition: 400ms;
+
+}
+
