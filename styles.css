@@ -85,5 +85,9 @@ body {
 
     transition: 400ms;
 
+    font-style: none;
+
+    text-decoration: none;
+
 }
 
