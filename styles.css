@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     }
 
-#name {margin: 1rem;
+#home-name {margin: 1rem;
 
     font-family: "Kaushan Script"; 
     font-weight: 400;
@@ -42,18 +42,16 @@ body {
 }
 
 
-#buttons {
+#home-buttons {
     display: flex;
     justify-content: center;
-
-
-
-}#button-home-doodles, 
-#button-home-posters,
-#button-home-coding,
-#button-home-music,
-#button-home-photos,
-#button-home-thumbnails {
+}
+#home-button-doodles               , 
+#home-button-posters                ,
+#home-button-coding                 ,
+#home-button-music                  ,
+#home-button-photos                 ,
+#home-button-thumbnails {
 
     margin: 0.5rem;
     padding: 0.75rem;
@@ -72,12 +70,13 @@ body {
     min-width: 0;
     
 
-}#button-home-doodles:hover, 
-#button-home-posters:hover,
-#button-home-coding:hover,
-#button-home-music:hover,
-#button-home-photos:hover,
-#button-home-thumbnails:hover {
+}
+#home-button-doodles:hover         , 
+#home-home-button-posters:hover     ,
+#home-button-coding:hover           ,
+#home-button-music:hover            ,
+#home-button-photos:hover           ,
+#home-button-thumbnails:hover {
     min-width: fit-content;
     cursor: pointer;
     border: 1px solid #ffffff;
