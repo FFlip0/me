@@ -21,15 +21,24 @@ body {
     
     */
 
+
+    background-attachment: fixed;
+    background-position: center;
+
     margin: 0;
     font-family: "Arvo", serif;
-}
 
+}
+/*
+#body2 {
+    height: 100vh;
+}
+*/
 #heading-1-top {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 6rem;
     font-weight: bold;
-    padding: 2rem;
+    padding: 0rem;
     margin: 2rem;
     display: flex;
     align-items: center;
@@ -38,7 +47,18 @@ body {
 
 
 }
+#heading-2-top {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 3rem;
+    padding: 0rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+
+}
 
 #home-main {
     display: flex;
@@ -58,10 +78,10 @@ body {
     display: flex;
     justify-content: center;
     cursor: default;
-}#home-buttons {
+}#home-button-container {
     display: flex;
     justify-content: center;
-}#home-button-doodles,#home-button-posters,#home-button-coding,#home-button-music,#home-button-photos,#home-button-thumbnails {
+}#home-button {
 
     margin: 0.5rem;
     padding: 0.75rem;
@@ -80,7 +100,7 @@ body {
     min-width: 0;
     
 
-}#home-button-doodles:hover,#home-button-posters:hover,#home-button-coding:hover,#home-button-music:hover,#home-button-photos:hover,#home-button-thumbnails:hover {
+}#home-button:hover {
     min-width: fit-content;
     cursor: pointer;
     border: 1px solid #ffffff;
@@ -97,7 +117,7 @@ body {
     justify-content: center;
 
 }#ref-home-button {
-    margin: 0.5rem;
+    margin: 4rem;
     padding: 0.75rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -111,6 +131,8 @@ body {
     transition: 400ms;
     display: inline-flex;
     max-width: 0;
+    
+    scale: 1.5;
 }#ref-home-button:hover {
     min-width: fit-content;
     cursor: pointer;
@@ -129,41 +151,118 @@ body {
     }
 }
 
-#doodle-imgs {
+#doodle-img-container {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 
-}#doodle-img-1,#doodle-img-2,#doodle-img-3,#doodle-img-4,#doodle-img-5,#doodle-img-6,#doodle-img-7,#doodle-img-8,#doodle-img-9,#doodle-img-10,#doodle-img-11,#doodle-img-12,#doodle-img-13,#doodle-img-14,#doodle-img-15,#doodle-img-16,#doodle-img-17,#doodle-img-18,#doodle-img-19,#doodle-img-20,#doodle-img-21,#doodle-img-22,#doodle-img-23,#doodle-img-24,#doodle-img-25,#doodle-img-26,#doodle-img-27,#doodle-img-28{
+}#doodle-img {
     max-width: 15rem;
     margin: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px 0px #00000083;
-}#doodle-img-1:hover,#doodle-img-2:hover,#doodle-img-3:hover,#doodle-img-4:hover,#doodle-img-5:hover,#doodle-img-6:hover,#doodle-img-7:hover,#doodle-img-8:hover,#doodle-img-9:hover,#doodle-img-10:hover,#doodle-img-11:hover,#doodle-img-12:hover,#doodle-img-13:hover,#doodle-img-14:hover,#doodle-img-15:hover,#doodle-img-16:hover,#doodle-img-17:hover,#doodle-img-18:hover,#doodle-img-19:hover,#doodle-img-20:hover,#doodle-img-21:hover,#doodle-img-22:hover,#doodle-img-23:hover,#doodle-img-24:hover,#doodle-img-25:hover,#doodle-img-26:hover, #doodle-img-27:hover,#doodle-img-28:hover {
+}#doodle-img:hover {
     cursor: default;
     scale: 0.975;
     transition: 200ms ease;
 
 }
 
-#posters-imgs {
+#posters-img-container {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}#posters-img-1,#posters-img-2,#posters-img-3,#posters-img-4,#posters-img-5,#posters-img-6,#posters-img-7,#posters-img-8,#posters-img-9,#posters-img-10,#posters-img-11,#posters-img-12,#posters-img-13,#posters-img-14,#posters-img-15,#posters-img-16,#posters-img-17,#posters-img-18,#posters-img-19,#posters-img-20,#posters-img-21,#posters-img-22,#posters-img-23,#posters-img-24{
+}#posters-img{
     max-width: 15rem;
     margin: 0.5rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px 0px #00000083;
-}#posters-img-1:hover,#posters-img-2:hover,#posters-img-3:hover,#posters-img-4:hover,#posters-img-5:hover,#posters-img-6:hover,#posters-img-7:hover,#posters-img-8:hover,#posters-img-9:hover,#posters-img-10:hover,#posters-img-11:hover,#posters-img-12:hover,#posters-img-13:hover,#posters-img-14:hover,#posters-img-15:hover,#posters-img-16:hover,#posters-img-17:hover,#posters-img-18:hover,#posters-img-19:hover,#posters-img-20:hover,#posters-img-21:hover,#posters-img-22:hover,#posters-img-23:hover,#posters-img-24:hover{
+}#posters-img:hover{
     cursor: default;
     scale: 0.975;
     transition: 200ms ease;
 
 }
+
+#tn-img-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(-1rem, 1fr));
+
+}#tn-img{
+    max-width: 50rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px #00000083;
+}#tn-img:hover{
+    cursor: default;
+    scale: 0.975;
+    transition: 200ms ease;
+
 }
+/*
+.vertical-scroll::-webkit-scrollbar {
+    width: 2em;
+    height: 1em;
+}.vertical-scroll::-webkit-scrollbar-track {
+    background: hsl(120 75% 50% / 1);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}.vertical-scroll::-webkit-scrollbar-thumb {
+    background: hsl(120 100% 20% / 1);
+    border: 0.25em solid hsl(120 75% 50% / 1);
+    border-radius: 100vw;
+}.vertical-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+}.vertical-scroll {
+    display: grid;
+    gap: 0.5em;
+    grid-auto-flow: column;
+    grid-auto-columns: 75%;
+    padding: 0.5em;
+    overflow-x: scroll;
+    background: #d3fdbe;
+    border-radius: 1em;
+    position: relative;
+}.vertical-scroll > div {
+    background: hsl(0 0% 90%);
+    border-radius: 1em;
+    border: 0.5em solid hsl(0 0% 60%);
+    padding: 1em;
+}
+*/
+::-webkit-scrollbar {
+    width: 2em;
+    height: 1em;
+    border-radius: 100vw;
+
+
+}::-webkit-scrollbar-track {
+    margin: 0;
+    background: #00a9f7;
+    border: #0074aa 0.25rem solid;
+
+}::-webkit-scrollbar-thumb {
+    margin: 0;
+    background: #0074aa;
+    border: #00a9f7 0.25rem solid;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (pointer: none) {
 
@@ -191,3 +290,23 @@ body {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
