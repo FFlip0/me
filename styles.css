@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Ms+Madi&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Kaushan+Script&family=Ms+Madi&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+@media (pointer: fine) {
 
 body {
     background-image: url(
@@ -27,8 +28,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; 
-    height: 100vh;  
+    flex-direction: column;
+    height: 100vh;
     overflow: hidden;
 }
 #home-name {
@@ -47,7 +48,7 @@ body {
     display: flex;
     justify-content: center;
 }
-#home-button-doodles, 
+#home-button-doodles,
 #home-button-posters,
 #home-button-coding,
 #home-button-music,
@@ -72,7 +73,7 @@ body {
     
 
 }
-#home-button-doodles:hover, 
+#home-button-doodles:hover,
 #home-button-posters:hover,
 #home-button-coding:hover,
 #home-button-music:hover,
@@ -88,8 +89,8 @@ body {
     text-decoration: none; 
 }
 #ref-home-container {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
 
 }
 #ref-home-button {
@@ -105,7 +106,7 @@ body {
     color: #ffffff00;
     text-decoration: none;
     transition: 400ms;
-    display: inline-flex; 
+    display: inline-flex;
     max-width: 0;
 }
 #ref-home-button:hover {
@@ -116,8 +117,16 @@ body {
     color: #000000;
     text-decoration: none;
     transition: 400ms;
+    animation: ref-home-animation 20s;
 }
-
+@keyframes ref-home-animation {
+    50% {
+        color:#00000030
+    }
+    100% {
+        color:#000000
+    }
+}
 #heading-1-top {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 6rem;
@@ -127,16 +136,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; 
-    
+    flex-direction: column;
+
 
 }
 #doodle-imgs {
     display: grid;
-    justify-items: center; 
-    align-items: center; 
+    justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}   
+
+}
 
 #doodle-img-1,#doodle-img-2,#doodle-img-3,#doodle-img-4,#doodle-img-5,
 #doodle-img-6,#doodle-img-7,#doodle-img-8,#doodle-img-9,#doodle-img-10,
@@ -156,6 +166,41 @@ body {
 #doodle-img-21:hover,#doodle-img-22:hover,#doodle-img-23:hover,#doodle-img-24:hover,#doodle-img-25:hover,
 #doodle-img-26:hover, #doodle-img-27:hover,#doodle-img-28:hover {
     cursor: default;
-    scale: 0.95;
+    scale: 0.975;
     transition: 200ms ease;
+
+}
+
+
+  }
+  /* Default styles: hide the message */
+  .incompatible-message {
+    display: none;
+    background-color: #330000;
+    color: #ff0000;
+    padding: 0.5rem;
+    border: 0.25rem solid #ff000050;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+}
+
+@media (pointer: none) {
+
+    /* For devices without a pointer (cursors)*/
+
+    .incompatible-message {display: block;}
+    #body2 {opacity: 0;}
+    body {background-color: #1e1e1e;}
+}
+
+@media (pointer: coarse) {
+
+    /* For devices with coarse pointers (cursors)*/
+
+    .incompatible-message {display: block;}
+    #body2 {opacity: 0;}
+    body {background-color: #1e1e1e;}
 }
