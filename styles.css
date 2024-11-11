@@ -6,85 +6,6 @@
 
 
 
-@media (pointer: none) {
-    #home-button-container {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        }#home-button {
-            min-width: fit-content;
-            color: #000000;
-        }#ref-home-container {
-            display: flex;
-            justify-content: center;
-        
-        }#ref-home-button {
-            min-width: fit-content;
-            color: #ffffff;
-        }
-    
-        #tn-img-container{
-            grid-template-columns: none;
-        }#tn-img{
-            max-width: 80%;
-        }
-        
-        #doodle-img-container{
-            grid-template-columns: none;
-        }#doodle-img{
-            max-width: 80%;
-        }
-    
-        #posters-img-container{
-            grid-template-columns: none;
-        }#posters-img{
-            max-width: 80%;
-        }
-    
-        /*Photos page is not grid but list like mobile*/
-}
-@media (pointer: coarse) {
-
-    #home-button-container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }#home-button {
-        min-width: fit-content;
-        color: #000000;
-    }#ref-home-container {
-        display: flex;
-        justify-content: center;
-    
-    }#ref-home-button {
-        min-width: fit-content;
-        color: #ffffff;
-    }
-
-    #tn-img-container{
-        grid-template-columns: none;
-    }#tn-img{
-        max-width: 80%;
-    }
-    
-    #doodle-img-container{
-        grid-template-columns: none;
-    }#doodle-img{
-        max-width: 80%;
-    }
-
-    #posters-img-container{
-        grid-template-columns: none;
-    }#posters-img{
-        max-width: 80%;
-    }
-
-    /*Photos page is not grid but list like mobile*/
-    
-}
-
 
 
 
@@ -162,8 +83,10 @@ body {
     justify-content: center;
     cursor: default;
 }#home-button-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(-1rem, 1fr));
 }#home-button {
 
     margin: 0.5rem;
@@ -178,9 +101,8 @@ body {
 
     font-family: "Arvo", serif;
     font-size: 2rem;
-    color: #00000000;
-    max-width: 0;
-    min-width: 0;
+
+    color: #000000;
 
     text-decoration: none;
     
@@ -211,11 +133,10 @@ body {
     border-radius: 100rem;
     font-family: "Arvo", serif;
     font-size: 2rem;
-    color: #ffffff00;
     text-decoration: none;
     transition: 400ms;
     display: inline-flex;
-    max-width: 0;
+    color: #ffffff;
     
     scale: 1.5;
 }#ref-home-button:hover {
@@ -408,7 +329,9 @@ body {
 
 
 
-
+@media (pointer: fine) {
+    
+}
 
 
 
