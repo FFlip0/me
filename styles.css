@@ -6,6 +6,90 @@
 
 
 
+@media (pointer: none) {
+    #home-button-container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        }#home-button {
+            min-width: fit-content;
+            color: #000000;
+        }#ref-home-container {
+            display: flex;
+            justify-content: center;
+        
+        }#ref-home-button {
+            min-width: fit-content;
+            color: #ffffff;
+        }
+    
+        #tn-img-container{
+            grid-template-columns: none;
+        }#tn-img{
+            max-width: 80%;
+        }
+        
+        #doodle-img-container{
+            grid-template-columns: none;
+        }#doodle-img{
+            max-width: 80%;
+        }
+    
+        #posters-img-container{
+            grid-template-columns: none;
+        }#posters-img{
+            max-width: 80%;
+        }
+    
+        /*Photos page is not grid but list like mobile*/
+}
+@media (pointer: coarse) {
+
+    #home-button-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }#home-button {
+        min-width: fit-content;
+        color: #000000;
+    }#ref-home-container {
+        display: flex;
+        justify-content: center;
+    
+    }#ref-home-button {
+        min-width: fit-content;
+        color: #ffffff;
+    }
+
+    #tn-img-container{
+        grid-template-columns: none;
+    }#tn-img{
+        max-width: 80%;
+    }
+    
+    #doodle-img-container{
+        grid-template-columns: none;
+    }#doodle-img{
+        max-width: 80%;
+    }
+
+    #posters-img-container{
+        grid-template-columns: none;
+    }#posters-img{
+        max-width: 80%;
+    }
+
+    /*Photos page is not grid but list like mobile*/
+    
+}
+
+
+
+
+
+
 body {
     background-image: url(
         "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
@@ -326,90 +410,6 @@ body {
 
 
 
-
-
-
-
-
-
-@media (pointer: none) {
-    #home-button-container {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        }#home-button {
-            min-width: fit-content;
-            color: #000000;
-        }#ref-home-container {
-            display: flex;
-            justify-content: center;
-        
-        }#ref-home-button {
-            min-width: fit-content;
-            color: #ffffff;
-        }
-    
-        #tn-img-container{
-            grid-template-columns: none;
-        }#tn-img{
-            max-width: 80%;
-        }
-        
-        #doodle-img-container{
-            grid-template-columns: none;
-        }#doodle-img{
-            max-width: 80%;
-        }
-    
-        #posters-img-container{
-            grid-template-columns: none;
-        }#posters-img{
-            max-width: 80%;
-        }
-    
-        /*Photos page is not grid but list like mobile*/
-}
-@media (pointer: coarse) {
-
-    #home-button-container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }#home-button {
-        min-width: fit-content;
-        color: #000000;
-    }#ref-home-container {
-        display: flex;
-        justify-content: center;
-    
-    }#ref-home-button {
-        min-width: fit-content;
-        color: #ffffff;
-    }
-
-    #tn-img-container{
-        grid-template-columns: none;
-    }#tn-img{
-        max-width: 80%;
-    }
-    
-    #doodle-img-container{
-        grid-template-columns: none;
-    }#doodle-img{
-        max-width: 80%;
-    }
-
-    #posters-img-container{
-        grid-template-columns: none;
-    }#posters-img{
-        max-width: 80%;
-    }
-
-    /*Photos page is not grid but list like mobile*/
-    
-}
 
 
 
