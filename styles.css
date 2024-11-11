@@ -6,6 +6,9 @@
 
 @media (pointer: fine) {
 
+        
+    
+
 body {
     background-image: url(
         "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
@@ -36,7 +39,7 @@ body {
 */
 #heading-1-top {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bold;
     padding: 0rem;
     margin: 2rem;
@@ -66,7 +69,6 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
 }#home-name {
     margin: 1rem;
     font-family: "Kaushan Script"; 
@@ -98,6 +100,8 @@ body {
     color: #00000000;
     max-width: 0;
     min-width: 0;
+
+    text-decoration: none;
     
 
 }#home-button:hover {
@@ -156,15 +160,17 @@ body {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    
 
 }#doodle-img {
-    max-width: 15rem;
-    margin: 0.5rem;
+    max-width: 90%;
+    margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#doodle-img:hover {
+
     cursor: default;
-    scale: 0.975;
+    scale: 0.95;
     transition: 200ms ease;
 
 }
@@ -175,13 +181,13 @@ body {
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }#posters-img{
-    max-width: 15rem;
-    margin: 0.5rem;
+    max-width: 90%;
+    margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#posters-img:hover{
     cursor: default;
-    scale: 0.975;
+    scale: 0.95;
     transition: 200ms ease;
 
 }
@@ -190,19 +196,78 @@ body {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(-1rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    
 
 }#tn-img{
-    max-width: 50rem;
-    margin: 0.5rem;
+    max-width: 90%;
+    margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#tn-img:hover{
     cursor: default;
-    scale: 0.975;
+    scale: 0.95;
     transition: 200ms ease;
 
 }
+
+#photos-img-container {
+    /*Photos page is not grid but list like mobile*/
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}#photos-img{
+    max-width: 90%;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px #00000083;
+}#photos-img:hover{
+    cursor: default;
+    scale: 0.95;
+    transition: 200ms ease;
+
+}
+
+}#coding-button-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}#coding-button {
+
+
+    margin: 0.5rem;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: #00000000;
+
+    border: 1px solid #000000;
+    border-radius: 100rem;
+
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+
+    
+
+    
+
+}#coding-button:hover {
+    min-width: fit-content;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: 400ms;
+    font-style: none;
+    text-decoration: none; 
+    background-color: #00000000;
+}
+
+
 /*
 .vertical-scroll::-webkit-scrollbar {
     width: 2em;
@@ -235,8 +300,8 @@ body {
 }
 */
 ::-webkit-scrollbar {
-    width: 2em;
-    height: 1em;
+    width: 2rem;
+    height: 2em;
     border-radius: 100vw;
 
 
@@ -249,10 +314,16 @@ body {
     margin: 0;
     background: #0074aa;
     border: #00a9f7 0.25rem solid;
-
 }
 
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -265,43 +336,83 @@ body {
 
 
 @media (pointer: none) {
-
-    /* For devices without a pointer (cursors)*/
-
-    .incompatible-message {display: block;}
-    #body2 {opacity: 0;}
-    body {background-color: #1e1e1e;}
-}@media (pointer: coarse) {
-
-    /* For devices with coarse pointers (cursors)*/
-
-    .incompatible-message {display: block;}
-    #body2 {opacity: 0;}
-    body {background-color: #1e1e1e;}
-}.incompatible-message {
-    display: none;
-    background-color: #330000;
-    color: #ff0000;
-    padding: 0.5rem;
-    border: 0.25rem solid #ff000050;
-    border-radius: 1rem;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 20px;
+    #home-button-container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        }#home-button {
+            min-width: fit-content;
+            color: #000000;
+        }#ref-home-container {
+            display: flex;
+            justify-content: center;
+        
+        }#ref-home-button {
+            min-width: fit-content;
+            color: #ffffff;
+        }
+    
+        #tn-img-container{
+            grid-template-columns: none;
+        }#tn-img{
+            max-width: 80%;
+        }
+        
+        #doodle-img-container{
+            grid-template-columns: none;
+        }#doodle-img{
+            max-width: 80%;
+        }
+    
+        #posters-img-container{
+            grid-template-columns: none;
+        }#posters-img{
+            max-width: 80%;
+        }
+    
+        /*Photos page is not grid but list like mobile*/
 }
+@media (pointer: coarse) {
 
+    #home-button-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }#home-button {
+        min-width: fit-content;
+        color: #000000;
+    }#ref-home-container {
+        display: flex;
+        justify-content: center;
+    
+    }#ref-home-button {
+        min-width: fit-content;
+        color: #ffffff;
+    }
 
+    #tn-img-container{
+        grid-template-columns: none;
+    }#tn-img{
+        max-width: 80%;
+    }
+    
+    #doodle-img-container{
+        grid-template-columns: none;
+    }#doodle-img{
+        max-width: 80%;
+    }
 
+    #posters-img-container{
+        grid-template-columns: none;
+    }#posters-img{
+        max-width: 80%;
+    }
 
-
-
-
-
-
-
-
-
+    /*Photos page is not grid but list like mobile*/
+    
+}
 
 
 

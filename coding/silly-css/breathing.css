@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+body {
+    background-color: #1a1a1a;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span {
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+
+#t1  {animation: ta 1450ms infinite ease-in-out;}
+#t2  {animation: ta 1450ms infinite ease-in-out 100ms;}
+#t3  {animation: ta 1450ms infinite ease-in-out 200ms;}
+#t4  {animation: ta 1450ms infinite ease-in-out 300ms;}
+#t5  {animation: ta 1450ms infinite ease-in-out 400ms;}
+#t6  {animation: ta 1450ms infinite ease-in-out 500ms;}
+#t7  {animation: ta 1450ms infinite ease-in-out 600ms;}
+#t8  {animation: ta 1450ms infinite ease-in-out 700ms;}
+#t9  {animation: ta 1450ms infinite ease-in-out 800ms;}
+#t10 {animation: ta 1450ms infinite ease-in-out 900ms;}
+#t11 {animation: ta 1450ms infinite ease-in-out 1000ms;}
+#t12 {animation: ta 1450ms infinite ease-in-out 1100ms;}
+#t13 {animation: ta 1450ms infinite ease-in-out 1200ms;}
+
+
+@keyframes ta {
+    form {
+        font-weight: 100;
+    }
+    50% {
+        font-weight: 800;
+    }
+    to {
+        font-weight: 100;
+    }
+
+}
+
+#ref-home-container {
+
+    margin: 0;
+    margin-top: 10rem;
+    
+    
+    }#ref-home-button {
+        position: absolute;
+        
+        margin: 4rem;
+        padding: 0.75rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: #00000000;
+        border: 1px solid #000000;
+        border-radius: 100rem;
+        font-family: "Arvo", serif;
+        font-size: 2rem;
+        color: #ffffff00;
+        text-decoration: none;
+        transition: 400ms;
+    
+    
+        max-width: 0;
+        
+        scale: 1.5;
+    }#ref-home-button:hover {
+        min-width: fit-content;
+        cursor: pointer;
+        border: 1px solid #ffffff;
+        font-size: 2rem;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 400ms;
+        animation: ref-home-animation 20s;
+    }@keyframes ref-home-animation {
+        50% {
+            color:#ffffff30
+        }
+        100% {
+            color:#ffffff
+        }
+    }
