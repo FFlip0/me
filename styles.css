@@ -4,10 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
-@media (pointer: fine) {
 
-        
-    
 
 body {
     background-image: url(
@@ -228,7 +225,7 @@ body {
 
 }
 
-}#coding-button-container {
+#coding-button-container {
     display: grid;
     justify-items: center;
     align-items: center;
