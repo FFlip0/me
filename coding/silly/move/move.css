@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Roboto:wght@900&display=swap');
+body {
+    background-color: #1a1a1a;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+  #bouncyText h1 {
+    display: inline-block;
+    text-shadow: 5px 5px 0px#6a6a6ca8;
+
+    color: #ffffff;
+  }
+  
+  #t1 {animation: vertical 2.5s   infinite    ease-in-out   0.5s;  }
+  #t2 {animation: vertical 3s     infinite    ease-in-out   1s;     }
+  #t3 {animation: vertical 2s     infinite    ease-in-out   -0.5s;   }
+  #t4 {animation: vertical 3.5s   infinite    ease-in-out   -1s;     }
+  
+  
+  #bouncyText {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  
+  @keyframes vertical {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(1rem);
+    }
+    75% {
+      transform: translateY(-1rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+

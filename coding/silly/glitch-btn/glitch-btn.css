@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: #1a1a1a;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn {
+    font-family: 'kanit';
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #1a1a1a;
+    
+    transition: 300ms;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    border-radius: 150px;
+    border-color: #00000000;
+    border: 0px;
+    
+    box-shadow: 15px 15px 100px #ffffffa6;
+
+}
+#btn:hover {
+    animation: btn-glitch1 300ms forwards;
+    scale: 1.05;
+    border-radius: 90px;
+    background: #ffffff;
+    cursor: pointer;
+}
+#btn:active {
+    scale: 200px;
+    animation: btn-glitch2 300ms;
+}
+@keyframes btn-glitch1 {
+    from {
+    box-shadow:
+    15px 15px 100px #ffffffa6, 
+    0px 0px 0px #0facfb, 
+    0px 0px 0px #cc0f25;
+    }
+    to {
+    box-shadow:
+    15px 15px 100px #ffffffa6, 
+    -5px -5px 0px #0facfb, 
+    5px 5px 0px #cc0f25;
+    }}
+
+@keyframes btn-glitch2 {
+    from {
+    box-shadow:
+    15px 15px 100px #ffffffa6, 
+    -5px -5px 0px #0facfb, 
+    5px 5px 0px #cc0f25;
+    scale: 1;
+    }
+
+    to {
+    box-shadow:
+    15px 15px 100px #ffffffa6, 
+    0px 0px 0px #0facfb, 
+    0px 0px 0px #cc0f25;
+    scale: 1;
+    }}

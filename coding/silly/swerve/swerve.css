@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {background-color: #1a1a1a;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+button {
+    background: #00000000;
+    border-style: none;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: -13px;
+    transition: 200ms;
+    text-shadow:
+    4px 4px  #4b4b4b, 
+    -0px -0px 70px #ffffff65;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900
+}
+button:hover {
+    cursor: default;
+    text-shadow: 4.5px 2px 0px #0facfb,
+    -4.5px -2px 0px #cc0f25;
+}
+
+#tdiv #t1 {animation: t1-a-v2 3340ms ease-out forwards infinite;}
+#tdiv #t2 {animation: t2-a-v2 3350ms ease-out forwards infinite;}
+#tdiv #t3 {animation: t3-a-v2 3360ms ease-out forwards infinite;}
+#tdiv #t4 {animation: t4-a-v2 3370ms ease-out forwards infinite;}
+#tdiv #t5 {animation: t5-a-v2 3380ms ease-out forwards infinite;}
+#tdiv #t6 {animation: t6-a-v2 3390ms ease-out forwards infinite;}
+#tdiv #t7 {animation: t7-a-v2 3400ms ease-out forwards infinite;}
+
+@keyframes t1-a-v2 {
+    0% {rotate: 360deg; transform: translateY(-1500px);}
+    75% {rotate: 0deg; transform: translateY(0px);}
+}
+@keyframes t2-a-v2 {
+    0% {rotate: -270deg; transform: translateY(2000px);}
+    75% {rotate: 0deg; transform: translateY(0px);}
+}
+@keyframes t3-a-v2 {
+    0% {rotate: 520deg; transform: translateY(2000px);}
+    75% {rotate: 0deg; transform: translateY(0px);}
+}
+@keyframes t4-a-v2 {
+    0% {rotate: -190deg; transform: translateY(-2000px);}
+    75% {rotate: 0deg; transform: translateY(0px);}
+}
+@keyframes t5-a-v2 {
+    0% {rotate: 20deg; transform: translateY(2000px);}
+    75% {rotate: 0deg; transform: translateY(0px);}
+}
+@keyframes t6-a-v2 {
+    0% {rotate: -220deg; transform: translateY(2000px);}
+    75% {rotate: 0deg; transform: translateY(0px);}
+}
+@keyframes t7-a-v2 {
+    0% {rotate: 20deg; transform: translateY(-2000px);}
+    75% {rotate: 0deg; transform: translateY(0px);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@keyframes t1-a {
+    0% {
+    }
+    30% {
+        scale: 1.12;
+        rotate: 50deg;
+    }
+    30% {
+        transform: translateY(300px);
+    }
+    35% {
+        rotate: 0deg;
+    }
+    40% {
+        rotate: -20deg;
+        transform: translateX(10px);
+    }
+    59% {
+        scale: 1;
+    }
+    60% {
+        scale: 1.1;
+    }
+    60% {
+        transform: translateX(px);
+    }
+    65% {
+        transform: translateX(-20px);
+    }
+    65% {
+        transform: translateY(px);
+        scale: 1.1;
+    }
+    75% {
+        transform: translateY(-35px);
+        scale: 1.2;
+
+    }
+    80% {
+        rotate: 20deg;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes t2-a {
+    0% {
+    }
+    20% {
+        rotate: 20deg;
+    }
+    30% {
+        transform: translateY(-1000px);
+    }
+    35% {
+        rotate: 0deg;
+    }
+    40% {
+        rotate: 40deg;
+        scale: 1.2;
+
+    }
+    50% {
+        scale: 1.12;
+        rotate: -30deg;
+    }
+    59% {
+        scale: 1;
+    }
+    60% {
+        transform: translateX(px);
+    }
+    65% {
+        transform: translateY(px);
+        scale: 1.1;
+    }
+    75% {
+        transform: translateY(-px);
+        scale: 1.4;
+
+    }
+    80% {
+        rotate: -10deg;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+*/

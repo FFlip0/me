@@ -13,7 +13,7 @@ body {
 span {
     font-family: 'Mulish', sans-serif;
     color: #fff;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 100;
 }
 
@@ -45,47 +45,3 @@ span {
     }
 
 }
-
-#ref-home-container {
-
-    margin: 0;
-    margin-top: 10rem;
-    
-    
-    }#ref-home-button {
-        position: absolute;
-        
-        margin: 4rem;
-        padding: 0.75rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        background-color: #00000000;
-        border: 1px solid #000000;
-        border-radius: 100rem;
-        font-family: "Arvo", serif;
-        font-size: 2rem;
-        color: #ffffff00;
-        text-decoration: none;
-        transition: 400ms;
-    
-    
-        max-width: 0;
-        
-        scale: 1.5;
-    }#ref-home-button:hover {
-        min-width: fit-content;
-        cursor: pointer;
-        border: 1px solid #ffffff;
-        font-size: 2rem;
-        color: #ffffff;
-        text-decoration: none;
-        transition: 400ms;
-        animation: ref-home-animation 20s;
-    }@keyframes ref-home-animation {
-        50% {
-            color:#ffffff30
-        }
-        100% {
-            color:#ffffff
-        }
-    }

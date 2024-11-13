@@ -37,3 +37,19 @@
     text-decoration: none; 
     background-color: #00000000;
 }
+
+
+#coding-embed-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#coding-bouncy-embed {
+    border-radius: 1rem;
+    margin: 1rem;
+}
+#coding-bouncy-embed:hover {
+    cursor: pointer;
+    transition: 200ms ease;
+    scale: 0.95;
+}

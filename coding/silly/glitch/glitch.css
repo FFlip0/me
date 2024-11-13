@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+body {
+    background-color: #1a1a1a;
+    height: 100vh;
+    margin: 0rem;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+#glitch-text {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    filter: blur(0px);
+    transition: 165ms;
+    padding: 0px;
+    margin: 0px;
+    animation: glitch 1.5s infinite ease-in-out;
+    
+}
+@keyframes glitch {
+    25% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 3px 2px 1px #0facfb, -3px -2px 1px #cc0f25;
+        cursor: default;
+    }
+    75% {
+        text-shadow: none;
+    }
+}

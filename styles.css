@@ -32,11 +32,8 @@ body {
     font-family: "Arvo", serif;
 
 }
-/*
-#body2 {
-    height: 100vh;
-}
-*/
+
+
 h1 {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 4rem;
@@ -52,7 +49,7 @@ h1 {
 }
 h2 {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 3rem;
+    font-size: 2.25rem;
     padding: 0rem;
     margin: 1rem;
     display: flex;
@@ -155,12 +152,6 @@ h2 {
         color:#000000
     }
 }
-
-
-
-
-
-
 
 
 /*
