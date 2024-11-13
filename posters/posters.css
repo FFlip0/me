@@ -1,0 +1,17 @@
+
+#posters-img-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}#posters-img{
+    max-width: 90%;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px #00000083;
+}#posters-img:hover{
+    cursor: default;
+    scale: 0.95;
+    transition: 200ms ease;
+
+}
