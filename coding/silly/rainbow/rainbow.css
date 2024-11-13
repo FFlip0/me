@@ -14,7 +14,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(#483de0, #00bbff, #00ffb7, #00ff55 );
+    background: radial-gradient(#483de0, #00bbff, #4400ff, #00ff55 );
     /*background: linear-gradient(60deg, #ff3c00, #9920da, #483de0, #00bbff, #00ffb7, #00ff55 );*/
     background-size: 700% 700%;
     animation: gradient 5s infinite;
