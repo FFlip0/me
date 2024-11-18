@@ -16,6 +16,8 @@
     transition: 400ms;
     display: inline-flex;
     color: #ffffff;
+
+    scale: 1.5;
     
 }#ref-home-button:hover {
     min-width: fit-content;
@@ -39,6 +41,7 @@
     #ref-home-container {
         display: flex;
         justify-content: center;
+
     
     }#ref-home-button {
         margin: 4rem;
