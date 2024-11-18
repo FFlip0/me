@@ -1,1 +1,13 @@
-This is a simple project for my coding project. It's my portfolio of "things" i've made, and simply just that. Theres not much to it.
+# What is this?
+This is my personal website. Here you can find my interests, hobbies.
+
+# Flip's Endavours
+Some subdomains include:
+- Coding
+- Doodles
+- Music **(hidden)**
+- Photos
+- Thumbnails 
+- Writting **(hidden)**
+
+*This website was made by AI because I personaly am too tired to make a README.md*

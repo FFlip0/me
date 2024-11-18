@@ -115,43 +115,8 @@ h2 {
     background-color: #00000000;
 }
 
-#ref-home-container {
-    display: flex;
-    justify-content: center;
 
-}#ref-home-button {
-    margin: 4rem;
-    padding: 0.75rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: #00000000;
-    border: 1px solid #ffffff;
-    border-radius: 100rem;
-    font-family: "Arvo", serif;
-    font-size: 2rem;
-    text-decoration: none;
-    transition: 400ms;
-    display: inline-flex;
-    color: #ffffff;
-    
-    scale: 1.5;
-}#ref-home-button:hover {
-    min-width: fit-content;
-    cursor: pointer;
-    border: 1px solid #000000;
-    font-size: 2rem;
-    color: #000000;
-    text-decoration: none;
-    transition: 400ms;
-    animation: ref-home-animation 20s;
-}@keyframes ref-home-animation {
-    50% {
-        color:#00000030
-    }
-    100% {
-        color:#000000
-    }
-}
+
 
 
 /*
@@ -201,8 +166,75 @@ h2 {
     background: #0074aa;
     border: #00a9f7 0.25rem solid;
 }
+@media (min-width: 768px) {
+    h1 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 9rem;
+        font-weight: bold;
+        padding: 0rem;
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    
+    }
+    h2 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 3.5rem;
+        padding: 0rem;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: normal;
+    
+    
+    }
+}
+@media (pointer: fine) {
 
-
+    #home-button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }#home-button {
+    
+        margin: 0.5rem;
+        padding: 0.75rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        background-color: #00000000;
+    
+        border: 1px solid #000000;
+        border-radius: 100rem;
+    
+        font-family: "Arvo", serif;
+        font-size: 2rem;
+    
+        color: #000000;
+    
+        text-decoration: none;
+        
+        max-width: 0;
+        color: #00000000;
+        
+    
+    }#home-button:hover {
+        min-width: fit-content;
+        cursor: pointer;
+        border: 1px solid #ffffff;
+        font-size: 2rem;
+        color: #ffffff;
+        transition: 400ms;
+        font-style: none;
+        text-decoration: none; 
+        background-color: #00000000;
+    }
+}
 
 
 
