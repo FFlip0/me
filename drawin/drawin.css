@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+#draw-img-full-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+#draw-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+#draw-img {
+    max-width: 90%; 
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 0px #00000083;
+}
+
+#draw-img:hover {
+    cursor: default;
+    scale: 0.95;
+    transition: 200ms ease;
+}
+
+
+
+#draw-img-caption {
+    max-width: 90%; /* Optional: adjust max-width if necessary */
+    margin: 0;
+    background: rgba(0, 19, 114, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Arvo", serif;
+    font-size: fit-content ;
+    min-width: 80%;
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+}
+
+#draw-img-caption:hover {
+    transition: 200ms ease;
+    scale: 0.95;
+}
