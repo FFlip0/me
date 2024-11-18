@@ -5,6 +5,7 @@ This is my personal website. Here you can find my interests, hobbies.
 Some subdomains include:
 - Coding
 - Doodles
+- Drawin
 - Music **(hidden)**
 - Photos
 - Thumbnails 
