@@ -1,0 +1,30 @@
+
+#lol {
+  font-family: "Pixelify Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+} #toggle {
+  display: none;
+} #toggle:hover {
+  cursor: pointer;
+} #label {
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+  transition: 400ms;
+  border: 1.5px solid #ffffff;
+} #toggle:checked + #label {
+  color: #000000;
+  border: 1.5px solid #000000;
+} .content {
+  display: none;
+  font-size: 1.25rem;
+} #toggle:checked + #label + .content {
+  display: block;
+}

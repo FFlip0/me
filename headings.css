@@ -1,0 +1,71 @@
+h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 0rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+
+} h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 3.25rem;
+    padding: 0rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: normal;
+    text-decoration: underline;
+} h3 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2.5rem;
+    padding: 0rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 6rem;
+        font-weight: bold;
+        padding: 0rem;
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    
+    } h2 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 3.75rem;
+        padding: 0rem;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: normal;
+    } h3 {
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 3rem;
+        padding: 0rem;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: normal;
+    }
+}

@@ -48,8 +48,9 @@
     border-radius: 1rem;
     margin: 1rem;
 }
-#coding-bouncy-embed:hover {
+@media (pointer: fine) {
+ #coding-bouncy-embed:hover {
     cursor: pointer;
     transition: 200ms ease;
     scale: 0.95;
-}
+}}

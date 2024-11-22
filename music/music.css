@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+
+#audio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} #audio {
+    
+}
+audio {
+    background-color: transparent;
+    color: transparent;
+} audio::-webkit-media-controls-panel {
+    background-color: #ff4646;
+    backdrop-filter: blur(5px);
+
+    border-radius: 10rem;
+    border: 5px solid #ff00ea;
+    
+} audio::-webkit-media-controls {
+
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+} audio::-webkit-media-controls-play-button {
+
+} audio::-webkit-media-controls-volume-slider {
+    width: 150px;
+    background-color: #ff0000;
+} audio::-webkit-media-controls-volume-slider-container {
+    background-color: #333;
+} audio::-webkit-media-controls-mute-button {
+
+} audio::-webkit-media-controls-current-time-display {
+    color: #000000;
+    font-family: "Pixelify Sans", sans-serif;
+} audio::-webkit-media-controls-time-remaining-display {
+    color: #000000;
+    font-family: "Pixelify Sans", sans-serif;
+} 
+
+/*
+audio::-webkit-media-controls-seek-backward-button {
+    background-color: #ff0000;
+} audio::-webkit-media-controls-seek-forward-button {
+    background-color: #ff0000;
+} audio::-webkit-media-controls-toggle-closed-captions-button {
+    background-color: #ff0000;
+} audio::-webkit-media-controls-rewind-button {
+    background-color: #ff0000;
+} audio::-webkit-media-controls-next-button {
+    background-color: #ff0000;
+} audio::-webkit-media-controls-pip-button {
+    background-color: #ff0000;
+}
+*/
+
+
+
+
