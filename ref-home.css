@@ -37,7 +37,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (pointer: fine) {
     #ref-home-container {
         display: flex;
         justify-content: center;

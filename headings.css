@@ -1,19 +1,17 @@
 h1 {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 5rem;
+    font-size: 3.75rem;
     font-weight: bold;
     padding: 0rem;
-    margin: 2rem;
+    margin: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
-
 } h2 {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 3.25rem;
+    font-size: 2.75rem;
     padding: 0rem;
     margin: 1rem;
     display: flex;
@@ -22,9 +20,10 @@ h1 {
     flex-direction: column;
     font-weight: normal;
     text-decoration: underline;
+    text-align: center;
 } h3 {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0rem;
     margin: 1rem;
     display: flex;
@@ -32,40 +31,30 @@ h1 {
     justify-content: center;
     flex-direction: column;
     font-weight: normal;
+    text-align: center;
+    font-weight: bold;
+} h4 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.5rem;
+    padding: 0rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
 }
 
 @media (min-width: 768px) {
     h1 {
-        font-family: "Pixelify Sans", sans-serif;
         font-size: 6rem;
-        font-weight: bold;
-        padding: 0rem;
-        margin: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    
-    
     } h2 {
-        font-family: "Pixelify Sans", sans-serif;
-        font-size: 3.75rem;
-        padding: 0rem;
-        margin: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        font-weight: normal;
+        font-size: 4.5rem;
     } h3 {
-        font-family: "Pixelify Sans", sans-serif;
         font-size: 3rem;
-        padding: 0rem;
-        margin: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        font-weight: normal;
+    } h4 {
+        font-size: 2rem;
     }
 }
