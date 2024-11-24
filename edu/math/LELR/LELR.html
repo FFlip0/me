@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>linear equations</title>
+        <link rel="icon" href="../icon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="../../../styles.css">
+        <link rel="stylesheet" href="../../../ref-home.css">  
+        <link rel="stylesheet" href="../../../scroll.css">  
+        <link rel="stylesheet" href="../../../headings.css"> 
+        <link rel="stylesheet" href="../../edu.css"> 
+        <link rel="stylesheet" href="LELR.css">
+    </head>
+    <body>
+        <main>
+            <h1>linear equations</h1>
+            <p>&bull; The coordinates of the y-intercept always make x = 0.
+            <br>&bull; The coordinates of the x-intercept always make y = 0.
+            </p>
+
+            <h2>equations</h2>
+            <h3>slope intercept form </h3>
+            <math>
+                <mi>y </mi>
+                <mo>=</mo>
+                <mn>m</mn>
+                <mi>x </mi>
+                <mi>+</mi>
+                <mn>b</mn>
+            </math>
+            <p> 
+                y &rArr; the value of y on the point (which is on the line) 
+                <br> m &rArr; the slope of the line / the gradient
+                <br> x &rArr; the value of x on the point (which is on the line)
+                <br> b &rArr; the y-intercept (where the line cuts the y axis)
+            </p>
+
+            <h3>standard form </h3>
+            <math>
+                <mi>Ax&nbsp;</mi>
+                <mi>+&nbsp;</mi>
+                <mi>By&nbsp;</mi>
+                <mi>&minus;&nbsp;</mi>
+                <mi>C&nbsp;</mi>
+                <mi>=&nbsp;0</mi>
+            </math>
+            <p>
+                A &rArr; the slope of the line / the gradient
+                <br> B &rArr; the y-intercept (where the line cuts the y axis)
+                <br> C &rArr; the x-intercept (where the line cuts the x axis)
+                <br> y &rArr; the value of y on the point (which is on the line)
+                <br> x &rArr; the value of x on the point (which is on the line)
+            </p>
+
+            <h3>point-slope form</h3>
+            <math>
+                <mi>y </mi>
+                <mi>&minus; </mi>
+                <msub>
+                    <mi>y </mi>
+                    <mi>1</mi>
+                </msub>
+                <mi>= </mi>
+                <mi>m </mi>
+                <mi>(x </mi>
+                <mi>&minus; </mi>
+                <msub>
+                    <mi>x </mi>
+                    <mi>1</mi>
+                </msub>
+                <mi>) </mi>
+            </math>
+            <p> 
+                y &rArr; the value of y on the point (which is on the line) 
+                <br> m &rArr; the slope of the line / the gradient
+                <br> x &rArr; the value of x on the point (which is on the line)
+            </p>
+            
+            <h3>midpoint</h3>
+            <math>
+                <mi>(&nbsp;</mi>
+                <mfrac>
+                    <mrow>
+                        <msub>
+                            <mi>x </mi>
+                            <mi>1</mi>
+                        </msub> 
+                        <mi>+</mi>
+                        <msub>
+                            <mi>x </mi>
+                            <mi>2</mi>
+                        </msub> 
+                    </mrow>
+                    <mi>2 </mi>
+                </mfrac>
+                <mi>,&nbsp;</mi>
+                <mfrac>
+                    <mrow>
+                        <msub>
+                            <mi>y </mi>
+                            <mi>1</mi>
+                        </msub> 
+                        <mi>+</mi>
+                        <msub>
+                            <mi>y </mi>
+                            <mi>2</mi>
+                        </msub> 
+                    </mrow>
+                    <mi>2 </mi>
+                </mfrac>
+                <mi> )</mi>
+            </math>
+
+            <h3>distance</h3>
+            <math style="transform: scale(0.75);">
+                <msqrt>
+                    <msub>
+                        <mi >(x </mi>
+                        <mi>2</mi>
+                    </msub> 
+                    <mi>&minus; &nbsp;</mi>
+                    <msub>
+                        <mi>x </mi>
+                        <mi>1</mi>
+                    </msub>
+                    <mi>) + ( &nbsp;</mi>
+                    <msub>
+                        <mi>y </mi>
+                        <mi>2</mi>
+                    </msub> 
+                    <mi>&minus; &nbsp;</mi>
+                    <msub>
+                        <mi>y </mi>
+                        <mi>1</mi>
+                    </msub>
+                    <mi>)</mi>
+                </msqrt>
+            </math>
+
+            <h2>gradient</h2>
+            <math>
+                <mi>m </mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mi style="margin: 0.25rem;">rise</mi>
+                    </mrow>
+                    <mi style="margin: 0.25rem;">run</mi>
+                </mfrac>
+            </math>
+
+            <p>m &rArr; gradient/slope
+                <br> rise &rArr; the change in y
+                <br> run &rArr; the change in x
+            </p>           
+            <p>&bull; run is always positive
+                <br> &bull; two points are needed to find the gradient
+                <br> &bull; if you only have one point you can always use the origin point (0, 0) if it's passing through that
+            </p>   
+
+            <h3>Positive and Negative Gradients</h3>
+            <h4>Positive gradient</h4>
+            <img id="img-example" src="media/positiveGradient.svg" alt="Positive Gradient">
+
+            <h4>Negative gradient</h4>
+            <img id="img-example" src="media/negativeGradient.svg" alt="Negative Gradient">
+            
+            <h3>Vertical and Horizontal Gradients</h3>
+            <h4>Vertical Gradient</h4>
+            <p style="text-align: center;">m = undefined
+                <br>When a line is vertical (straight on the y-axis), its gradient is undefined.
+            </p>
+            <img id="img-example" src="media/GradientVertical.svg" alt="Vertical Gradient">
+            
+            <h4>Horizontal Gradient</h4>
+            <p style="text-align: center;">m = 0
+                <br>When a line is horizontal (straight on the x-axis), its gradient is undefined.
+            </p>
+            <img id="img-example" src="media/GradientHorizontal.svg" alt="Horizontal Gradient">
+
+            <h2>parallel & perpendicular</h2>
+
+            <h3>parallel</h3>
+            <p>The gradient (m) of two parallel lines are always equal, as shown in this example.</p>
+            <img id="img-example" src="media/Parrellel.svg" alt="Parallel Lines">
+            <math>
+                <msub>
+                    <mi>m </mi>
+                    <mi>1</mi>
+                </msub> 
+                <mi>= &nbsp;</mi>
+                <msub>
+                    <mi>m </mi>
+                    <mi>2</mi>
+                </msub> 
+            </math>
+
+            <p>In the same way this is how it's represented in a formula.</p>
+
+            <h3>perpendicular</h3>
+            <img id="img-example" src="media/Perpendicular.svg" alt="Perpendicular Lines">
+            <img id="img-example" src="media/Perpendicular2.svg" alt="Another Example of Perpendicular Lines">
+
+            <p>When two lines are perpendicular, their gradients multiply to &minus;1.</p>
+            <math>
+                <msub>
+                    <mi>m </mi>
+                    <mi>1</mi>
+                </msub> 
+                <msub>
+                    <mi>m </mi>
+                    <mi>2</mi>
+                </msub> 
+                <mi>= &nbsp;</mi>
+                <mi>&minus;1</mi>
+            </math>
+            <p>In the same way this is how it's represented in a formula.</p>
+
+            <div id="ref-home-container">
+                <a id="ref-home-button" href="../../edu.html">back</a>
+            </div>
+        </main>
+    </body>
+</html>

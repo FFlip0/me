@@ -1,0 +1,91 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+math {
+  font-size: 2.5rem;
+    font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  margin: 2rem;
+}
+
+
+#img-example {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}#img-example:hover {
+  scale: 0.95;
+  transition: 200ms ease-in-out;
+}
+
+
+#edu-button-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(-1rem, 1fr));
+  }#edu-button {
+  
+    margin: 0.5rem;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+    background-color: #00000000;
+  
+    border: 1px solid #000000;
+    border-radius: 100rem;
+  
+    font-family: "Arvo", serif;
+    font-size: 2rem;
+  
+    color: #000000;
+  
+    text-decoration: none;
+    
+  
+  }#edu-button:hover {
+    min-width: fit-content;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: 400ms;
+    font-style: none;
+    text-decoration: none; 
+    background-color: #00000000;
+  }
+  
+#device-warning {
+  color: red;
+  background-color: #100000;
+  padding: 1rem;
+  text-align: center;
+  border: 0.25rem solid red;
+  border-radius: 1rem;
+  margin: 0;
+  font-size: 1rem
+}  
+  @media (pointer: fine) {
+    
+  #device-warning {display: none;}
+    
+  #edu-button {
+        max-width: 0;
+        color: #00000000;  
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

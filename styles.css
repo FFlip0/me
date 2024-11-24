@@ -26,4 +26,13 @@ body {
 
 }
 
+p {
+    font-size: 1.5rem
+  }
 
+/* This is for random stand alone elements. */
+#horizontal-center {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}

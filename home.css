@@ -1,10 +1,11 @@
 
-#home-main {
+#home-main {    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+
 }#home-name {
     margin: 1rem;
     font-family: "Kaushan Script"; 
