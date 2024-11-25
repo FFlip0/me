@@ -1,2 +1,0 @@
-LE = Linear Equations
-LR = Linear Relationships

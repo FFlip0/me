@@ -1,0 +1,3 @@
+ANG = angles
+LELR = Linear Equations, Linear Relationships
+TRIG = Trigonometry
