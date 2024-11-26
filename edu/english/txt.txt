@@ -1,2 +1,2 @@
 TECH = Techniques
-TOL = Types of litrature
+LIT = Litrature
