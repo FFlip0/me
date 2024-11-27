@@ -1,0 +1,26 @@
+#poem-author {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;    
+    font-family: "Pixelify Sans", sans-serif;
+}
+#poem-text {    
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+
+}
+#poem-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+#poem-link:hover {
+    color: #000000;
+}
