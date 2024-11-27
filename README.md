@@ -6,9 +6,10 @@ Some subdomains include:
 - Coding
 - Doodles
 - Drawin
-- Music **(hidden)**
+- Edu
+- Music
 - Photos
 - Thumbnails 
-- Writting **(hidden)**
 
-*This website was made by AI because I personaly am too tired to make a README.md*
+
+*This README.md was made by AI because I personaly am too tired to make a README.md*
