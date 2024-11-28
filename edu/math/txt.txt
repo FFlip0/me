@@ -3,4 +3,5 @@ FIN = financial
 IND = Indecies
 LELR = Linear Equations, Linear Relationships
 PR = Proportional Relationships
+STATS = Statistics
 TRIG = Trigonometry
