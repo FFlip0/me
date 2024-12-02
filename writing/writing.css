@@ -9,7 +9,6 @@
     font-style: italic;
     text-align: center;
     line-height: 2.5rem;
-    font-size: 1.25rem;
 
 }
 #poem-link {
@@ -19,8 +18,11 @@
     margin: 1rem;
     text-align: center;
     font-size: 2rem;
-    color: #ffffff;
-}
-#poem-link:hover {
     color: #000000;
 }
+
+#poem-link:hover {
+    color: #ffffff;
+}
+#poem-author {cursor: default}
+#poem-text {cursor: default}
