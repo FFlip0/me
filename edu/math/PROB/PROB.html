@@ -10,34 +10,105 @@
         <link rel="stylesheet" href="../../../scroll.css">  
         <link rel="stylesheet" href="../../../headings.css">  
         <link rel="stylesheet" href="../../edu.css"> 
-        <link rel="stylesheet" href="VENN.css">
+        <link rel="stylesheet" href="PROB.css">
     </head>
     <body>
         <main>
             <h1>probability</h1>
 
+            <p>P(a) = probability of A
+                <br>n(a) = number or amount of numbers in A
+            </p>
 
+            <h3>types of probability</h3>
+            <p>(decimals/fraction) 0 &nbsp;to&nbsp; 1
+                <br>(percentage) 0% &nbsp;to&nbsp; 100%
+                <br>
+            </p>
             <h2>sets</h2>
+
+                <p>
+                    Sets = (cricle) "A" or "B"
+                    <br>Elements = (data) A = {1, 2, 3}
+
+                    <br><br>A' = A Complement, everything but A (invert)
+                    
+                    <br><br>&cup; =  Union, everything 
+                    <br>&nbsp;&nbsp;&nbsp; = Usually adding the areas of both elements
+                    
+                    <br><br>&cap; = Intersection, everything that is common in both elements
+                    <br>&nbsp;&nbsp;&nbsp; = Usually finding whats common in both elements
+                </p>
+                
                 <h3>two sets</h3>
-                    <image id="img-example" src="media/A.svg"></image>
 
-                    <image id="img-example" src="media/B.svg"></image>
+                    <h4>base examples</h4>
 
-                    <image id="img-example" src="media/A-Complement.svg"></image>
+                        <image id="img-example" src="media/FIG1.svg"></image>
+                        <image id="img-example" src="media/FIG2.svg"></image>
+                        <image id="img-example" src="media/FIG3.svg"></image>
+                        <image id="img-example" src="media/FIG4.svg"></image>
+                        <p>theres a lot more examples but these are the fundementals,<br>im quite lazy and making these arent easy.</p>
+                        <p>try making the following by yourself:
+                            </p>
+                            <math><mi>B </mi></math>
+                            <math><mi>B`</mi></math>
+                            <math><mi>A &cup; B`</mi></math>
+                            <math><mi>A` &cup; B</mi></math>
+                            <math><mi>(A &cup; B)`</mi></math>
+                            <math><mi>A` &cap; B</mi></math>
+                            <math><mi>A &cap; B`</mi></math>
+                            <math><mi>(A &cap; B)`</mi></math>
+                            <math><mi>A` &cap; B`</mi></math>
+                
 
-                    <image id="img-example" src="media/B-Complement.svg"></image>
+                <h3>mutually exclusive events</h3>
+                <p>these are sets that do not have any elements in common.
+                    <br>&empty; = null = zero
+                </p>
+                <p>e.g A &cap; B = &empty;</p>
+                
+                <h4>represented visually</h4>
+                <image id="img-example" src="media/FIG5.svg"></image>
 
-                    <image id="img-example" src="media/A-Union-B.svg"></image>
+            <h2>example questions</h2>
+            
+            <h3>Q1</h3>
+            <p>P(A) = 0.7,&nbsp;&nbsp;&nbsp; P(B) = 0.5,&nbsp;&nbsp;&nbsp; P(A &cap; B) = 0.4
+                <br>Find P(A &cup; B)</p>
 
-                    <image id="img-example" src="media/A-Intersection-B.svg"></image>
+            <math><mi>P(A &cup; B) = P(A) + P(B) &minus; P(A &cap; B)</mi></math>
+            <math><mi>P(A &cup; B) = 0.7 + 0.5 &minus; 0.4</mi></math>
+            <math><mi>P(A &cup; B) = 0.8</mi></math>
 
-                    <image id="img-example" src="media/Bracket-A-Union-B-Bracket-Complement.svg"></image>
+            <br><br><br>
 
-                    <image id="img-example" src="media/Bracket-A-Intersection-B-Bracket-Complement.svg"></image>
+            <h3>Q2</h3>
+            <p>P(A) = 0.4,&nbsp;&nbsp;&nbsp; P(B) = 0.5,&nbsp;&nbsp;&nbsp; P(A &cap; B) = 0.85
+            </p>
+            <p>i) Find P(A &cap; B)</p>
+                <math><mi>P(A &cap; B) = P(A) + P(B) &minus; P(A &cup; B)</mi></math>
+                <math><mi>P(A &cap; B) = 0.4 + 0.8 &minus; 0.85</mi></math>
+                <math><mi>P(A &cap; B) = 0.35</mi></math>
+            <br><br><br>
 
-                    <image id="img-example" src="media/A-Complement-Intersection-B.svg"></image>
 
-                    <image id="img-example" src="media/A-Intersection-B-Complement.svg"></image>
+            <p>ii) Find P(A` &cap; B`)</p>
+                <math><mi>P(A` &cap; B`) = 1 &minus; P(A &cup; B)</mi></math>
+                <math><mi>P(A` &cap; B`) = 1 &minus; 0.85</mi></math>
+                <math><mi>P(A` &cap; B`) = 0.15</mi></math>
+            <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
 
             <div id="ref-home-container">
                 <a id="ref-home-button" href="../../edu.html">back</a>

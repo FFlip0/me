@@ -23,11 +23,15 @@ math {
   transition: 200ms ease-in-out;
 }
 
+
+
+
 #img-example-2 {
   background-color: #1a1a1a;
   padding: 0rem;
   border-radius: 1rem;
   margin: 1rem;
+
 }#img-example-2:hover {
   scale: 0.95;
   transition: 200ms ease-in-out;
