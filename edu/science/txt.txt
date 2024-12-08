@@ -1,7 +1,9 @@
 b-BS = Body Systems
 b-ECO = Ecosystems
 cp-ATM = Atoms
+cbp-ENGY = Energy
 p-ELEC = Electericty
+p-WAVE = Waves
 
 b = biology
 c = chemistry

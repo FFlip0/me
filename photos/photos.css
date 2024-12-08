@@ -1,9 +1,8 @@
-
 #photos-img-container {
-    /*Photos page is not grid but list like mobile*/
     display: grid;
     justify-items: center;
     align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }#photos-img{
     max-width: 90%;
     margin: 1rem;
