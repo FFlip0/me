@@ -27,55 +27,15 @@
     color: #000000;
     text-decoration: none;
     transition: 400ms;
-    animation: ref-home-animation 20s;
-}@keyframes ref-home-animation {
-    50% {
-        color:#00000030
-    }
-    100% {
-        color:#000000
-    }
+
 }
-
 @media (pointer: fine) {
-    #ref-home-container {
-        display: flex;
-        justify-content: center;
-
-    
-    }#ref-home-button {
-        margin: 4rem;
-        padding: 0.75rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        background-color: #00000000;
-        border: 1px solid #ffffff;
-        border-radius: 100rem;
-        font-family: "Arvo", serif;
-        font-size: 2rem;
-        text-decoration: none;
-        transition: 400ms;
-        display: inline-flex;
+    #ref-home-button {
         color: #00000000;
-        
         max-width: 0;
-        
+        letter-spacing: -1rem;
     }#ref-home-button:hover {
-        min-width: fit-content;
-        cursor: pointer;
-        border: 1px solid #000000;
-        font-size: 2rem;
-        color: #000000;
-        text-decoration: none;
-        transition: 400ms;
-        animation: ref-home-animation 20s;
-    }@keyframes ref-home-animation {
-        50% {
-            color:#00000030
-        }
-        100% {
-            color:#000000
-        }
+        letter-spacing: 0;
     }
     
 }
