@@ -1,15 +1,15 @@
 # What is this?
-This is my personal website. Here you can find my interests, hobbies.
+This is my personal website. Here you can find my interests, and hobbies.
 
-# Flip's Endavours
+# Flip's Endeavours
 Some subdomains include:
-- Coding
-- Doodles
-- Drawin
-- Edu
-- Music
-- Photos
+- coding
+- doodles
+- drawin
+- edu
+- music
+- photos
 - Thumbnails 
 
 
-*This README.md was made by AI because I personaly am too tired to make a README.md*
+*This README.md was made by AI because I personally am too tired to make a README.md*
