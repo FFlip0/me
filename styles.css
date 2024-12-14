@@ -29,6 +29,12 @@ body {
 p {
     font-size: 1.5rem
   }
+#font-1 {
+    font-family: "Pixelify Sans", sans-serif;
+}
+#font-2 {
+  font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
+}
 
 /* This is for random stand alone elements. */
 #horizontal-center {
@@ -43,6 +49,24 @@ main {
     align-items: center;
     flex-direction: column;
   padding: 1rem;
+  }
+  a:link {
+    text-decoration: none;
+    color: #ff0000;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #0000ff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: #00ff00;
   }
 
   
@@ -91,7 +115,8 @@ margin: 0.5rem;
   font-style: none;
   text-decoration: none; 
   background-color: #00000000;
-}#btn-2-box {
+}#btn-1:active {scale: 0.5;}
+#btn-2-box {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -118,8 +143,7 @@ margin: 0.5rem;
   font-style: none;
   text-decoration: none; 
   background-color: #00000000;
-
-}
+}#btn-2:active {scale: 0.5;}
   
 @media (pointer: fine) {
   #btn-1-box {
