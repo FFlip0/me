@@ -1,7 +1,6 @@
 #ref-home-container {
     display: flex;
     justify-content: center;
-
 }#ref-home-button {
     margin: 4rem;
     padding: 0.75rem;
@@ -16,9 +15,7 @@
     transition: 400ms;
     display: inline-flex;
     color: #ffffff;
-
     scale: 1.5;
-    
 }#ref-home-button:hover {
     min-width: fit-content;
     cursor: pointer;
@@ -27,8 +24,7 @@
     color: #000000;
     text-decoration: none;
     transition: 400ms;
-
-}
+} #ref-home-button:active {scale: 0.5;}
 @media (pointer: fine) {
     #ref-home-button {
         color: #00000000;
@@ -37,5 +33,4 @@
     }#ref-home-button:hover {
         letter-spacing: 0;
     }
-    
 }
