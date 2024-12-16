@@ -30,16 +30,7 @@ main {
 }
 
   
-#device-warning {
-  color: red;
-  background-color: #100000;
-  padding: 1rem;
-  text-align: center;
-  border: 0.25rem solid red;
-  border-radius: 1rem;
-  margin: 0;
-  font-size: 1rem
-}  
+
 
 #content-warning-1 /* For overlaping topics */{
   font-weight: bold;
@@ -55,9 +46,6 @@ main {
 
 #text-align {text-align: center;}
 
-@media (pointer: fine) {#device-warning {display: none;}}
-
-  
   
   
   

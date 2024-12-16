@@ -5,33 +5,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 
 body {
-    background-image: url(
-        "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
-    ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
-    
-    /*
-                                                                                                                                                    ^^^                   ^^^                              
-    Orignal(512x512): 
-        data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-    
-    Edited(80x80):
-    data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-    
-    */
+  background-image: url(
+      "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
+  ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
+  
+  /*
+                                                                                                                                                  ^^^                   ^^^                              
+  Orignal(512x512): 
+      data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
+  
+  Edited(80x80):
+  data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
+  
+  */
 
 
-    background-attachment: fixed;
-    background-position: center;
+  background-attachment: fixed;
+  background-position: center;
 
-    margin: 2.5rem;
+  margin: 2.5rem;
     font-family: "Arvo", serif;
 
 }
 
 p {
-    font-size: 1.5rem;
-    cursor: default;
-  }
+  font-size: 1.5rem;
+  cursor: default;
+}
+
 #font-1 {font-family: "Pixelify Sans", sans-serif;}
 #font-2 {font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;}
 #font-3 {font-family: "Handjet", sans-serif;}
@@ -40,43 +41,57 @@ p {
 
 /* This is for random stand alone elements. */
 #horizontal-center {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 1rem;
-  }
-  a:link {
-    text-decoration: underline;
-    color: #ff0000;
-  }
-  
-  a:visited {
-    text-decoration: underline;
-    color: #0000ff;
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
-  
-  a:active {
-    text-decoration: none;
-    color: #00ff00;
-  }
+}
+a:link {
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #0000ff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+  color: #00ff00;
+}
 
   
 
 
 
 
+#device-warning-1 {
+  color: red;
+  background-color: #200000;
+  padding: 1rem;
+  text-align: center;
+  border: 0.25rem solid red;
+  border-radius: 1rem;
+  margin: 0;
+  font-size: 1rem;
+  box-shadow: 0px 0px 20px 0px #00000083;
+}  
 
+@media (pointer: fine) {#device-warning-1 {display: none;}}
+
+  
 
 
 
