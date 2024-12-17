@@ -3,8 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+#colours {
+  /*Gradient 1*/
+  color: #00DAF7;
+  color: #0029FF;
+  
+  /*Gradient 2*/
+  color: #00a9f7;
+  color: #0074aa;
 
+  /*Real Colours*/
+  color: #0000ff;
+  color: #ff0000;
+  color: #00ff00;
+}
+html {margin: 0; padding: 0;}
 body {
+  margin: 1.5rem;
   background-image: url(
       "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
   ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
@@ -23,15 +38,12 @@ body {
   background-attachment: fixed;
   background-position: center;
 
-  margin: 2.5rem;
+
     font-family: "Arvo", serif;
 
 }
 
-p {
-  font-size: 1.5rem;
-  cursor: default;
-}
+
 
 #font-1 {font-family: "Pixelify Sans", sans-serif;}
 #font-2 {font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;}
@@ -51,23 +63,18 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
+
 }
 a:link {
   text-decoration: underline;
   color: #ff0000;
-}
-
-a:visited {
+}a:visited {
   text-decoration: underline;
   color: #0000ff;
-}
-
-a:hover {
+}a:hover {
   text-decoration: none;
-}
-
-a:active {
+  font-weight: bold;
+}a:active {
   text-decoration: none;
   color: #00ff00;
 }
@@ -87,9 +94,7 @@ a:active {
   margin: 0;
   font-size: 1rem;
   box-shadow: 0px 0px 20px 0px #00000083;
-}  
-
-@media (pointer: fine) {#device-warning-1 {display: none;}}
+}  @media (pointer: fine) {#device-warning-1 {display: none;}}
 
   
 
@@ -111,7 +116,7 @@ a:active {
   grid-template-columns: repeat(auto-fit, minmax(-1rem, 1fr));
 }#btn-1 {
   flex-grow: 1;  
-margin: 0.5rem;
+  margin: 0.5rem;
   padding: 0.75rem;
   padding-left: 2rem;
   padding-right: 2rem;

@@ -1,8 +1,11 @@
 b-BS = Body Systems
+b-CELL = Cells
 b-ECO = Ecosystems
 cp-ATM = Atoms
 cbp-ENGY = Energy
+cbp-GEN = General
 p-ELEC = Electericty
+p-FOMO = Force and Motion
 p-WAVE = Waves
 
 b = biology

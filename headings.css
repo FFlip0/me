@@ -1,7 +1,5 @@
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 3.75rem;
-    font-weight: bold;
     padding: 0rem;
     margin: 1rem;
     display: flex;
@@ -10,55 +8,51 @@ h1 {
     flex-direction: column;
     text-align: center;
     cursor: default;
-} h2 {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 2.75rem;
-    padding: 0rem;
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight: normal;
+}
+h1 {font-weight: bold; 
     text-decoration: underline;
-    text-align: center;
-    cursor: default;
-} h3 {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 2.25rem;
-    padding: 0rem;
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight: normal;
-    text-align: center;
-    font-weight: bold;
-    cursor: default;
-} h4 {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 2rem;
-    padding: 0rem;
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight: normal;
-    text-align: center;
+}h2 {font-weight: normal;
     text-decoration: underline;
-    cursor: default;
+}h3 {font-weight: normal;
+    font-weight: bold;
+}h4 {font-weight: normal;
+    text-decoration: underline;
+}p {cursor: default;
 }
 
+/*
+Goes up 0.3 each time 
+*/
+
+@media (min-width: 0px) {
+    h1 { font-size: 2.3em;}
+    h2 { font-size: 2.0em;}
+    h3 { font-size: 1.7em;}
+    h4 { font-size: 1.4em;}
+    h5 { font-size: 1.1em;}
+    h6 { font-size: 1.0em;}
+    p {font-size: 0.7rem;}}
+@media (min-width: 425px) {
+    h1 { font-size: 2.6em;}
+    h2 { font-size: 2.3em;}
+    h3 { font-size: 2.0em;}
+    h4 { font-size: 1.7em;}
+    h5 { font-size: 1.4em;}
+    h6 { font-size: 1.3em;}
+    p {font-size: 1rem;}}
 @media (min-width: 768px) {
-    h1 {
-        font-size: 6rem;
-    } h2 {
-        font-size: 4.5rem;
-    } h3 {
-        font-size: 3rem;
-    } h4 {
-        font-size: 2rem;
-    }
-}
+    h1 { font-size: 2.9em;}
+    h2 { font-size: 2.6em;}
+    h3 { font-size: 2.3em;}
+    h4 { font-size: 2.0em;}
+    h5 { font-size: 1.7em;}
+    h6 { font-size: 1.6em;}
+    p {font-size: 1.3rem;}}
+@media (min-width: 1024px) {
+    h1 { font-size: 3.2em;}
+    h2 { font-size: 2.9em;}
+    h3 { font-size: 2.6em;}
+    h4 { font-size: 2.3em;}
+    h5 { font-size: 2.0em;}
+    h6 { font-size: 1.9em;}
+    p {font-size: 1.6rem;}}
