@@ -6,6 +6,7 @@ cbp-ENGY = Energy
 cbp-GEN = General
 p-ELEC = Electericty
 p-FOMO = Force and Motion
+p-LIG = Light
 p-WAVE = Waves
 
 b = biology
