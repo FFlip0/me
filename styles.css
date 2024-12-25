@@ -25,21 +25,15 @@ body {
   ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
   
   /*
-                                                                                                                                                  ^^^                   ^^^                              
   Orignal(512x512): 
-      data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
+  data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
   
   Edited(80x80):
   data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-  
   */
-
-
   background-attachment: fixed;
   background-position: center;
-
-
-    font-family: "Arvo", serif;
+  font-family: "Arvo", serif;
 
 }
 
@@ -49,6 +43,14 @@ body {
 #font-2 {font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;}
 #font-3 {font-family: "Handjet", sans-serif;}
 #font-4 {font-family: "Tiny5", serif; font-style: italic;}
+
+
+
+
+
+
+
+
 
 
 /* This is for random stand alone elements. */
@@ -63,22 +65,46 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-}
-a:link {
-  text-decoration: underline;
-  color: #ff0000;
-}a:visited {
-  text-decoration: underline;
-  color: #0000ff;
-}a:hover {
-  text-decoration: none;
-}a:active {
-  text-decoration: none;
-  color: #00ff00;
+}a:link     {text-decoration: underline;    color: #ff0000;
+}a:visited  {text-decoration: underline;    color: #0000ff;
+}a:hover    {text-decoration: none;
+}a:active   {text-decoration: none;         color: #00ff00;
 }
 
-  
+#table1-tr, #table1-td, #table1-th {
+  border: #000000 solid 0.1rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}#table1-table {
+  border: #000000 solid 0.15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,9 +119,19 @@ a:link {
   margin: 0;
   font-size: 1rem;
   box-shadow: 0px 0px 20px 0px #00000083;
-}  @media (pointer: fine) {#device-warning-1 {display: none;}}
+}@media (pointer: fine) {#device-warning-1 {display: none;}}
 
   
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,17 +216,14 @@ a:link {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  #btn-1 {
+  }#btn-1 {
     letter-spacing: -0.99999rem;
     max-width: 0;
     color: #00000000; 
   }#btn-1:hover {
     transition: 400ms;
     letter-spacing: 0;
-  }
-  
-  #btn-2 {
+  }#btn-2 {
     letter-spacing: -0.99999rem;
       max-width: 0;
       color: #00000000;

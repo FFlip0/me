@@ -1,2 +1,2 @@
 TECH = Techniques
-LIT = Litrature
+WAP = Words and Phrases
