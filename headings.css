@@ -32,6 +32,7 @@ Goes up 0.3 each time
     h5 { font-size: 1.1em;}
     h6 { font-size: 1.0em;}
     p {font-size: 0.7rem;}
+    math {font-size: 1.6rem;}
     #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 0.7rem;}}
 @media (min-width: 425px) {
     h1 { font-size: 2.6em;}
@@ -41,6 +42,7 @@ Goes up 0.3 each time
     h5 { font-size: 1.4em;}
     h6 { font-size: 1.3em;}
     p {font-size: 1rem;}
+    math {font-size: 1.9rem;}
     #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1rem;}}
 @media (min-width: 768px) {
     h1 { font-size: 2.9em;}
@@ -50,6 +52,7 @@ Goes up 0.3 each time
     h5 { font-size: 1.7em;}
     h6 { font-size: 1.6em;}
     p {font-size: 1.3rem;}
+    math {font-size: 2.2rem;}
     #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1.3rem;}}
 @media (min-width: 1024px) {
     h1 { font-size: 3.2em;}
@@ -59,4 +62,18 @@ Goes up 0.3 each time
     h5 { font-size: 2.0em;}
     h6 { font-size: 1.9em;}
     p {font-size: 1.6rem;}
+    math {font-size: 2.5rem;}
     #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1.6rem;}}
+
+
+/*  Hover and invert text and headings and stuff blah blah.  */
+/*
+@media (pointer: fine) {
+    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, math:hover {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 0.5rem;
+    cursor: default;
+}
+}
+*/

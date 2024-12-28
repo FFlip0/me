@@ -1,34 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  color: #ffffff;
+  background-color: black;
+}
+@media (min-width: 1024px) {
 main {
+  padding-top: 10rem;
+  padding: 10em;
+}
+
+#edu-main-body {padding-left: 22.5rem;}
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, #table1-table {
+  font-family: "Space Mono", sans-serif;
+  padding: 0rem;
+  margin: 1rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
   flex-direction: column;
-}math {
-  font-size: 2.5rem;
+  cursor: default;
+}
+h1 {font-weight: bold; 
+}h2 {font-weight: bold;
+}h3 {font-weight: normal;
+    text-decoration: underline;
+}h4 {font-weight: normal;
+  text-decoration: underline;
+}p {cursor: default;
+}
+
+/*
+Goes up 0.3 each time 
+*/
+
+@media (min-width: 0px) {
+  h1 { font-size: 3.3em;}
+  h2 { font-size: 2.0em;}
+  h3 { font-size: 1.7em;}
+  h4 { font-size: 1.4em;}
+  h5 { font-size: 1.1em;}
+  h6 { font-size: 1.0em;}
+  p {font-size: 0.7rem;}
+  math {font-size: 1.6rem;}
+  #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 0.7rem;}}
+@media (min-width: 425px) {
+  h1 { font-size: 3.6em;}
+  h2 { font-size: 2.3em;}
+  h3 { font-size: 2.0em;}
+  h4 { font-size: 1.7em;}
+  h5 { font-size: 1.4em;}
+  h6 { font-size: 1.3em;}
+  p {font-size: 1rem;}
+  math {font-size: 1.9rem;}
+  #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1rem;}}
+@media (min-width: 768px) {
+  h1 { font-size: 3.9em;}
+  h2 { font-size: 2.6em;}
+  h3 { font-size: 2.3em;}
+  h4 { font-size: 2.0em;}
+  h5 { font-size: 1.7em;}
+  h6 { font-size: 1.6em;}
+  p {font-size: 1.3rem;}
+  math {font-size: 2.2rem;}
+  #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1.3rem;}}
+@media (min-width: 1024px) {
+  h1 { font-size: 4.2em;}
+  h2 { font-size: 2.9em;}
+  h3 { font-size: 2.6em;}
+  h4 { font-size: 2.3em;}
+  h5 { font-size: 2.0em;}
+  h6 { font-size: 1.9em;}
+  p {font-size: 1.6rem;}
+  math {font-size: 2.5rem;}
+  #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1.6rem;}}
+
+
+/*  Hover and invert text and headings and stuff blah blah.  */
+/*
+@media (pointer: fine) {
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, math:hover {
+  background-color: #000000;
+  color: #ffffff; 
+  padding: 0.5rem;
+  cursor: default;
+}
+}
+*/
+math {
   font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   margin: 2rem;
+
+  
 }
+
+a {cursor: pointer;}
+a:link      {text-decoration: none;             color: #0000ff;
+}a:visited  {text-decoration: none;             color: #0000ff;
+}a:hover    {text-decoration: none;             color: #0000ff75;
+}a:active   {text-decoration: none;             color: #ff000075;
+}
+
+#edu-btn-1, #edu-btn-2 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#mobile-back {
+  font-weight: bold;
+  font-size: 1.5em;
+}#dir-search {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}#dir-search-box {
+  border-bottom: #ffffff solid 0.2rem; 
+  padding: 0.5rem;
+}#ref-home-button {display: none;}
+@media (max-width: 1024px) {#dir-search-box {display: none;}}
+@media (min-width: 1024px) {#mobile-back    {display: none;}}
+#dir-search:link, #mobile-back:link         {text-decoration: none;  color: #ff0000;
+}#dir-search:visited, #mobile-back:visited  {text-decoration: none;  color: #ff0000;
+}#dir-search:hover, #mobile-back:hover      {text-decoration: none;  color: #ff000075;
+}#dir-search:active, #mobile-back:active    {text-decoration: none;  color: #0000ff75;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1.5em;
+  border-radius: 100vw;
+}::-webkit-scrollbar-track {
+  margin: 0;
+  background: #000000;
+  border: #ffffff 0.25rem solid;
+}::-webkit-scrollbar-thumb {
+  margin: 0;
+  background: #ffffff;
+  border: #000000 0.25rem solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+#table1-tr, #table1-td, #table1-th {
+  font-family: "Space Mono", sans-serif;
+  border: #ffffff solid 0.1rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}#table1-table {
+  border: #ffffff solid 0.15rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 #img-example {
   background-color: #1a1a1a;
   padding: 2rem;
-  border-radius: 1rem;
   margin: 1rem;
   max-width: 90%;
-}#img-example:hover {
-  scale: 0.95;
-  transition: 200ms ease-in-out;
 }@media (pointer: fine) {#img-example {max-width: none;}}
 #img-example-2 {
   background-color: #1a1a1a;
   padding: 0rem;
-  border-radius: 1rem;
   margin: 1rem;
   max-width: 90%;
-}#img-example-2:hover {
-  scale: 0.95;
-  transition: 200ms ease-in-out;
 }
 
   
@@ -36,12 +199,10 @@ main {
 
 #content-warning-1 /* For overlaping topics */{
   font-weight: bold;
-  color:  #0074aa;
-  background-color: #00a9f7;
+  color:  #000000;
+  background-color: #ffffff;
   padding: 1rem;
   text-align: center;
-  border: 0.25rem solid #0074aa;
-  border-radius: 1rem;
   margin: 0;
   font-size: 1.25rem
 }
@@ -52,8 +213,5 @@ main {
   
 
 
-  
-  
-  
   
   

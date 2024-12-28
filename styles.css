@@ -172,10 +172,12 @@ main {
   font-style: none;
   text-decoration: none; 
   background-color: #00000000;
+  text-shadow: #ffffff 0px 0px 10px;
 }#btn-1:active {
   scale: 0.95;
   color: #00ff00;
   border: 1px solid #00ff00;
+  text-shadow: #00ff00 0px 0px 10px;
 }
 
 #btn-2-box {
@@ -205,10 +207,12 @@ main {
   font-style: none;
   text-decoration: none; 
   background-color: #00000000;
+  text-shadow: #ffffff 0px 0px 10px;
 }#btn-2:active {
   scale: 0.95;
   color: #00ff00;
   border: 1px solid #00ff00;
+  text-shadow: #00ff00 0px 0px 10px;
 }
   
 @media (pointer: fine) {
