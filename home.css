@@ -13,7 +13,7 @@ main {
     cursor: default;
     text-shadow: #00000099 0px 0px 5px;
 }
-@media (pointer: fine) {
+@media (pointer: fine) {    
     #home-name:hover {
         text-shadow: #ffffff99 0px 0px 5px;
         color: #ffffff;
@@ -28,7 +28,7 @@ main {
     opacity: 0;
     cursor: pointer;
     margin: 2rem;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
 }
 #secret-btn:hover {
     opacity: 1;
