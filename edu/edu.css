@@ -36,7 +36,7 @@ main {
 */
 
 
-h1, h2, h3, h4, h5, h6, p, a, li, ul  {
+h1, h2, h3, h4, h5, h6, p, a, ul  {
   font-family: "Space Mono", sans-serif;
   padding: 0rem;
   margin: 1rem;
@@ -45,8 +45,11 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul  {
   cursor: default;
 }
 
+
+
+
 /* (No Flex) */
-#table1-table, #table2-table{
+#table1-table, th, td {
   font-family: "Space Mono", sans-serif;
   padding: 0rem;
   margin: 1rem;
@@ -54,17 +57,28 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul  {
 }
 
 
+/* To remove the list dots. */
+li {display: flex;}
 
 
 
-
-h1 {font-weight: bold; 
-}h2 {font-weight: bold;
-}h3 {font-weight: normal;
-    text-decoration: underline;
-}h4 {font-weight: normal;
+h1 {  
+  font-weight: bold; 
+}h2 { 
+  font-weight: bold;
   text-decoration: underline;
-}p {cursor: default;
+}h3 { 
+  font-weight: bold;
+
+}h4 { 
+  font-weight: normal;
+  text-decoration: underline;
+}h5 {
+  font-weight: normal;
+  text-decoration: none;
+}p, li, th, td, a  {
+  color: #cccccc;
+  font-style: italic;
 }
 
 
@@ -85,7 +99,10 @@ Goes up 0.3 each time
   p {font-size: 0.7rem;}
   math {font-size: 1.6rem;}
   li {font-size: 0.7rem;}
-  #table1-th, #table1-td {font-size: 0.7rem;}}
+  #table1-th, #table1-td {font-size: 0.7rem;}
+  #img-example {width: 50%;}
+
+}
 @media (min-width: 425px) {
   h1 { font-size: 3.6em;}
   h2 { font-size: 2.3em;}
@@ -96,7 +113,10 @@ Goes up 0.3 each time
   p {font-size: 1rem;}
   math {font-size: 1.9rem;}
   li {font-size: 1rem;}
-  #table1-th, #table1-td {font-size: 1rem;}}
+  #table1-th, #table1-td {font-size: 1rem;}
+  #img-example {width: 22.5rem;}
+
+}
 @media (min-width: 768px) {
   h1 { font-size: 3.9em;}
   h2 { font-size: 2.6em;}
@@ -106,8 +126,11 @@ Goes up 0.3 each time
   h6 { font-size: 1.6em;}
   p {font-size: 1.3rem;}
   math {font-size: 2.2rem;}
-  mli {font-size: 1.3rem;}
-  #table1-th, #table1-td {font-size: 1.3rem;}}
+  li {font-size: 1.3rem;}
+  #table1-th, #table1-td {font-size: 1.3rem;}
+  #img-example {width: 40rem;}
+
+}
 @media (min-width: 1024px) {
   h1 { font-size: 4.2em;}
   h2 { font-size: 2.9em;}
@@ -118,7 +141,10 @@ Goes up 0.3 each time
   p {font-size: 1.6rem;}
   math {font-size: 2.5rem;}
   li {font-size: 1.3rem;}
-  #table1-th, #table1-td {font-size: 1.6rem;}}
+  #table1-th, #table1-td {font-size: 1.6rem;}
+  #img-example {width: 47.5rem}
+
+}
 
 
 /*  Hover and invert text and headings and stuff blah blah.  */
@@ -167,9 +193,15 @@ a:link      {text-decoration: none;             color: #0000ff;
 #edu-btn-1, #edu-btn-2 {
   font-weight: bold;
   font-size: 1.5em;
+  font-style: normal;
 }
 
 
+#line1 {
+  border: #808080 dashed 0.1rem;
+  margin: 1rem;
+}
+#block {display: block;}
 
 
 
@@ -181,20 +213,23 @@ a:link      {text-decoration: none;             color: #0000ff;
 
 /* 
 
- Pages ---------------------------------------------------------------------------- 
+ Pages, Dir-search ---------------------------------------------------------------------------- 
 
 */
 #mobile-back {
   font-weight: bold;
   font-size: 1.5em;
+  font-style: normal;
 }#dir-search {
   display: inline-block;
   font-size: 2rem;
   margin: 0.5rem;
   font-weight: bold;
+  font-style: normal;
 }#dir-search-box {
-  border-bottom: #ffffff solid 0.2rem; 
+  border-bottom: #ffffff solid 0.1rem;
   padding: 0.5rem;
+  margin: 1rem;
 }#ref-home-button {display: none;}
 @media (max-width: 1024px) {#dir-search-box {display: none;}}
 @media (min-width: 1024px) {#mobile-back    {display: none;}}
@@ -283,7 +318,6 @@ a:link      {text-decoration: none;             color: #0000ff;
   background-color: #000000;
   padding: 2rem;
   margin: 1rem;
-  max-width: 90%;
   border: #ffffff solid 0.25rem;
 }@media (pointer: fine) {#img-example {max-width: none;}}
 #img-example-2 {
@@ -310,6 +344,7 @@ a:link      {text-decoration: none;             color: #0000ff;
  Content Warning ---------------------------------------------------------------------------- 
 
 */
+
 #content-warning-1 /* For overlaping topics */{
   font-weight: bold;
   color:  #000000;
@@ -341,7 +376,7 @@ a:link      {text-decoration: none;             color: #0000ff;
 
  Hovers ---------------------------------------------------------------------------- 
 
-*/
+
 
 @media (pointer: fine) {
   h1:hover, 
@@ -357,10 +392,12 @@ a:link      {text-decoration: none;             color: #0000ff;
   td:hover,
   li:hover {
   color: #ff0000; 
+} #img-example:hover{
+  border-color: #ff0000;
 }}
 
 
-
+*/
 
 
 
