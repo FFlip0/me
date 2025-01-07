@@ -4,7 +4,7 @@
 
 body {
   color: #ffffff;
-  background-color: black;
+  background-color: #000000;
 }
 
 @media (min-width: 1024px) {
@@ -34,7 +34,6 @@ main {
  Default Styles ---------------------------------------------------------------------------- 
 
 */
-
 
 h1, h2, h3, h4, h5, h6, p, a, ul  {
   font-family: "Space Mono", sans-serif;
@@ -178,7 +177,6 @@ Goes up 0.3 each time
 
 math {
   font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
   margin: 2rem;
   cursor: default;
 }
@@ -194,8 +192,26 @@ a:link      {text-decoration: none;             color: #0000ff;
   font-weight: bold;
   font-size: 1.5em;
   font-style: normal;
+
 }
 
+/*  When #edu-btn-1 hover/active, it's background becomes the color and text becomes black*//*
+
+@media (pointer: fine) {
+#edu-btn-1 {
+  padding: 0.5rem;
+  margin: 1rem;
+}#edu-btn-1:hover {
+  background-color: #0000ff;
+  box-shadow: 0px 0px 1rem 0px #0000ff;
+  color: #000000;
+}#edu-btn-1:active {
+  background-color: #ff0000;
+  box-shadow: 0px 0px 1rem 0px #ff0000;
+  color: #000000;
+}}
+
+*/
 
 #line1 {
   border: #808080 dashed 0.1rem;
@@ -216,6 +232,7 @@ a:link      {text-decoration: none;             color: #0000ff;
  Pages, Dir-search ---------------------------------------------------------------------------- 
 
 */
+
 #mobile-back {
   font-weight: bold;
   font-size: 1.5em;

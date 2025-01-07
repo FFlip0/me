@@ -1,6 +1,6 @@
 ANG = angles
 FIN = financial
-IND = Indecies
+GEO = Geometry
 LELR = Linear Equations, Linear Relationships
 PR = Proportional Relationships
 PROB = Probability 
