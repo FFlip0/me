@@ -5,6 +5,7 @@
 body {
   color: #ffffff;
   background-color: #000000;
+  padding-bottom: 5rem;
 }
 
 @media (min-width: 1024px) {
@@ -75,7 +76,7 @@ h1 {
 }h5 {
   font-weight: normal;
   text-decoration: none;
-}p, li, th, td, a  {
+}p, li, th, td, a, math  {
   color: #cccccc;
   font-style: italic;
 }
@@ -99,7 +100,7 @@ Goes up 0.3 each time
   math {font-size: 1.6rem;}
   li {font-size: 0.7rem;}
   #table1-th, #table1-td {font-size: 0.7rem;}
-  #img-example {width: 50%;}
+  /*#img-example {width: 50%;}*/
 
 }
 @media (min-width: 425px) {
@@ -113,7 +114,7 @@ Goes up 0.3 each time
   math {font-size: 1.9rem;}
   li {font-size: 1rem;}
   #table1-th, #table1-td {font-size: 1rem;}
-  #img-example {width: 22.5rem;}
+  /*#img-example {width: 22.5rem;}*/
 
 }
 @media (min-width: 768px) {
@@ -127,7 +128,7 @@ Goes up 0.3 each time
   math {font-size: 2.2rem;}
   li {font-size: 1.3rem;}
   #table1-th, #table1-td {font-size: 1.3rem;}
-  #img-example {width: 40rem;}
+  /*#img-example {width: 40rem;}*/
 
 }
 @media (min-width: 1024px) {
@@ -141,7 +142,7 @@ Goes up 0.3 each time
   math {font-size: 2.5rem;}
   li {font-size: 1.3rem;}
   #table1-th, #table1-td {font-size: 1.6rem;}
-  #img-example {width: 47.5rem}
+  /*#img-example {width: 47.5rem}*/
 
 }
 
@@ -215,6 +216,10 @@ a:link      {text-decoration: none;             color: #0000ff;
 
 #line1 {
   border: #808080 dashed 0.1rem;
+  margin: 1rem;
+}
+#line2 {
+  border: #808080 solid 0.25rem;
   margin: 1rem;
 }
 #block {display: block;}
@@ -336,12 +341,18 @@ a:link      {text-decoration: none;             color: #0000ff;
   padding: 2rem;
   margin: 1rem;
   border: #ffffff solid 0.25rem;
-}@media (pointer: fine) {#img-example {max-width: none;}}
+}
 #img-example-2 {
   background-color: #1a1a1a;
   padding: 0rem;
   margin: 1rem;
-  max-width: 90%;
+}#img-example-3 { /* Litteraly just #img-example with an invert effect for images with white backgrounds.*/
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1rem;
+  border: #000000 solid 0.25rem;
+  filter: invert();
+  color: #000000;
 }
 
   
