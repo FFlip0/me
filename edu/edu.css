@@ -36,7 +36,7 @@ main {
 
 */
 
-h1, h2, h3, h4, h5, h6, p, a, ul  {
+h1, h2, h3, h4, h5, h6, p, a, ul, math  {
   font-family: "Space Mono", sans-serif;
   padding: 0rem;
   margin: 1rem;
@@ -178,7 +178,7 @@ Goes up 0.3 each time
 
 math {
   font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
-  margin: 2rem;
+  margin: 1rem;
   cursor: default;
 }
 
@@ -217,10 +217,12 @@ a:link      {text-decoration: none;             color: #0000ff;
 #line1 {
   border: #808080 dashed 0.1rem;
   margin: 1rem;
+  display: block;
 }
 #line2 {
   border: #808080 solid 0.25rem;
   margin: 1rem;
+  display: block;
 }
 #block {display: block;}
 
@@ -341,18 +343,34 @@ a:link      {text-decoration: none;             color: #0000ff;
   padding: 2rem;
   margin: 1rem;
   border: #ffffff solid 0.25rem;
+  
+  /* For making the width 80% when the width of 
+  a image is larger than the width of the screen */
+  max-width: 80%;  
+  margin-right: auto;
 }
 #img-example-2 {
   background-color: #1a1a1a;
   padding: 0rem;
   margin: 1rem;
-}#img-example-3 { /* Litteraly just #img-example with an invert effect for images with white backgrounds.*/
+    
+  /* For making the width 80% when the width of 
+  a image is larger than the width of the screen */
+  max-width: 80%;  
+  margin-right: auto;
+}#img-example-3 /*#img-example with an invert effect for white BGs*/ { 
+  
   background-color: #ffffff;
   padding: 2rem;
   margin: 1rem;
   border: #000000 solid 0.25rem;
   filter: invert();
   color: #000000;
+
+  /* For making the width 80% when the width of 
+  a image is larger than the width of the screen */
+  max-width: 80%;  
+  margin-right: auto;
 }
 
   
