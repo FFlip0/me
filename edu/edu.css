@@ -1,10 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray-1: #cccccc;
+  --gray-2: #808080; /* Exactly in between #fff and #000 */
+}
 body {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--white);
+  background-color: var(--black);
   padding-bottom: 5rem;
 }
 
@@ -36,25 +41,36 @@ main {
 
 */
 
-h1, h2, h3, h4, h5, h6, p, a, ul, math  {
+/* All */
+h1, h2, h3, h4, h5, h6, p, a, ul, button  {
   font-family: "Space Mono", sans-serif;
   padding: 0rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   cursor: default;
+
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
+table, th, td {
+  font-family: "Space Mono", sans-serif;
+  padding: 0rem;
+  margin: 1rem;
+  cursor: default;
+}
+
+
+p, a, li {
+  display: inline-block;
 }
 
 
 
 
 /* (No Flex) */
-#table1-table, th, td {
-  font-family: "Space Mono", sans-serif;
-  padding: 0rem;
-  margin: 1rem;
-  cursor: default;
-}
+
 
 
 /* To remove the list dots. */
@@ -77,8 +93,47 @@ h1 {
   font-weight: normal;
   text-decoration: none;
 }p, li, th, td, a, math  {
-  color: #cccccc;
+  color: var(--gray-1);
   font-style: italic;
+}
+
+math {
+  font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
+  margin: 1rem;
+  cursor: default;
+  padding: 0.5rem;
+}button {
+  border-radius: 0;
+  background-color: var(--black);
+  border: var(--white) solid 0.1rem;
+  color: var(--white);
+  padding: 0.5rem;
+}button:hover {
+  border-radius: 0;
+  background-color: var(--white);
+  border: var(--white) solid 0.1rem;
+  color: var(--black);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+  font-weight: bold;
+  font-style: normal;
+}
+a:link      {text-decoration: none;             color: #0000ff;
+}a:visited  {text-decoration: none;             color: #0000ff;
+}a:hover    {text-decoration: none;             color: #0000ff75;
+}a:active   {text-decoration: none;             color: #ff000075;
+}
+
+#p2 {
+  background-color: var(--white);
+  display: inline-block;
+  padding: 0.25rem;
+  color: var(--black);
+  font-style: normal;
+  border: var(--black) solid 0.1rem;
 }
 
 
@@ -96,7 +151,7 @@ Goes up 0.3 each time
   h4 { font-size: 1.4em;}
   h5 { font-size: 1.1em;}
   h6 { font-size: 1.0em;}
-  p {font-size: 0.7rem;}
+  p, a, button {font-size: 0.7rem;}
   math {font-size: 1.6rem;}
   li {font-size: 0.7rem;}
   #table1-th, #table1-td {font-size: 0.7rem;}
@@ -110,7 +165,7 @@ Goes up 0.3 each time
   h4 { font-size: 1.7em;}
   h5 { font-size: 1.4em;}
   h6 { font-size: 1.3em;}
-  p {font-size: 1rem;}
+  p, a, button {font-size: 1rem;}
   math {font-size: 1.9rem;}
   li {font-size: 1rem;}
   #table1-th, #table1-td {font-size: 1rem;}
@@ -124,7 +179,7 @@ Goes up 0.3 each time
   h4 { font-size: 2.0em;}
   h5 { font-size: 1.7em;}
   h6 { font-size: 1.6em;}
-  p {font-size: 1.3rem;}
+  p, a, button {font-size: 1.3rem;}
   math {font-size: 2.2rem;}
   li {font-size: 1.3rem;}
   #table1-th, #table1-td {font-size: 1.3rem;}
@@ -138,7 +193,7 @@ Goes up 0.3 each time
   h4 { font-size: 2.3em;}
   h5 { font-size: 2.0em;}
   h6 { font-size: 1.9em;}
-  p {font-size: 1.6rem;}
+  p, a, button {font-size: 1.6rem;}
   math {font-size: 2.5rem;}
   li {font-size: 1.3rem;}
   #table1-th, #table1-td {font-size: 1.6rem;}
@@ -151,6 +206,8 @@ Goes up 0.3 each time
 
 
 
+#block {display: block;}
+#inline-block {display: inline-block;}
 
 
 
@@ -176,24 +233,12 @@ Goes up 0.3 each time
 
 
 
-math {
-  font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
-  margin: 1rem;
-  cursor: default;
-}
-
-a {cursor: pointer;}
-a:link      {text-decoration: none;             color: #0000ff;
-}a:visited  {text-decoration: none;             color: #0000ff;
-}a:hover    {text-decoration: none;             color: #0000ff75;
-}a:active   {text-decoration: none;             color: #ff000075;
-}
 
 #edu-btn-1, #edu-btn-2 {
   font-weight: bold;
   font-size: 1.5em;
   font-style: normal;
-
+  display: block;
 }
 
 /*  When #edu-btn-1 hover/active, it's background becomes the color and text becomes black*//*
@@ -215,16 +260,16 @@ a:link      {text-decoration: none;             color: #0000ff;
 */
 
 #line1 {
-  border: #808080 dashed 0.1rem;
+  border: var(--gray-2) dashed 0.1rem;
   margin: 1rem;
   display: block;
 }
 #line2 {
-  border: #808080 solid 0.25rem;
+  border: var(--gray-2) solid 0.25rem;
   margin: 1rem;
   display: block;
 }
-#block {display: block;}
+
 
 
 
@@ -236,7 +281,7 @@ a:link      {text-decoration: none;             color: #0000ff;
 
 /* 
 
- Pages, Dir-search ---------------------------------------------------------------------------- 
+ Pages, Dir-search, Theme Swap ---------------------------------------------------------------------------- 
 
 */
 
@@ -251,9 +296,11 @@ a:link      {text-decoration: none;             color: #0000ff;
   font-weight: bold;
   font-style: normal;
 }#dir-search-box {
-  border-bottom: #ffffff solid 0.1rem;
+  border-bottom: var(--white) solid 0.25rem;
   padding: 0.5rem;
   margin: 1rem;
+}#dir-search-box:hover {
+  cursor: default;
 }#ref-home-button {display: none;}
 @media (max-width: 1024px) {#dir-search-box {display: none;}}
 @media (min-width: 1024px) {#mobile-back    {display: none;}}
@@ -266,7 +313,24 @@ a:link      {text-decoration: none;             color: #0000ff;
 
 */
 
+/* Theme Switch (Disabled) */#themeSwitch {display: none;}/*
+#themeSwitch {
+  display: inline;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: var(--white);
+  transition: all 200ms;
+  border-radius: 1rem; 
+  display: none;
+}#themeSwitch:hover {
+  background-color: var(--black);
+  scale: 2;
+}#themeSwitch:active {
+  scale: 1.5;
+}@media (pointer: fine) {#themeSwitch {display: inline;}}
 
+
+*/
 
 
 
@@ -303,12 +367,12 @@ a:link      {text-decoration: none;             color: #0000ff;
 */
 
 #table1-tr, #table1-td, #table1-th {
-  border: #ffffff solid 0.1rem;
+  border: var(--white) solid 0.1rem;
   margin: 0rem;
   padding: 1rem;
   text-align: center;
 }#table1-table {
-  border: #ffffff solid 0.15rem;
+  border: var(--white) solid 0.15rem;
 }
 
 
@@ -385,29 +449,6 @@ a:link      {text-decoration: none;             color: #0000ff;
 
 
 
-/* 
-
- Content Warning ---------------------------------------------------------------------------- 
-
-*/
-
-#content-warning-1 /* For overlaping topics */{
-  font-weight: bold;
-  color:  #000000;
-  background-color: #ffffff;
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
-  font-size: 1.25rem
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -422,7 +463,7 @@ a:link      {text-decoration: none;             color: #0000ff;
 
  Hovers ---------------------------------------------------------------------------- 
 
-
+*//* Hover1 *//*
 
 @media (pointer: fine) {
   h1:hover, 
@@ -443,23 +484,54 @@ a:link      {text-decoration: none;             color: #0000ff;
 }}
 
 
+*//* Hover2 *//*
+
+@media (pointer: fine) {
+  h1:hover, 
+  h2:hover, 
+  h3:hover, 
+  h4:hover, 
+  h5:hover, 
+  h6:hover, 
+  p:hover, 
+  math:hover, 
+  a:hover,
+  th:hover,
+  td:hover,
+  li:hover {
+  color: var(--black);
+  background-color: var(--white);
+} #img-example:hover{
+  filter: invert();
+} #p2:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: var(--white) solid 0.1rem;
+}}
+
 */
-
-
-
-
-
-
 
 
 
 /* 
+ Content Warning ---------------------------------------------------------------------------- 
+*/
+#content-warning-1 /* For overlaping topics */{
+  font-weight: bold;
+  color:  var(--black);
+  background-color: var(--white);
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem
+}
 
+
+/* 
  Mobile Warning ---------------------------------------------------------------------------- 
-
 */
 #mobileSupport {
-  color: #000000; 
+  color: var(--black); 
   font-weight: bold;
   background-color: #ff0000;
   padding: 1rem;
@@ -486,12 +558,12 @@ a:link      {text-decoration: none;             color: #0000ff;
   border-radius: 100vw;
 }::-webkit-scrollbar-track {
   margin: 0;
-  background: #000000;
-  border: #ffffff 0.25rem solid;
+  background: var(--black);
+  border: var(--white) 0.25rem solid;
 }::-webkit-scrollbar-thumb {
   margin: 0;
-  background: #ffffff;
-  border: #000000 0.25rem solid;
+  background: var(--white);
+  border: var(--black) 0.25rem solid;
 }
 
 
