@@ -301,7 +301,7 @@ Goes up 0.3 each time
   margin: 1rem;
 }#dir-search-box:hover {
   cursor: default;
-}#ref-home-button {display: none;}
+}
 @media (max-width: 1024px) {#dir-search-box {display: none;}}
 @media (min-width: 1024px) {#mobile-back    {display: none;}}
 /* Red Links for #dir-search and #mobile-back*//* 
