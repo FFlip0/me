@@ -42,7 +42,7 @@ main {
 */
 
 /* All */
-h1, h2, h3, h4, h5, h6, p, a, ul, button  {
+h1, h2, h3, h4, h5, h6, p, a, ul, button, details  {
   font-family: "Space Mono", sans-serif;
   padding: 0rem;
   margin: 1rem;
@@ -78,18 +78,18 @@ li {display: flex;}
 
 
 
-h1 {  
+h1, #h1 {  
   font-weight: bold; 
-}h2 { 
+}h2, #h2 { 
   font-weight: bold;
   text-decoration: underline;
-}h3 { 
+}h3, #h3 { 
   font-weight: bold;
 
-}h4 { 
+}h4, #h4 { 
   font-weight: normal;
   text-decoration: underline;
-}h5 {
+}h5, #h5 {
   font-weight: normal;
   text-decoration: none;
 }p, li, th, td, a, math  {
@@ -97,6 +97,24 @@ h1 {
   font-style: italic;
 }
 
+/*
+details {
+  border: 0.15rem solid var(--white);
+  padding: 0;
+  display: none;
+}summary { 
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.5rem;
+
+}summary:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 0.15rem solid var(--white);
+} 
+#detailsContent {}
+*/
 math {
   font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
   margin: 1rem;
@@ -145,12 +163,12 @@ Goes up 0.3 each time
 */
 
 @media (min-width: 0px) {
-  h1 { font-size: 3.3em;}
-  h2 { font-size: 2.0em;}
-  h3 { font-size: 1.7em;}
-  h4 { font-size: 1.4em;}
-  h5 { font-size: 1.1em;}
-  h6 { font-size: 1.0em;}
+  h1, #h1 { font-size: 3.3em;}
+  h2, #h2 { font-size: 2.0em;}
+  h3, #h3 { font-size: 1.7em;}
+  h4, #h4 { font-size: 1.4em;}
+  h5, #h5 { font-size: 1.1em;}
+  h6, #h6 { font-size: 1.0em;}
   p, a, button {font-size: 0.7rem;}
   math {font-size: 1.6rem;}
   li {font-size: 0.7rem;}
@@ -159,12 +177,12 @@ Goes up 0.3 each time
 
 }
 @media (min-width: 425px) {
-  h1 { font-size: 3.6em;}
-  h2 { font-size: 2.3em;}
-  h3 { font-size: 2.0em;}
-  h4 { font-size: 1.7em;}
-  h5 { font-size: 1.4em;}
-  h6 { font-size: 1.3em;}
+  h1, #h1 { font-size: 3.6em;}
+  h2, #h2 { font-size: 2.3em;}
+  h3, #h3 { font-size: 2.0em;}
+  h4, #h4 { font-size: 1.7em;}
+  h5, #h5 { font-size: 1.4em;}
+  h6, #h6 { font-size: 1.3em;}
   p, a, button {font-size: 1rem;}
   math {font-size: 1.9rem;}
   li {font-size: 1rem;}
@@ -173,12 +191,12 @@ Goes up 0.3 each time
 
 }
 @media (min-width: 768px) {
-  h1 { font-size: 3.9em;}
-  h2 { font-size: 2.6em;}
-  h3 { font-size: 2.3em;}
-  h4 { font-size: 2.0em;}
-  h5 { font-size: 1.7em;}
-  h6 { font-size: 1.6em;}
+  h1, #h1 { font-size: 3.9em;}
+  h2, #h2 { font-size: 2.6em;}
+  h3, #h3 { font-size: 2.3em;}
+  h4, #h4 { font-size: 2.0em;}
+  h5, #h5 { font-size: 1.7em;}
+  h6, #h6 { font-size: 1.6em;}
   p, a, button {font-size: 1.3rem;}
   math {font-size: 2.2rem;}
   li {font-size: 1.3rem;}
@@ -187,12 +205,12 @@ Goes up 0.3 each time
 
 }
 @media (min-width: 1024px) {
-  h1 { font-size: 4.2em;}
-  h2 { font-size: 2.9em;}
-  h3 { font-size: 2.6em;}
-  h4 { font-size: 2.3em;}
-  h5 { font-size: 2.0em;}
-  h6 { font-size: 1.9em;}
+  h1, #h1 { font-size: 4.2em;}
+  h2, #h2 { font-size: 2.9em;}
+  h3, #h3 { font-size: 2.6em;}
+  h4, #h4 { font-size: 2.3em;}
+  h5, #h5 { font-size: 2.0em;}
+  h6, #h6 { font-size: 1.9em;}
   p, a, button {font-size: 1.6rem;}
   math {font-size: 2.5rem;}
   li {font-size: 1.3rem;}

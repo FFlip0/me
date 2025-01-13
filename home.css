@@ -13,17 +13,7 @@ main {
     cursor: default;
     text-shadow: #00000099 0px 0px 5px;
 }
-@media (pointer: fine) {    
-    #home-name:hover {
-        text-shadow: #ffffff99 0px 0px 5px;
-        color: #ffffff;
-        transition: 400ms;
-    }
-    
-}
-@media (max-width: 1024px)  /*Laptop to 4k*/ {
 
-}
 #secret-btn {
     opacity: 0;
     cursor: pointer;
