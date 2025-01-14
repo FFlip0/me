@@ -21,7 +21,7 @@ html {margin: 0; padding: 0;}
 body {
   margin: 1.5rem;
   
-      /*old style*/
+
       background-image: url(
           "  data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
       ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
@@ -52,7 +52,7 @@ body {
 #font-4 {font-family: "Tiny5", serif; font-style: italic;}
 
 
-/*
+
 p, a {
   backdrop-filter: blur(0.5rem);
   border: 0.1rem solid #000000;
@@ -60,9 +60,10 @@ p, a {
   margin: 1rem;
   font-family: "Pixelify Sans", sans-serif;
   background-color: #00000005;
+  color: #ffffff;
 }
 
-*/
+
 
 
 
