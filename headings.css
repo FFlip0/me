@@ -11,11 +11,8 @@ h1 {font-weight: bold;
 }
 
 p, a, h1, h2, h3, h4, h5, h6{
-    backdrop-filter: blur(10rem);
-    background-color: #00000005;
     color: #ffffff;
     padding: 1rem;
-    border: #ffffff solid 0.1rem;
     text-align: center;
     font-family: "Pixelify Sans", sans-serif;
     display: flex;
@@ -23,9 +20,24 @@ p, a, h1, h2, h3, h4, h5, h6{
     justify-content: center;
     flex-direction: column;
     cursor: default;
-    background-color: #ffffff50;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
+#bg1 {
+    backdrop-filter: blur(10rem);
+    border: #ffffff solid 0.1rem;
+    background-color: #ffffff50;
+    margin: 2rem;
+}
+a {
+    backdrop-filter: blur(10rem);
+    border: #0000ff solid 0.1rem;
+    background-color: #0000ff50;
+    margin: 2rem;
 
+}
 
 /*
 Goes up 0.3 each time 
@@ -38,9 +50,10 @@ Goes up 0.3 each time
     h4 { font-size: 1.4em;}
     h5 { font-size: 1.1em;}
     h6 { font-size: 1.0em;}
-    p {font-size: 0.7rem;}
+    p, a {font-size: 0.7rem;}
     math {font-size: 1.6rem;}
-    #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 0.7rem;}}
+    audio {scale: 0.65;}
+}
 @media (min-width: 425px) {
     h1 { font-size: 2.6em;}
     h2 { font-size: 2.3em;}
@@ -48,9 +61,10 @@ Goes up 0.3 each time
     h4 { font-size: 1.7em;}
     h5 { font-size: 1.4em;}
     h6 { font-size: 1.3em;}
-    p {font-size: 1rem;}
+    p, a {font-size: 1rem;}
     math {font-size: 1.9rem;}
-    #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1rem;}}
+    audio {scale: 0.9;}
+}
 @media (min-width: 768px) {
     h1 { font-size: 2.9em;}
     h2 { font-size: 2.6em;}
@@ -58,9 +72,10 @@ Goes up 0.3 each time
     h4 { font-size: 2.0em;}
     h5 { font-size: 1.7em;}
     h6 { font-size: 1.6em;}
-    p {font-size: 1.3rem;}
+    p, a {font-size: 1.3rem;}
     math {font-size: 2.2rem;}
-    #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1.3rem;}}
+    audio {scale: 1.0;}
+}
 @media (min-width: 1024px) {
     h1 { font-size: 3.2em;}
     h2 { font-size: 2.9em;}
@@ -68,9 +83,10 @@ Goes up 0.3 each time
     h4 { font-size: 2.3em;}
     h5 { font-size: 2.0em;}
     h6 { font-size: 1.9em;}
-    p {font-size: 1.6rem;}
+    p, a {font-size: 1.6rem;}
     math {font-size: 2.5rem;}
-    #table1-table, #table1-th, #table1-td, #table1-tr {font-size: 1.6rem;}}
+    audio {scale: 1.0;}
+}
 
 
 /*  Hover and invert text and headings and stuff blah blah.  */

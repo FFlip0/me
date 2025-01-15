@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
 }#ref-home-button {
-    margin: 4rem;
+    margin: 1rem;
     padding: 0.75rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -80,7 +80,7 @@
     background-color: #000000;
     color: #ffffff;
 }
-    
+/*
 
 @media (pointer: fine) {
     #ref-home-container {
@@ -98,4 +98,4 @@
   }
   
 
-  
+*/

@@ -46,7 +46,7 @@ body {
    background-color: #ff00ff;
     margin: 0;
 
-    padding: 0;
+    padding: 0rem;
     width: 100%;
     height: 100%;
     background: radial-gradient(#aa0000, #0000aa, #00aa00 );
@@ -96,16 +96,11 @@ main {
 }a:active   {text-decoration: none;         color: #00ff00;
 }
 
-#table1-tr, #table1-td, #table1-th {
-  border: #000000 solid 0.1rem;
-  margin: 0;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-}#table1-table {
-  border: #000000 solid 0.15rem;
+#line {
+  border: 1px solid #ffffff;
+  margin: 2rem;
+  width: 100%;
 }
-
 
 
 
