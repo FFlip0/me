@@ -6,7 +6,7 @@
 }#lsmp-s2-img{
     max-width: 90%;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#lsmp-s2-img:hover{
     cursor: default;

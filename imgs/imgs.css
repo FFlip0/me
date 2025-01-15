@@ -6,7 +6,7 @@
 }#doodle-img {
     max-width: 90%;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#doodle-img:hover {
     cursor: default;
@@ -31,7 +31,7 @@
 }#draw-img {
     max-width: 90%; 
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#draw-img:hover {
     cursor: default;
@@ -40,12 +40,13 @@
     max-width: 90%; 
     margin: 0;
     background: rgba(0, 19, 114, 0.2);
-    border-radius: 1rem;
+    border-radius: 0rem;
     padding: 1rem;
     font-family: "Pixelify Sans", sans-serif;
     backdrop-filter: blur(10px);
     color: #000000;
     text-align: center;
+    border: #000000 0.1rem solid;
 }#draw-img-caption:hover {
     cursor: default;
     transition: 200ms ease;
@@ -69,7 +70,7 @@
 }#photos-img{
     max-width: 90%;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#photos-img:hover{
     cursor: default;
@@ -89,7 +90,7 @@
 }#posters-img{
     max-width: 90%;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#posters-img:hover{
     cursor: default;
@@ -109,7 +110,7 @@
 }#tn-img{
     max-width: 90%;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0rem;
     box-shadow: 0px 0px 20px 0px #00000083;
 }#tn-img:hover{
     cursor: default;

@@ -19,14 +19,13 @@
 }
 html {margin: 0; padding: 0;}
 body {
-  margin: 1.5rem;
   
-
+/*
       background-image: url(
           "  data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
       ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
       
-      /*
+      *//*
       Orignal(512x512): 
       data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
       
@@ -35,14 +34,33 @@ body {
       
       Edited2? maybe 512x512? idk
       data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-      */
+      *//*
       background-attachment: fixed;
+  
       background-position: center;
 
+*/
 
   font-family: "Arvo", serif;
+  
+   background-color: #ff00ff;
+    margin: 0;
 
-}
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#aa0000, #0000aa, #00aa00 );
+    background-size: 700% 700%;
+    animation: gradient 10s infinite;
+  }
+  @keyframes gradient {
+    0% {background-position: 0% 0%;}
+    25% {background-position: -75% -50%;}
+    50% {background-position: 25% 50%;}
+    75% {background-position: 75% 25%;}
+    100% {background-position: 0% 0%;}
+  }
+
 
 
 
@@ -53,15 +71,7 @@ body {
 
 
 
-p, a {
-  backdrop-filter: blur(0.5rem);
-  border: 0.1rem solid #000000;
-  padding: 1rem;
-  margin: 1rem;
-  font-family: "Pixelify Sans", sans-serif;
-  background-color: #00000005;
-  color: #ffffff;
-}
+
 
 
 
@@ -171,28 +181,25 @@ main {
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: #00000000;
-  border: 1px solid #000000;
-  border-radius: 100rem;
   font-family: "Arvo", serif;
   font-size: 2rem;
   color: #000000;
   text-decoration: none;
+  border: 1px solid #000000;
 }#btn-1:hover {
   min-width: fit-content;
   cursor: pointer;
-  border: 1px solid #ffffff;
   font-size: 2rem;
   color: #ffffff;
   transition: 400ms;
   font-style: none;
   text-decoration: none; 
   background-color: #00000000;
-  text-shadow: #ffffff 0px 0px 10px;
+  border: 1px solid #ffffff;
 }#btn-1:active {
-  scale: 0.95;
-  color: #00ff00;
-  border: 1px solid #00ff00;
-  text-shadow: #00ff00 0px 0px 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
 }
 
 #btn-2-box {
@@ -251,6 +258,7 @@ main {
     letter-spacing: 0;
   }
 }
+
 
 
 

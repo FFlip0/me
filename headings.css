@@ -1,14 +1,4 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Pixelify Sans", sans-serif;
-    padding: 0rem;
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    cursor: default;
-}
+
 h1 {font-weight: bold; 
     text-decoration: underline;
 }h2 {font-weight: normal;
@@ -19,6 +9,23 @@ h1 {font-weight: bold;
     text-decoration: underline;
 }p {cursor: default;
 }
+
+p, a, h1, h2, h3, h4, h5, h6{
+    backdrop-filter: blur(10rem);
+    background-color: #00000005;
+    color: #ffffff;
+    padding: 1rem;
+    border: #ffffff solid 0.1rem;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: default;
+    background-color: #ffffff50;
+}
+
 
 /*
 Goes up 0.3 each time 
@@ -77,3 +84,4 @@ Goes up 0.3 each time
 }
 }
 */
+
