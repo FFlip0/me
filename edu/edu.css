@@ -1,26 +1,43 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Space Mono           */@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Inter                */@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Roboto               */@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Roboto Mono          */@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* Ubuntu               */@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 :root {
   --white: #ffffff;
   --black: #000000;
   --gray-1: #cccccc;
   --gray-2: #808080; /* Exactly in between #fff and #000 */
+  
+  --n-bg: #191919; /* Notion BG Color*/
+  --n-link: #9c9c9c; /* Notion Link */
+  --n-text: #d4d4d4; /* Notion Text*/
+
+  --bg1: #101010;
+  --text1: #eeeeee;
+  
+  --bg1: #090909;
+  --text1: #ffffff;
 }
 body {
-  color: var(--white);
-  background-color: var(--black);
-  padding-bottom: 5rem;
+  color: var(--text1);
+  background-color: var(--bg1);
+  font-family: "Space Mono", sans-serif;
+  font-family: "Inter", serif;
+  font-family: "Roboto", serif;
+  font-family: "Roboto Mono", serif;
+  font-family: "Ubuntu", serif;
 }
 
 @media (min-width: 1024px) {
 main {
-  padding-top: 10rem;
-  padding: 10em;
+
+padding: 3rem;
 }
-#edu-main-body {
-  padding-left: 20rem;
-}
+#edu-main-body {padding-left: 10rem;}
 }
 
 
@@ -43,7 +60,6 @@ main {
 
 /* All */
 h1, h2, h3, h4, h5, h6, p, a, ul, button, details  {
-  font-family: "Space Mono", sans-serif;
   padding: 0rem;
   margin: 1rem;
   display: flex;
@@ -55,14 +71,15 @@ h1, h2, h3, h4, h5, h6, p, a, ul, button, details  {
 }
 
 table, th, td {
-  font-family: "Space Mono", sans-serif;
+
   padding: 0rem;
   margin: 1rem;
   cursor: default;
 }
 
 
-p, a, li {
+/* Future me please explain why this is here...*/
+p, a, li { 
   display: inline-block;
 }
 
@@ -78,6 +95,23 @@ li {display: flex;}
 
 
 
+a {
+  font-weight: bold;
+}
+/* Contrast Links *//*
+a:link      {text-decoration: none;             color: #0000ff;
+}a:visited  {text-decoration: none;             color: #0000ff;
+}a:hover    {text-decoration: none;             color: #0000ff75;
+}a:active   {text-decoration: none;             color: #ff000075;
+}
+*/
+
+a:link      {text-decoration: none;             color: var(--n-link);
+}a:visited  {text-decoration: none;             color: var(--n-link);
+}a:hover    {text-decoration: underline;        color: var(--n-link);
+}a:active   {text-decoration: underline;        color: var(--n-link);
+}
+
 h1, #h1 {  
   font-weight: bold; 
 }h2, #h2 { 
@@ -92,9 +126,6 @@ h1, #h1 {
 }h5, #h5 {
   font-weight: normal;
   text-decoration: none;
-}p, li, th, td, a, math  {
-  color: var(--gray-1);
-  font-style: italic;
 }
 
 /*
@@ -134,24 +165,17 @@ math {
   padding: 0.5rem;
   cursor: pointer;
 }
-a {
-  cursor: pointer;
-  font-weight: bold;
-  font-style: normal;
-}
-a:link      {text-decoration: none;             color: #0000ff;
-}a:visited  {text-decoration: none;             color: #0000ff;
-}a:hover    {text-decoration: none;             color: #0000ff75;
-}a:active   {text-decoration: none;             color: #ff000075;
-}
+
+
+
 
 #p2 {
-  background-color: var(--white);
+  background-color: var(--text1);
   display: inline-block;
   padding: 0.25rem;
-  color: var(--black);
+  color: var(--bg1);
   font-style: normal;
-  border: var(--black) solid 0.1rem;
+  border: var(--bg1) solid 0.1rem;
 }
 
 
@@ -252,30 +276,13 @@ Goes up 0.3 each time
 
 
 
-#edu-btn-1, #edu-btn-2 {
+#aLink1 {
   font-weight: bold;
   font-size: 1.5em;
   font-style: normal;
   display: block;
 }
 
-/*  When #edu-btn-1 hover/active, it's background becomes the color and text becomes black*//*
-
-@media (pointer: fine) {
-#edu-btn-1 {
-  padding: 0.5rem;
-  margin: 1rem;
-}#edu-btn-1:hover {
-  background-color: #0000ff;
-  box-shadow: 0px 0px 1rem 0px #0000ff;
-  color: #000000;
-}#edu-btn-1:active {
-  background-color: #ff0000;
-  box-shadow: 0px 0px 1rem 0px #ff0000;
-  color: #000000;
-}}
-
-*/
 
 #line1 {
   border: var(--gray-2) dashed 0.1rem;
@@ -299,7 +306,7 @@ Goes up 0.3 each time
 
 /* 
 
- Pages, Dir-search, Theme Swap ---------------------------------------------------------------------------- 
+ Mobile-back, Dir-search ---------------------------------------------------------------------------- 
 
 */
 
@@ -314,7 +321,7 @@ Goes up 0.3 each time
   font-weight: bold;
   font-style: normal;
 }#dir-search-box {
-  border-bottom: var(--white) solid 0.25rem;
+  border-bottom: var(--text1) solid 0.25rem;
   padding: 0.5rem;
   margin: 1rem;
 }#dir-search-box:hover {
@@ -322,33 +329,8 @@ Goes up 0.3 each time
 }
 @media (max-width: 1024px) {#dir-search-box {display: none;}}
 @media (min-width: 1024px) {#mobile-back    {display: none;}}
-/* Red Links for #dir-search and #mobile-back*//* 
-#dir-search:link, #mobile-back:link         {text-decoration: none;  color: #ff0000;
-}#dir-search:visited, #mobile-back:visited  {text-decoration: none;  color: #ff0000;
-}#dir-search:hover, #mobile-back:hover      {text-decoration: none;  color: #ff000075;
-}#dir-search:active, #mobile-back:active    {text-decoration: none;  color: #0000ff75;
-}
-
-*/
-
-/* Theme Switch (Disabled) */#themeSwitch {display: none;}/*
-#themeSwitch {
-  display: inline;
-  padding: 0.5rem;
-  margin: 1rem;
-  background-color: var(--white);
-  transition: all 200ms;
-  border-radius: 1rem; 
-  display: none;
-}#themeSwitch:hover {
-  background-color: var(--black);
-  scale: 2;
-}#themeSwitch:active {
-  scale: 1.5;
-}@media (pointer: fine) {#themeSwitch {display: inline;}}
 
 
-*/
 
 
 
@@ -385,12 +367,15 @@ Goes up 0.3 each time
 */
 
 #table1-tr, #table1-td, #table1-th {
-  border: var(--white) solid 0.1rem;
+  border: var(--text1) solid 0.1rem;
   margin: 0rem;
   padding: 1rem;
   text-align: center;
-}#table1-table {
-  border: var(--white) solid 0.15rem;
+}#table1-th {
+  
+}
+#table1-table {
+  border: var(--text1) solid 0.15rem;
 }
 
 
@@ -420,8 +405,8 @@ Goes up 0.3 each time
 
 */
 
-#img-example {
-  background-color: #000000;
+#img1, #img-v2, #img-v3, #img1-v4 {
+  background-color: var(--bg1);
   padding: 2rem;
   margin: 1rem;
   border: #ffffff solid 0.25rem;
@@ -430,32 +415,133 @@ Goes up 0.3 each time
   a image is larger than the width of the screen */
   max-width: 80%;  
   margin-right: auto;
+}#img1-v2 /* invert + yes padding */ { 
+  filter: invert();
+  background-color: #ffffff;
+  border: #000000 solid 0.25rem;
+}#img1-v3 /* invert + no padding */ { 
+  background-color: #ffffff;
+  padding: 0;
+  border: #000000 solid 0.25rem;
+  filter: invert();
+}#img1-v4 /* yes padding */ { 
+  background-color: #000000;
+  border: #ffffff solid 0.25rem;
 }
-#img-example-2 {
-  background-color: #1a1a1a;
+#img2 {
+  background-color: var(--bg1);
   padding: 0rem;
   margin: 1rem;
+  border: #ffffff solid 0.25rem;
     
   /* For making the width 80% when the width of 
   a image is larger than the width of the screen */
   max-width: 80%;  
   margin-right: auto;
-}#img-example-3 /*#img-example with an invert effect for white BGs*/ { 
+}
   
-  background-color: #ffffff;
-  padding: 2rem;
-  margin: 1rem;
-  border: #000000 solid 0.25rem;
-  filter: invert();
-  color: #000000;
 
-  /* For making the width 80% when the width of 
-  a image is larger than the width of the screen */
-  max-width: 80%;  
-  margin-right: auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+/* 
+ Content Warning ---------------------------------------------------------------------------- 
+*/
+#content-warning-1 /* For overlaping topics */{
+  font-weight: bold;
+  color:  var(--bg1);
+  background-color: var(--text1);
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.25rem
 }
 
-  
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ Mobile Warning ---------------------------------------------------------------------------- 
+*/
+#mobileSupport {
+  color: var(--bg1); 
+  font-weight: bold;
+  background-color: #ff0000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  display: block;
+}@media (pointer: fine) {#mobileSupport {display: none}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+ Theme Switch (Disabled) ---------------------------------------------------------------------------- 
+
+*/
+#themeSwitch {display: none;}
+
+/*
+
+#themeSwitch {
+  display: inline;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: var(--white);
+  transition: all 200ms;
+  border-radius: 1rem; 
+  display: none;
+}#themeSwitch:hover {
+  background-color: var(--black);
+  scale: 2;
+}#themeSwitch:active {
+  scale: 1.5;
+}@media (pointer: fine) {#themeSwitch {display: inline;}}
+
+
+*/
 
 
 
@@ -473,9 +559,35 @@ Goes up 0.3 each time
 
 
 
+/* 
 
-  
-  
+ Scrollbar ---------------------------------------------------------------------------- 
+
+*/
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1.5em;
+  border-radius: 100vw;
+}::-webkit-scrollbar-track {
+  margin: 0;
+  background: var(--black);
+  border: var(--white) 0.25rem solid;
+}::-webkit-scrollbar-thumb {
+  margin: 0;
+  background: var(--white);
+  border: var(--black) 0.25rem solid;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 
@@ -528,61 +640,3 @@ Goes up 0.3 each time
 }}
 
 */
-
-
-
-/* 
- Content Warning ---------------------------------------------------------------------------- 
-*/
-#content-warning-1 /* For overlaping topics */{
-  font-weight: bold;
-  color:  var(--black);
-  background-color: var(--white);
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
-  font-size: 1.25rem
-}
-
-
-/* 
- Mobile Warning ---------------------------------------------------------------------------- 
-*/
-#mobileSupport {
-  color: var(--black); 
-  font-weight: bold;
-  background-color: #ff0000;
-  padding: 1rem;
-  font-size: 1.5rem;
-}@media (pointer: fine) {#mobileSupport {display: none;}}
-
-
-
-
-
-
-
-
-
-
-/* 
-
- Scrollbar ---------------------------------------------------------------------------- 
-
-*/
-::-webkit-scrollbar {
-  width: 1.5rem;
-  height: 1.5em;
-  border-radius: 100vw;
-}::-webkit-scrollbar-track {
-  margin: 0;
-  background: var(--black);
-  border: var(--white) 0.25rem solid;
-}::-webkit-scrollbar-thumb {
-  margin: 0;
-  background: var(--white);
-  border: var(--black) 0.25rem solid;
-}
-
-
-
