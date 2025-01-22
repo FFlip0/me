@@ -3,29 +3,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
-#colours {
+:root {
   /*Gradient 1*/
-  color: #00DAF7;
-  color: #0029FF;
+  --g1-1: #00DAF7;
+  --g1-2: #0029FF;
   
   /*Gradient 2*/
-  color: #00a9f7;
-  color: #0074aa;
+  --g2-1: #00a9f7;
+  --g2-1: #0074aa;
 
   /*Real Colours*/
-  color: #0000ff;
-  color: #ff0000;
-  color: #00ff00;
+  --blue: #0000ff;
+  --red: #ff0000;
+  --green: #00ff00;
+  --black: #000000;
+  --white: #ffffff;
+  --transparent: #00000000;
+
 }
-html {margin: 0; padding: 0;}
-body {
+body /* OLD BG */ {
   
 /*
       background-image: url(
           "  data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
       ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
       
-      *//*
+      */
+      /*
       Orignal(512x512): 
       data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
       
@@ -34,70 +38,75 @@ body {
       
       Edited2? maybe 512x512? idk
       data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-      *//*
+      */
+      /*
       background-attachment: fixed;
   
       background-position: center;
 
 */
-
-  font-family: "Arvo", serif;
-  
-    margin: 0;
-
-    padding: 0rem;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(#aa0000, #0000aa, #00aa00 );
-    background-size: 700% 700%;
-    animation: gradient 20s infinite;
-  }
- 
-  @keyframes gradient {
-    0% {background-position: 0% 0%;}
-    25% {background-position: -75% -50%;}
-    50% {background-position: 25% 50%;}
-    75% {background-position: 75% 25%;}
-    100% {background-position: 0% 0%;}
-  }
-
-
-
-
-#font-1 {font-family: "Pixelify Sans", sans-serif;}
-#font-2 {font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;}
-#font-3 {font-family: "Handjet", sans-serif;}
-#font-4 {font-family: "Tiny5", serif; font-style: italic;}
-
-
-
-
-
-
-
-
-
-
-/* This is for random stand alone elements. */
-#horizontal-center {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+opacity: 1; /* cuz i don't want that "error" on the file. */
 }
+
+
+body {
+  font-family: "Arvo", serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    45deg,
+    #ff0000, 
+    #0080ff, 
+    #5424ff, 
+    #000000  
+  );
+  background-size: 400% 400%; 
+  animation: moveGradient 10s ease infinite; 
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+@keyframes moveGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%; }
+  100% {background-position: 0% 50%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}a:link     {text-decoration: none;               color: #0000ff;
-}a:visited  {text-decoration: none;               color: #0000ff;
-}a:hover    {text-decoration: underline;          cursor: pointer;
-}a:active   {text-decoration: underline;          color: #ff0000;
 }
 
 #line {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   margin: 2rem;
   width: 100%;
 }
@@ -111,35 +120,104 @@ main {
 
 
 
+p, a, h1, h2, h3, h4, h5, h6{
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 0rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#device-warning-1 {
-  color: red;
-  background-color: #200000;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  color: var(--white);
+  display: block;
   text-align: center;
-  border: 0.25rem solid red;
-  border-radius: 1rem;
-  margin: 0;
-  font-size: 1rem;
-  box-shadow: 0px 0px 20px 0px #00000083;
-}@media (pointer: fine) {#device-warning-1 {display: none;}}
+}a:link     {text-decoration: none;               color: #0000ff;
+}a:visited  {text-decoration: none;               color: #0000ff;
+}a:hover    {text-decoration: underline;          cursor: pointer;
+}a:active   {text-decoration: underline;          color: #ff0000;
+}
+
+h1 {  
+  font-weight: bold; 
+}h2 { 
+  font-weight: bold;
+  text-decoration: underline;
+}h3 { 
+  font-weight: bold;
+}h4 { 
+  font-weight: normal;
+  text-decoration: underline;
+}h5 {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a {
+  font-weight: bold;
+  text-shadow: 0.0625rem 0.0625rem 0 #0000ff;
+}
+
+
+/*
+Goes up 0.3 each time 
+*/
+
+
+@media (min-width: 0px) {
+  h1 { font-size: 3.3em;}
+  h2 { font-size: 2.0em;}
+  h3 { font-size: 1.7em;}
+  h4 { font-size: 1.4em;}
+  h5 { font-size: 1.1em;}
+  h6 { font-size: 1.0em;}
+  p, a, button, li {font-size: 0.7rem;}
+  audio {scale: 0.65;}
+}
+@media (min-width: 425px) {
+  h1, #h1 { font-size: 3.6em;}
+  h2, #h2 { font-size: 2.3em;}
+  h3, #h3 { font-size: 2.0em;}
+  h4, #h4 { font-size: 1.7em;}
+  h5, #h5 { font-size: 1.4em;}
+  h6, #h6 { font-size: 1.3em;}
+  p, a, button, li {font-size: 1rem;}
+  audio {scale: 0.9;}
+}
+@media (min-width: 768px) {
+  h1, #h1 { font-size: 3.9em;}
+  h2, #h2 { font-size: 2.6em;}
+  h3, #h3 { font-size: 2.3em;}
+  h4, #h4 { font-size: 2.0em;}
+  h5, #h5 { font-size: 1.7em;}
+  h6, #h6 { font-size: 1.6em;}
+  p, a, button, li {font-size: 1.3rem;}
+  audio {scale: 1.0;}
+}
+@media (min-width: 1024px) {
+  h1, #h1 { font-size: 4.2em;}
+  h2, #h2 { font-size: 2.9em;}
+  h3, #h3 { font-size: 2.6em;}
+  h4, #h4 { font-size: 2.3em;}
+  h5, #h5 { font-size: 2.0em;}
+  h6, #h6 { font-size: 1.9em;}
+  p, a, button, li {font-size: 1.6rem;}
+  audio {scale: 1.0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
@@ -149,20 +227,42 @@ main {
 
 
 
+/* 
 
+Buttons ---------------------------------------------------------------------------- 
 
+*/
 
+#ref-home-container {
+  display: flex;
+  justify-content: center;
+}#ref-home-button {
+  margin: 1rem;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #ffffff00;
+  border: 1px solid #ffffff;
+  font-family: "Arvo", serif;
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: none;
+}#ref-home-button:hover {
+  min-width: fit-content;
+  cursor: pointer;
+  border: 1px solid #000000;
+  font-size: 2rem;
+  color: #000000;
+  transition: 400ms;
+  font-style: none;
+  text-decoration: none; 
+  background-color: #ffffff00;
 
-
-
-
-
-
-
-
-
-
-
+}#ref-home-button:active {
+  background-color: #000000;
+  color: #ffffff;
+}
 
 #btn-1-box {
   display: grid;
@@ -175,64 +275,28 @@ main {
   padding: 0.75rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: #00000000;
-  font-family: "Arvo", serif;
+  background-color: var(--transparent);
   font-size: 2rem;
-  color: #000000;
+  color: var(--white);
   text-decoration: none;
-  border: 1px solid #000000;
+  border: 1px solid var(--white);
+  font-family: "Pixelify Sans", sans-serif;
+  text-shadow: none;
 }#btn-1:hover {
   min-width: fit-content;
   cursor: pointer;
   font-size: 2rem;
-  color: #ffffff;
-  transition: 400ms;
+  color: var(--black);
+  transition: 300ms;
   font-style: none;
   text-decoration: none; 
-  background-color: #00000000;
-  border: 1px solid #ffffff;
+  background-color: var(--transparent);
+  border: 1px solid var(--black);
 }#btn-1:active {
-  background-color: #000000;
-  color: #ffffff;
-  border: 1px solid #000000;
-}
-
-#btn-2-box {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(-1rem, 1fr));
-}#btn-2 {
-  margin: 0.5rem;
-  padding: 0.75rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: #00000000;
-  border: 1px solid #000000;
-  border-radius: 100rem;
-  font-family: "Arvo", serif;
-  font-size: 2rem;
-  color: #000000;
-  text-decoration: none;
-}#btn-2:hover {
-  min-width: fit-content;
-  cursor: pointer;
-  border: 1px solid #ffffff;
-  font-size: 2rem;
-  color: #ffffff;
-  transition: 400ms;
-  font-style: none;
-  text-decoration: none; 
-  background-color: #00000000;
-  text-shadow: #ffffff 0px 0px 10px;
-}#btn-2:active {
-  scale: 0.95;
-  color: #00ff00;
-  border: 1px solid #00ff00;
-  text-shadow: #00ff00 0px 0px 10px;
-}
-  
-@media (pointer: fine) {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--white);
+}@media (pointer: fine) {
   #btn-1-box {
     display: flex;
     align-items: center;
@@ -244,13 +308,6 @@ main {
   }#btn-1:hover {
     transition: 400ms;
     letter-spacing: 0;
-  }#btn-2 {
-    letter-spacing: -0.99999rem;
-      max-width: 0;
-      color: #00000000;
-  }#btn-2:hover {
-    transition: 400ms;
-    letter-spacing: 0;
   }
 }
 
@@ -259,3 +316,44 @@ main {
 
 
 
+
+/* 
+
+Scrollbar ---------------------------------------------------------------------------- 
+
+*/
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1.5em;
+  border-radius: 100vw;
+}::-webkit-scrollbar-track {
+  margin: 0;
+  background: var(--black);
+  border: var(--white) 0.25rem solid;
+}::-webkit-scrollbar-thumb {
+  margin: 0;
+  background: var(--white);
+  border: var(--black) 0.25rem solid;
+}
+
+
+
+
+
+/* 
+
+Device Warning ---------------------------------------------------------------------------- 
+
+*/
+
+#device-warning-1 {
+  color: var(--red);
+  background-color: #200000;
+  padding: 1rem;
+  text-align: center;
+  border: 0.25rem solid var(--red);
+  border-radius: 1rem;
+  margin: 0;
+  font-size: 1rem;
+  box-shadow: 0px 0px 20px 0px #00000083;
+}@media (pointer: fine) {#device-warning-1 {display: none;}}

@@ -81,17 +81,12 @@ h1, h2, h3, h4, h5, h6, p, a, ul, button, details  {
   padding: 0.25rem;
 }
 
-table, th, td {
 
-  padding: 0rem;
-  margin: 1rem;
-  cursor: default;
-}
 
 
 /* Future me please explain why this is here...*/
-p, a, li { 
-  display: inline-block;
+p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, details, summary, ul  {
+  display: block;
 }
 
 
@@ -121,6 +116,16 @@ a:link      {text-decoration: none;             color: var(--n-link);
 }a:visited  {text-decoration: none;             color: var(--n-link);
 }a:hover    {text-decoration: underline;        color: var(--n-link);
 }a:active   {text-decoration: underline;        color: var(--n-link);
+}
+
+#math-box {
+  display: block;
+  margin: 0;
+  padding: 0;
+}math {
+  font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
+  margin: 0.5rem;
+  padding: 0.25rem;
 }
 
 h1, #h1 {  
@@ -157,31 +162,6 @@ details {
 } 
 #detailsContent {}
 */
-#math-box {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-math {
-  font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
-  margin: 1rem;
-  cursor: default;
-  padding: 0.5rem;
-}button {
-  border-radius: 0;
-  background-color: var(--black);
-  border: var(--white) solid 0.1rem;
-  color: var(--white);
-  padding: 0.5rem;
-}button:hover {
-  border-radius: 0;
-  background-color: var(--white);
-  border: var(--white) solid 0.1rem;
-  color: var(--black);
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
 
 
 
@@ -393,7 +373,11 @@ Goes up 0.3 each time
  Tables ---------------------------------------------------------------------------- 
 
 */
-
+table, th, td {
+  padding: 0rem;
+  margin: 1rem;
+  cursor: default;
+}
 #table1-tr, #table1-td, #table1-th {
   border: var(--text1) solid 0.1rem;
   margin: 0rem;
@@ -435,7 +419,7 @@ Goes up 0.3 each time
 
 */
 
-#img1, #img-v2, #img-v3, #img1-v4 {
+#img1, #img1-v2, #img1-v3, #img1-v4 {
   background-color: var(--bg1);
   padding: 2rem;
   margin: 1rem;
@@ -454,7 +438,7 @@ Goes up 0.3 each time
   padding: 0;
   border: #000000 solid 0.25rem;
   filter: invert();
-}#img1-v4 /* yes padding */ { 
+}#img1-v4 /* no invert + yes padding */ { 
   background-color: #000000;
   border: #ffffff solid 0.25rem;
 }
@@ -551,9 +535,7 @@ Goes up 0.3 each time
  Theme Switch (Disabled) ---------------------------------------------------------------------------- 
 
 */
-#themeSwitch {display: none;}
 
-/*
 
 #themeSwitch {
   display: inline;
@@ -561,17 +543,27 @@ Goes up 0.3 each time
   margin: 1rem;
   background-color: var(--white);
   transition: all 200ms;
-  border-radius: 1rem; 
-  display: none;
+  border-radius: 10rem; 
+  border: solid 0.125rem var(--gray-2);
+  
+  font-family: "Ubuntu", serif;
+  display: inline;
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-size: 0;
 }#themeSwitch:hover {
   background-color: var(--black);
-  scale: 2;
-}#themeSwitch:active {
   scale: 1.5;
+  cursor: pointer;
+}#themeSwitch:active {
+  scale: 1;
 }@media (pointer: fine) {#themeSwitch {display: inline;}}
+#themeSwitch {display: none;}
 
 
-*/
+
+
 
 
 

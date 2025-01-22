@@ -11,7 +11,7 @@ main {
     display: flex;
     justify-content: center;
     cursor: default;
-    color: #000;
+    color: #ffffff;
 }
 
 #secret-btn {
