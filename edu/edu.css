@@ -20,17 +20,12 @@
   --magenta: #ff00ff;
   --light-blue: #00ffff;
 
-
-
-  --n-bg: #191919; /* Notion BG Color*/
+  --n-bg: #191919;   /* Notion BG   */
   --n-link: #9c9c9c; /* Notion Link */
-  --n-text: #d4d4d4; /* Notion Text*/
+  --n-text: #d4d4d4; /* Notion Text */
 
-  --bg1: #101010;
-  --text1: #eeeeee;
-  
   --bg1: #090909;
-  --text1: #ffffff;
+  --text1: #eeeeee;
 }
 body {
   color: var(--text1);
