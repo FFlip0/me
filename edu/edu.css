@@ -4,7 +4,7 @@
 /* Roboto               */@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Roboto Mono          */@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 /* Ubuntu               */@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+/*                      */
 
 :root {
   --white: #ffffff;
@@ -39,11 +39,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-main {
-
-padding: 3rem;
-}
-#edu-main-body {padding-left: 10rem;}
+main {padding: 3rem;}
 }
 
 
@@ -76,9 +72,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul, button, details  {
   padding: 0.25rem;
 }
 
-
-
-
 /* Future me please explain why this is here...*/
 p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, details, summary, ul  {
   display: block;
@@ -99,13 +92,6 @@ li {display: flex;}
 a {
   font-weight: bold;
 }
-/* Contrast Links *//*
-a:link      {text-decoration: none;             color: #0000ff;
-}a:visited  {text-decoration: none;             color: #0000ff;
-}a:hover    {text-decoration: none;             color: #0000ff75;
-}a:active   {text-decoration: none;             color: #ff000075;
-}
-*/
 
 a:link      {text-decoration: none;             color: var(--n-link);
 }a:visited  {text-decoration: none;             color: var(--n-link);
@@ -173,6 +159,61 @@ details {
 
 
 
+
+#block {display: block;}
+#inline-block {display: inline-block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line1 {
+  border: var(--gray-2) dashed 0.1rem;
+  margin: 1rem;
+  display: block;
+}
+#border1-v1, #border1-v2 {
+  border: var(--gray-2) dashed 0.1rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  display: block;
+}#border1-v2 {
+  border: var(--red) dashed 0.1rem;
+  margin: 0.5;
+  padding: 0;
+  background-color: var(--red-2);
+}
+#line2 {
+  border: var(--gray-2) solid 0.25rem;
+  margin: 1rem;
+  display: block;
+}
+
+
+
 /*
 Goes up 0.3 each time 
 */
@@ -237,65 +278,6 @@ Goes up 0.3 each time
 
 /*  Hover and invert text and headings and stuff blah blah.  */
 
-
-
-#block {display: block;}
-#inline-block {display: inline-block;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#aLink1 {
-  font-weight: bold;
-  font-size: 1.5em;
-  font-style: normal;
-  display: block;
-}
-
-
-#line1 {
-  border: var(--gray-2) dashed 0.1rem;
-  margin: 1rem;
-  display: block;
-}
-#border1-v1, #border1-v2 {
-  border: var(--gray-2) dashed 0.1rem;
-  margin: 0.5rem;
-  padding: 1rem;
-  display: block;
-}#border1-v2 {
-  border: var(--red) dashed 0.1rem;
-  margin: 0.5;
-  padding: 0;
-  background-color: var(--red-2);
-}
-#line2 {
-  border: var(--gray-2) solid 0.25rem;
-  margin: 1rem;
-  display: block;
-}
 
 
 
