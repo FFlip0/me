@@ -459,7 +459,7 @@ table, th, td {
 /* 
  Content Warning ---------------------------------------------------------------------------- 
 */
-#content-warning-1 /* For overlaping topics */{
+#content-warning-1 /* For overlapping topics */{
   font-weight: bold;
   color:  var(--bg1);
   background-color: var(--text1);
