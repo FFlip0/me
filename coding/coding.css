@@ -1,56 +1,70 @@
-
 #coding-button-container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-}#coding-button {
-
-
-    margin: 0.5rem;
-    padding: 0.75rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-    background-color: #00000000;
-
-    border: 1px solid #000000;
-    border-radius: 100rem;
-
-    font-family: "Arvo", serif;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #000000;
-
-    
-
-    
-
-}#coding-button:hover {
-    min-width: fit-content;
-    cursor: pointer;
-    border: 1px solid #ffffff;
-    font-size: 2rem;
-    color: #ffffff;
-    transition: 400ms;
-    font-style: none;
-    text-decoration: none; 
-    background-color: #00000000;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
+#coding-button {
+  margin: 0.5rem;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 100rem;
+  font-family: "Arvo", serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+#coding-button:hover {
+  min-width: fit-content;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 400ms;
+}
 
 #coding-embed-container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
-#coding-bouncy-embed {
-    border-radius: 1rem;
-    margin: 1rem;
+
+#coding-silly-embed {
+  border-radius: 1rem;
+  margin: 1rem;
 }
+
 @media (pointer: fine) {
- #coding-bouncy-embed:hover {
+  #coding-silly-embed:hover {
     cursor: pointer;
     transition: 200ms ease;
     scale: 0.95;
-}}
+  }
+}
+
+#text1-box {
+  color: var(--white);
+  background: var(--white);
+  border: 0.25rem solid var(--black);
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
+#text1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  background: var(--white);
+  border: 0.25rem solid var(--black);
+  text-shadow: 0.25rem 0.25rem 0 var(--black);
+  -webkit-text-stroke: 0.1rem var(--black);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  writing-mode: vertical-rl;
+}
