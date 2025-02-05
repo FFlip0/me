@@ -43,6 +43,19 @@
     scale: 0.95;
   }
 }
+#embed1 {
+  border-radius: 1rem;
+  width: 95%;
+  height: 35rem;
+  display: none;
+} @media (pointer: fine) {
+  #embed1 {
+    display: block;
+  }
+}
+
+
+
 
 #text1-box {
   color: var(--white);
