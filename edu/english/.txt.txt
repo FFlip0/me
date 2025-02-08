@@ -1,2 +1,0 @@
-TECH = Techniques
-WAP = Words and Phrases

@@ -9,9 +9,12 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --gray-1: #cccccc;
-  --gray-2: #808080; /* Exactly in between #fff and #000 */
+  --gray-75-25: #BFBFBF; /* 75% white, 25% black*/
+  --gray-50-50: #808080; /* 50% white, 50% black*/
+  --gray-25-75: #404040; /* 25% white, 75% black*/
   
+  --gray-10-90: #1a1a1a; /* 10% white, 90% black*/
+
   --red: #ff0000;
   --red-2: #ff000025;
   --blue: #0000ff;
@@ -152,7 +155,9 @@ details {
   font-style: normal;
   border: var(--bg1) solid 0.1rem;
 }
-
+#p3 {
+  color: var(--gray-50-50);
+}
 
 
 
@@ -189,17 +194,17 @@ details {
 
 
 #line1 {
-  border: var(--gray-2) dashed 0.1rem;
+  border: var(--gray-50-50) dashed 0.1rem;
   margin: 1rem;
   display: block;
 }#line2 {
-  border: var(--gray-2) solid 0.25rem;
+  border: var(--gray-50-50) solid 0.25rem;
   margin: 1rem;
   display: block;
 }
 /* border1-v2 is just */
 #border1-v1, #border1-v2 {
-  border: var(--gray-2) dashed 0.1rem;
+  border: var(--gray-50-50) dashed 0.1rem;
   margin: 0.5rem;
   padding: 1rem;
   padding-left: 0.25rem;
@@ -362,8 +367,12 @@ table, th, td {
 }
 #table1-table {
   border: var(--text1) solid 0.15rem;
+  display: inline-block;
 }
 
+#table1-tr-highlight {
+  background-color: var(--gray-25-75);
+}
 
 
 
@@ -509,7 +518,7 @@ table, th, td {
   background-color: var(--white);
   transition: all 200ms;
   border-radius: 10rem; 
-  border: solid 0.125rem var(--gray-2);
+  border: solid 0.125rem var(--gray-50-50);
   
   font-family: "Ubuntu", serif;
   display: inline;
