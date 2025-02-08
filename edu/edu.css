@@ -192,11 +192,18 @@ details {
   border: var(--gray-2) dashed 0.1rem;
   margin: 1rem;
   display: block;
+}#line2 {
+  border: var(--gray-2) solid 0.25rem;
+  margin: 1rem;
+  display: block;
 }
+/* border1-v2 is just */
 #border1-v1, #border1-v2 {
   border: var(--gray-2) dashed 0.1rem;
   margin: 0.5rem;
   padding: 1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   display: block;
 }#border1-v2 {
   border: var(--red) dashed 0.1rem;
@@ -204,11 +211,7 @@ details {
   padding: 0;
   background-color: var(--red-2);
 }
-#line2 {
-  border: var(--gray-2) solid 0.25rem;
-  margin: 1rem;
-  display: block;
-}
+
 
 
 
