@@ -166,7 +166,9 @@ details {
 #block {display: block;}
 #inline-block {display: inline-block;}
 
-
+#mathFracM {
+  margin: 0.25rem;
+}
 
 
 
