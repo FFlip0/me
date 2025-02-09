@@ -229,7 +229,7 @@ details {
   h4, #h4 { font-size: 1.4em;}
   h5, #h5 { font-size: 1.1em;}
   h6, #h6 { font-size: 1.0em;}
-  p, a, button {font-size: 0.7rem;}
+  p, a, button, #screenSupport::before {font-size: 0.7rem;}
   math {font-size: 1.0rem;}
   li {font-size: 0.7rem;}
   #table1-th, #table1-td {font-size: 0.7rem;}
@@ -243,7 +243,7 @@ details {
   h4, #h4 { font-size: 1.7em;}
   h5, #h5 { font-size: 1.4em;}
   h6, #h6 { font-size: 1.3em;}
-  p, a, button {font-size: 1rem;}
+  p, a, button, #screenSupport::before {font-size: 1rem;}
   math {font-size: 1.3rem;}
   li {font-size: 1rem;}
   #table1-th, #table1-td {font-size: 1rem;}
@@ -257,7 +257,7 @@ details {
   h4, #h4 { font-size: 2.0em;}
   h5, #h5 { font-size: 1.7em;}
   h6, #h6 { font-size: 1.6em;}
-  p, a, button {font-size: 1.3rem;}
+  p, a, button, #screenSupport::before {font-size: 1.3rem;}
   math {font-size: 1.6rem;}
   li {font-size: 1.3rem;}
   #table1-th, #table1-td {font-size: 1.3rem;}
@@ -271,7 +271,7 @@ details {
   h4, #h4 { font-size: 2.3em;}
   h5, #h5 { font-size: 2.0em;}
   h6, #h6 { font-size: 1.9em;}
-  p, a, button {font-size: 1.6rem;}
+  p, a, button, #screenSupport::before {font-size: 1.6rem;}
   math {font-size: 1.9rem;}
   li {font-size: 1.3rem;}
   #table1-th, #table1-td {font-size: 1.6rem;}
@@ -484,14 +484,17 @@ table, th, td {
 /* 
  Mobile Warning ---------------------------------------------------------------------------- 
 */
-#mobileSupport {
+#screenSupport {
   color: var(--bg1); 
   font-weight: bold;
-  background-color: #ff0000;
+  background-color: var(--red);
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
-}@media (pointer: fine) {#mobileSupport {display: none}}
+  text-align: center;
+}#screenSupport::before {
+  content: "screen size compatibility is limited";
+} @media (min-width: 1024px) {#screenSupport {display: none}}
 
 
 
