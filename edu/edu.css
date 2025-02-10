@@ -62,7 +62,7 @@ main {padding: 3rem;}
 */
 
 /* All */
-h1, h2, h3, h4, h5, h6, p, a, ul, button, details  {
+h1, h2, h3, h4, h5, h6, p, a, ul, button  {
   padding: 0rem;
   margin: 1rem;
   display: flex;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, button, details  {
 }
 
 /* Future me please explain why this is here...*/
-p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, details, summary, ul  {
+p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, ul  {
   display: block;
 }
 
@@ -126,24 +126,6 @@ h1, #h1 {
   text-decoration: none;
 }
 
-/*
-details {
-  border: 0.15rem solid var(--white);
-  padding: 0;
-  display: none;
-}summary { 
-  cursor: pointer;
-  background-color: var(--white);
-  color: var(--black);
-  padding: 0.5rem;
-
-}summary:hover {
-  background-color: var(--black);
-  color: var(--white);
-  border: 0.15rem solid var(--white);
-} 
-#detailsContent {}
-*/
 
 
 

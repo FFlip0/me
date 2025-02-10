@@ -2,12 +2,7 @@
 
 
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+
 audio {
     padding: 1rem;
 }audio::-webkit-media-controls-current-time-display {
@@ -17,20 +12,6 @@ audio {
     font-weight: bold;
     font-family: "Pixelify Sans", sans-serif;
 } 
-/*
-audio {
-} audio::-webkit-media-controls-panel {
-} audio::-webkit-media-controls {
-} audio::-webkit-media-controls-play-button {
-} audio::-webkit-media-controls-volume-slider {
-} audio::-webkit-media-controls-volume-slider-container {
-} audio::-webkit-media-controls-mute-button {
-} audio::-webkit-media-controls-current-time-display {
-} audio::-webkit-media-controls-time-remaining-display {
-} 
-
-
-*/
 
 
 
