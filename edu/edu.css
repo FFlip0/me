@@ -12,7 +12,6 @@
   --gray-75-25: #BFBFBF; /* 75% white, 25% black*/
   --gray-50-50: #808080; /* 50% white, 50% black*/
   --gray-25-75: #404040; /* 25% white, 75% black*/
-  
   --gray-10-90: #1a1a1a; /* 10% white, 90% black*/
 
   --red: #ff0000;
@@ -23,6 +22,11 @@
   --magenta: #ff00ff;
   --light-blue: #00ffff;
 
+  
+  --bg1: #090909;
+  --text1: #eeeeee; 
+
+
   /* Notion Colours */
   --n-bg: #191919;     
   --n-link: #9c9c9c;    
@@ -32,19 +36,35 @@
   --n-menu1: #252525;
   --n-menu1-hover: #313131;
 
-  --bg1: #090909;
-  --text1: #eeeeee; 
 }
 .root2 {
 
-  --n-bg: #e6e6e6;               /* Inverted #191919 */
-  --n-link: #636363;             /* Inverted #9c9c9c */
-  --n-text: #2b2b2b;             /* Inverted #d4d4d4 */
-  --n-table: #d0d0d0;            /* Inverted #2f2f2f */
-  --n-table-highlight: #dddddd;  /* Inverted #222222 */
-  --n-menu1: #dadada;            /* Inverted #252525 */
-  --n-menu1-hover: #cecece;      /* Inverted #313131 */
-
+  --white: #000000; /* Inverted #ffffff */
+  --black: #ffffff; /* Inverted #000000 */
+  --gray-75-25: #404040; /* Inverted #BFBFBF (75% black, 25% white) */
+  --gray-50-50: #7F7F7F; /* Inverted #808080 (50% black, 50% white) */
+  --gray-25-75: #BFBFBF; /* Inverted #404040 (25% black, 75% white) */
+  --gray-10-90: #E5E5E5; /* Inverted #1a1a1a (10% black, 90% white) */
+  
+  --red: #00ffff; /* Inverted #ff0000 */
+  --red-2: #00ffff25; /* Inverted #ff000025 */
+  --blue: #ffff00; /* Inverted #0000ff */
+  --green: #ff00ff; /* Inverted #00ff00 */
+  --yellow: #0000ff; /* Inverted #ffff00 */
+  --magenta: #00ff00; /* Inverted #ff00ff */
+  --light-blue: #ff0000; /* Inverted #00ffff */
+  
+  --bg1: #F6F6F6; /* Inverted #090909 */
+  --text1: #111111; /* Inverted #eeeeee */
+  
+  /* Notion Colours */
+  --n-bg: #E6E6E6; /* Inverted #191919 */
+  --n-link: #636363; /* Inverted #9c9c9c */
+  --n-text: #2B2B2B; /* Inverted #d4d4d4 */
+  --n-table: #D0D0D0; /* Inverted #2f2f2f */
+  --n-table-highlight: #DDDDDD; /* Inverted #222222 */
+  --n-menu1: #DADADA; /* Inverted #252525 */
+  --n-menu1-hover: #CECECE; /* Inverted #313131 */
 }
 body {
   color: var(--n-text);
@@ -83,11 +103,12 @@ h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #themeToggle  {
   flex-direction: column;
   cursor: default;
 
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #themeToggle, input {
   margin: 0.5rem;
   padding: 0.5rem;
 }
-
-
 p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, ul  {
   display: block;
 }
@@ -477,10 +498,11 @@ table, th, td {
  Mobile Warning ---------------------------------------------------------------------------- 
 */
 #screenSupport {
-  color: var(--n-bg); 
+  color: var(--n-text1); 
   font-weight: bold;
-  background-color: var(--n-menu1-hover);
+  background-color: var(--n-menu1);
   padding: 1rem;
+  margin: 0.5rem;
   font-size: 1rem;
   display: block;
   text-align: center;
@@ -506,17 +528,21 @@ table, th, td {
 /* 
  Theme Switch (disabled) ---------------------------------------------------------------------------- 
 */
+#themeToggle::after {
+  content: "Theme Toggle";
+  font-family: "Ubuntu", sans-serif;
+  color: var(--n-text);
+}
 #themeToggle {
   display: inline;
-  background-color: var(--white);
+  background-color: var(--n-menu1);
   transition: all 200ms;
-  border: solid 0.125rem var(--gray-50-50);
+  border: 0;
   margin: 0.5rem;
   padding: 0.5rem;
 
 }#themeToggle:hover {
-  background-color: var(--black);
-  scale: 1.25;
+  background-color: var(--n-menu1-hover);
   cursor: pointer;
 }#themeToggle:active {
   scale: 1;
