@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>networking</title>
+        <link rel="icon" href="../icon2.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="../edu.css"> 
+        <script defer src="../edu.js"></script>
+        <button id="themeToggle"></button>
+    </head>
+     
+
+
+
+    <body>
+        <main>
+            <div id="dir-search-box">
+                <a id="dir-search" href="../edu.html">edu</a>
+                <p id="dir-search">/</p>
+                <a id="dir-search" href="../-cysk.html">cybersecurity</a>
+                <p id="dir-search">/</p>
+                <p id="dir-search">networking</p>
+            </div><div id="mobile-back-box">
+                <a id="mobile-back" href="../-cysk.html">back</a>
+            </div>
+            <h1>networking</h1>
+                <h2>protocols</h2>
+
+                    <h3>TCP</h3>
+                    <p>TCP (Transmission Control Protocol) is when two computers make an established connection making sure that no data is lost. TCP prefers accuracy at the loss of speed.
+                    </p>
+
+                    <h3>UDP</h3>
+                    <p>UDP (User Datagram Protocol) is when data is thrown at the receiving computer, possibly losing data at some times. UDP prefers speed at the loss of accuracy.
+                    </p>
+
+                <h2>OSI Model</h2>
+
+                    <p>
+                    OSI or Open Systems Interconnection outlines the 7 main layers to networking.
+                    </p>
+
+                    <h3>7 Application</h3>
+                    <ul><li>- User View</li>
+                    <li>- UI & UX</li>
+                    <li>- “providing an interface for them to use in order to transmit data”</li>
+                    </ul>
+
+                    <h3>6 Presentation</h3>
+                    
+                    <ul>
+                    <li>- Data is passed down from the application layer (7).</li>
+                    <li>- Data is usable for local applications but not it isn't always the standard, so data is standardised for the reciving computer.</li>
+                    <li>- Data is encrypted, compressed and any other transformations necssary.</li>
+                    </ul>
+
+                    <h3>5 Session</h3>
+                    
+                    <ul>
+                    <li>- Data is passed down from the presentation layer (6).</li>
+                    <li>- The session layer looks to see if it can set up a connection with the other computer across the network.</li>
+                    <li>- The session layer sets up, manages and terimates connections.</li>
+                    <li>- The session layer is also respobsible for managing multiple connections at the same time, allowing diffreint network applications to run at the same time.</li>
+                    </ul>
+
+                    <h3>4 Transport</h3>
+                    
+                    <ul>
+                    <li>- Data is passed down from the session layer (5).</li>
+                    <li>- The transport layer selects what protocol to use.</li>
+                    <li>- The transport layer divides the transmission into bite-sized pieces.</li>
+                    </ul>
+                    
+                    <h3>3 Network</h3>
+                    <ul>
+                    <li>- Data is passed down from the transport layer (4).</li>
+                    <li>- The network layer uses IP addresses to locate the destination of your request.</li>
+                    <li>- Logical Addressing</li>
+                    </ul>
+                    
+
+                    <h3>2 Data Link</h3>
+
+                    <ul><li>- Data is passed down from the network layer (3). </li>
+                    <li>- The data link layer focuses on the physical addressing of the transmission.</li>
+                    <li>- The data link layer adds the MAC address of the device to the packet (data).</li>
+                    <li>- The data link layer is also resposible for error detection (& corruption) and presenting the data in a format suitable for transmission.</li>
+                    </ul>
+
+                    <h3>1 Physical</h3>
+                    <ul>
+                    <li>- Data is passed down from the data link layer (2).</li>
+                    <li>- The physical layer is right down to the hardware of the computer.</li>
+                    <li>- It's the job of the physical layer to convert the binary data of the transmission into signals and transmit them across the network.</li>
+                    </ul>
+
+                <h2>TCP/IP</h2>
+                    <p>The TCP/IP model is what we use in the "real world" but the OSI model exsits to explain how everything works. They both do the same thing but it is just easier to explain the OSI model since everything is not so condensed. Here is an table that shows how the TCP/IP model is more condensed.</p>
+                <table id="table1-table" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th id="table1-th">OSI</th>
+                            <th id="table1-th">TCP/IP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="table1-td">Application</td>
+                            <td id="table1-td" rowspan="3">Application</td> </tr>
+                        <tr>
+                            <td id="table1-td">Presentation</td>
+                        </tr>
+                        <tr>
+                            <td id="table1-td">Session</td>
+                        </tr>
+                        <tr>
+                            <td id="table1-td">Transport</td>
+                            <td id="table1-td">Transport</td>
+                        </tr>
+                        <tr>
+                            <td id="table1-td">Network</td>
+                            <td id="table1-td">Internet</td>
+                        </tr>
+                        <tr>
+                            <td id="table1-td">Data Link</td>
+                            <td id="table1-td" rowspan="2">Network Interface</td> </tr>
+                        <tr>
+                            <td id="table1-td">Physical</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                    <p>Lately there has been an non-official update to the TCP/IP model that splits the Network Interface section in to Data Link & Physcial layers (just like the OSI model).</p>
+
+
+
+
+
+                
+                <h2>encapsulating</h2>
+                <p>Each layer adds more information to each piece of data, a figure is shown below to show how this works. Notice how each part has a diffreint name, this proccess is called encapsulating.</p>
+                <image id="img1" src="media/NET/FIG1.png" alt="layers of the OSI and TCP/IP model encapsulating and de-encapsulating data"></image>
+                <p>When the data is being recived from a computer  it goes in reverse, going up, this proccess is called de-encapsulating.</p>
+                
+ 
+        </main>
+    </body>
+</html>
