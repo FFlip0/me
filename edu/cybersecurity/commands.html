@@ -13,8 +13,6 @@
 
     <body>
         <main>
- 
-            <div id="screenSupport"></div>
             <div id="dir-search-box">
                 <a id="dir-search" href="../edu.html">edu</a>
                 <p id="dir-search">/</p>
@@ -24,13 +22,158 @@
             </div><div id="mobile-back-box">
                 <a id="mobile-back" href="../-cybersecurity.html">back</a>
             </div>
+            <div id="themeToggle"></div> 
+            <!--<div id="screenSupport">
+                <span class="close" onclick="closePopup()">&times;</span>
+            </div>-->
             <h1>commands</h1>
                 <h2>windows</h2>
+                    <h2>General</h2>
+                        <p id="p4">cipher</p>
+                        <p>Wipes Free Space and Encrypts Data</p>
+                        <p id="p4">cls</p>
+                        <p>Clears the terminal</p>
+                        <p id="p4">date & time</p>
+                        <p>Displays date/time and allows you to change it.</p>
+                        <p id="p4">start [app] or start "" "[C:/file.exe]"</p>
+                        <p>Opens application</p>
+                        <p id="p4">explorer C:</p>
+                        <p>Opens that drive</p>
+                        <p id="p4">explorer “<https://example.com>”</p>
+                        <p>Opens a website.</p>
+                        <p id="p4">whoami</p>
+                        <p>Displays user</p>
+                        <p id="p4">shutdown</p>
+                        <p id="p4">shutdown /s Shutdown</p>
+                        <p>Shutdown</p>
+                        <p id="p4">shutdown /r Restart</p>
+                        <p>Restart</p>
+                        <p id="p4">shutdown /l Log off</p>
+                        <p>Log off</p>
+                        <p id="p4">shutdown /a</p>
+                        <p>About (?)</p>
+                        <p id="p4">systeminfo</p>
+                        <p>Tells you a bunch of information about your PC/Laptop</p>
+                        <p id="p4">tasklist</p>
+                        <p>List every task running</p>
+                        <p id="p4">taskkill /pid [pid-no] /f</p>
+                        <p>Kills an app</p>
+                        <p id="p4">title <name></p>
+                        <p>Changes name of terminal or app.</p>
+                        <p id="p4">winver</p>
+                        <p>Displays version and “About Windows”</p>
+                        <p id="p4">ver</p>
+                        <p>Display windows version</p>
+                        <p id="p4">vol</p>
+                        <p>Shows drive's serial number.</p>
+
+                    <h2>Folders</h2>
+                        <p id="p4">copy [source] [destination]</p>
+                        <p>Copies files.</p>
+                        <p id="p4">xcopy [source] [destination] [options]</p>
+                        <p>xcopy > copy</p>
+                        <p id="p4">robocopy [source] [destination] [file(s)] [options]</p>
+                        <p>robocopy > xcopy</p>
+                        <p id="p4">cd</p>
+                        <p>Go to the next directory</p>
+                        <p id="p4">cd .. or cd \\</p>
+                        <p>Go back a directory</p>
+                        <p id="p4">cd ../../</p>
+                        <p>Go back directories</p>
+                        <p id="p4">cd /d D:</p>
+                        <p>Changes Drives</p>
+                        <p id="p4">fc [File1] [File2]</p>
+                        <p>Compares two files.</p>
+                        <p id="p4">mkdir or md</p>
+                        <p>Makes a folder</p>
+                        <p id="p4">rmdir or rd</p>
+                        <p>Deletes a folder</p>
+                        <p id="p4">move 1.txt [Folder]</p>
+                        <p>Moves 1.txt to a folder</p>
+                        <p id="p4">move [Folder1] [Folder2]</p>
+                        <p>Moves Folder 1 into Folder2</p>
+                        <p id="p4">move *.txt [Folder]</p>
+                        <p>Moves all .txt files to a folder</p>
+                        <p id="p4">tree</p>
+                        <p>Shows all folders in a tree folder format</p>
+                        <p id="p4">type</p>
+                        <p>Displays the contents of a file.</p>
+                        <p id="p4">rename 1.txt 2.txtor ren 1.txt 2.txt</p>
+                        <p>Renames 1.txt → 2.txt (Works for folders too)</p>
+                        <p id="p4">C:\\>dir "C:\\*.bat*" /s /p</p>
+                        <p>Search for a file type.</p>
+
+                    <h2>Networking</h2>
+                        <p id="p4">tracert [ip]</p>
+                        <p>Trace the path of packets.</p>
+                        <p id="p4">ipconfig</p>
+                        <p>Displays all current TCP/IP network configuration values and Domain Name System (DNS) settings.</p>
+                        <p id="p4">ipconfig /all</p>
+                        <p>Displays the full TCP/IP configuration for all adapters.</p>
+                        <p id="p4">ipconfig /all | findstr DNS</p>
+                        <p>To find a particular string.</p>
+                        <p id="p4">ipconfig /displaydns</p>
+                        <p>Displays every website your PC knows off</p>
+                        <p id="p4">ping [ip]</p>
+                        <p>To check if a server is up</p>
+                        <p id="p4">ping [ip] -l [size-bytes] -t</p>
+
+                    <br>
+
+                    <table>
+                        <tr>
+                        <td>-l [size-bytes]</td>
+                        <td>Sets the size of the ping packet in bytes.</td>
+                        </tr>
+                        <tr>
+                        <td>-t</td>
+                        <td>Makes the ping run continuously.</th>
+                        </tr>
+                    </table>
+
+
+                    <br>
+                    
+                    <p id="p4">netstat</p>
+                        <p>Displays active TCP connections, ports on which the computer is listening</p>
+                        <p id="p4">netstat -s</p>
+                        <p>Shows connection statistics.</p>
+
+                    <h2>Controls</h2>
+                        <p id="p4">Control + C</p>
+                        <p>Stops running command.</p>
+
+                    <h2>Pipes</h2>
+                        <p id="p4">| clip</p>
+                        <p>copies to clipboard</p>
+                        <p id="p4">| find [string]</p>
+                        <p>Filters the output of a command to display only the lines that match a specific string. (Capitals Matter)</p>
+                        <p id="p4">| findstr [string]</p>
+                        <p>Stands for “find string” and can find a specific string in a command. (findstr > find, Capitals Matter)</p>
+                        <p id="p4">| more</p>
+                        <p>Shows the entire output of a command without having to press enter after each screen full.</p>
+                        <p id="p4">| type</p>
+                        <p>Displays content of a file</p>
+
+                    <h2>Batch</h2>
+                        <p id="p4">&</p> 
+                        <p>Runs two commands sequentially.</p>
+                        <p id="p4">&&</p>
+                        <p>Runs the second command only if the first command succeeds.</p>
+                        <p id="p4">||</p>
+                        <p>Runs the second command only if the first command fails.</p>
+                        <p id="p4">@</p> 
+                        <p>Hides command display for a single command.</p>
+                        <p id="p4">@echo off</p>
+                        <p>Hides CMD display from the entire script.</p>
+                        <p id="p4">call</p>
+
+
 
                 <h2>linux</h2>
 
                     <h3>ping</h3>
-                    <p id="p2">ping (target)</p><br>
+                    <p id="p4">ping (target)</p><br>
                     <a target="_blank" href="https://linux.die.net/man/8/ping">linux man page</a><br>
                     <p>(target) is an ip/domain</p>
                     

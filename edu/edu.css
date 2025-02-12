@@ -42,6 +42,8 @@
   --n-menu1-border: #303030;
   --n-menu1-hover: #313131;
 
+  --n-code-bg: #202020;
+
 }
 .root2 {
 
@@ -69,6 +71,8 @@
   --n-menu1: #ffffff; 
   --n-menu1-border: #e9e9e9;
   --n-menu1-hover: #f7f7f7; 
+
+  --n-code-bg: #f7f6f3;
 }
 body {
   color: var(--n-text);
@@ -102,18 +106,18 @@ main {padding: 3rem;}
 */
 s
 /* All */
-h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #themeToggle  {
+h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #p4, #themeToggle  {
   display: flex;
   flex-direction: column;
   cursor: default;
 
 }
 
-h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #themeToggle {
+h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #p4, #themeToggle {
   margin: 0.5rem;
   padding: 0.5rem;
 }
-p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, ul, #themeToggle  {
+p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, ul, #p2, #p3, #p4, #themeToggle  {
   display: block;
 }
 
@@ -177,6 +181,12 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 #p3 {
   color: var(--gray-50-50);
   font-weight: bold;
+}#p4 {
+    background-color: var(--n-code-bg);
+    display: inline-block;
+    color: var(--n-text);
+    font-family: "Roboto Mono", serif;
+
 }
 
 
@@ -252,12 +262,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.25rem; }
     h5 { font-size: 1.125rem; }
     h6 { font-size: 1rem; }
-    p, a, button, math, li, th, td { font-size: 0.875rem; }
-    button { font-size: 0.875rem; }
-    math { font-size: 0.875rem; }
-    li { font-size: 0.875rem; }
-    th { font-size: 0.875rem; }
-    td { font-size: 0.875rem; }
+    p, a, button, math, li, th, td, #screenSupport::before { font-size: 0.875rem; }
 }
 
 /* Small devices (425px - 767px) */
@@ -268,12 +273,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.5rem; }
     h5 { font-size: 1.25rem; }
     h6 { font-size: 1.125rem; }
-    p { font-size: 1rem; }
-    button { font-size: 1rem; }
-    math { font-size: 1rem; }
-    li { font-size: 1rem; }
-    th { font-size: 1rem; }
-    td { font-size: 1rem; }
+    p, a, button, math, li, th, td, #screenSupport::before  { font-size: 1rem; }
 }
 
 /* Medium devices (768px - 1023px) */
@@ -284,12 +284,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.75rem; }
     h5 { font-size: 1.5rem; }
     h6 { font-size: 1.25rem; }
-    p { font-size: 1.125rem; }
-    button { font-size: 1.125rem; }
-    math { font-size: 1.125rem; }
-    li { font-size: 1.125rem; }
-    th { font-size: 1.125rem; }
-    td { font-size: 1.125rem; }
+    p, a, button, math, li, th, td, #screenSupport::before  { font-size: 1.125rem; }
 }
 
 /* Large devices (1024px and up) */
@@ -300,12 +295,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 2rem; }
     h5 { font-size: 1.75rem; }
     h6 { font-size: 1.5rem; }
-    p { font-size: 1.25rem; }
-    button { font-size: 1.25rem; }
-    math { font-size: 1.25rem; }
-    li { font-size: 1.25rem; }
-    th { font-size: 1.25rem; }
-    td { font-size: 1.25rem; }
+    p, a, button, math, li, th, td, #screenSupport::before  { font-size: 1.25rem; }
 }
 @media (min-width: 0px) {
 
@@ -365,7 +355,8 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 #mobile-back {
   font-weight: bold;
   font-style: normal;
-}#dir-search {
+}
+#dir-search {
   display: inline-block;
   margin: 0.5rem;
   font-weight: bold;
@@ -524,24 +515,27 @@ table {
  Screen Support ---------------------------------------------------------------------------- 
 */
 #screenSupport {
-  color: var(--n-text1); 
+  color: var(--gray-50-50); 
   font-weight: bold;
   background-color: var(--n-menu1);
-  padding: 1rem;
+  padding: 0.25rem;
   margin: 0.5rem;
   font-size: 1rem;
   display: block;
   text-align: center;
   border: var(--n-menu1-border) solid 0.25rem;
   transition: all 200ms;
+
 }#screenSupport::before {
   content: "screen size compatibility is limited";
 }#screenSupport:hover {
   background-color: var(--n-menu1-border);
 }@media (min-width: 1024px) {#screenSupport {display: none}}
-
-
-
+.close {
+    color: var(--n-text);
+    cursor: pointer;
+    font-weight: bold;
+}
 
 
 
@@ -572,6 +566,7 @@ table {
   display: block;
   text-align: center;
   border: var(--n-menu1-border) solid 0.25rem;
+
 }#themeToggle:hover {
   background-color: var(--n-menu1-border);
   cursor: pointer;
