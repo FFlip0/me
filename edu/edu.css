@@ -31,8 +31,10 @@
   --n-bg: #191919;     
   --n-link: #9c9c9c;    
   --n-text: #d4d4d4;   
+  
   --n-table: #2f2f2f;   
-  --n-table-highlight: #222222;
+  --n-table-highlight: #474747; /* (just the slider color) */
+  
   --n-menu1: #252525;
   --n-menu1-hover: #313131;
 
@@ -42,29 +44,25 @@
   --white: #000000; /* Inverted #ffffff */
   --black: #ffffff; /* Inverted #000000 */
   --gray-75-25: #404040; /* Inverted #BFBFBF (75% black, 25% white) */
-  --gray-50-50: #7F7F7F; /* Inverted #808080 (50% black, 50% white) */
+  --gray-50-50: #808080; /* Inverted #808080 (50% black, 50% white) */
   --gray-25-75: #BFBFBF; /* Inverted #404040 (25% black, 75% white) */
   --gray-10-90: #E5E5E5; /* Inverted #1a1a1a (10% black, 90% white) */
   
-  --red: #00ffff; /* Inverted #ff0000 */
-  --red-2: #00ffff25; /* Inverted #ff000025 */
-  --blue: #ffff00; /* Inverted #0000ff */
-  --green: #ff00ff; /* Inverted #00ff00 */
-  --yellow: #0000ff; /* Inverted #ffff00 */
-  --magenta: #00ff00; /* Inverted #ff00ff */
-  --light-blue: #ff0000; /* Inverted #00ffff */
+
   
   --bg1: #F6F6F6; /* Inverted #090909 */
   --text1: #111111; /* Inverted #eeeeee */
   
-  /* Notion Colours */
-  --n-bg: #E6E6E6; /* Inverted #191919 */
-  --n-link: #636363; /* Inverted #9c9c9c */
-  --n-text: #2B2B2B; /* Inverted #d4d4d4 */
-  --n-table: #D0D0D0; /* Inverted #2f2f2f */
-  --n-table-highlight: #DDDDDD; /* Inverted #222222 */
-  --n-menu1: #DADADA; /* Inverted #252525 */
-  --n-menu1-hover: #CECECE; /* Inverted #313131 */
+  /* Notion Light Colours */
+  --n-bg: #ffffff; 
+  --n-link: #73716d; 
+  --n-text: #37352f; 
+  
+  --n-table: #f8f8f7; 
+  --n-table-highlight: #d3d1cb; /* (just the slider color) */
+  
+  --n-menu1: #ffffff; 
+  --n-menu1-hover: #f7f7f7; 
 }
 body {
   color: var(--n-text);
@@ -580,12 +578,12 @@ table, th, td {
   border-radius: 100vw;
 }::-webkit-scrollbar-track {
   margin: 0;
-  background: var(--black);
-  border: var(--white) 0.25rem solid;
+  background: var(--n-bg);
+  border: var(--n-menu1) 0.25rem solid;
 }::-webkit-scrollbar-thumb {
   margin: 0;
-  background: var(--white);
-  border: var(--black) 0.25rem solid;
+  background: var(--n-menu1);
+  border: var(--n-bg) 0.25rem solid;
 }
 
 
@@ -599,54 +597,3 @@ table, th, td {
 
 
 
-/* 
-
- Hovers ---------------------------------------------------------------------------- 
-
-*//* Hover1 *//*
-
-@media (pointer: fine) {
-  h1:hover, 
-  h2:hover, 
-  h3:hover, 
-  h4:hover, 
-  h5:hover, 
-  h6:hover, 
-  p:hover, 
-  math:hover, 
-  a:hover,
-  th:hover,
-  td:hover,
-  li:hover {
-  color: #ff0000; 
-} #img-example:hover{
-  border-color: #ff0000;
-}}
-
-
-*//* Hover2 *//*
-
-@media (pointer: fine) {
-  h1:hover, 
-  h2:hover, 
-  h3:hover, 
-  h4:hover, 
-  h5:hover, 
-  h6:hover, 
-  p:hover, 
-  math:hover, 
-  a:hover,
-  th:hover,
-  td:hover,
-  li:hover {
-  color: var(--black);
-  background-color: var(--white);
-} #img-example:hover{
-  filter: invert();
-} #p2:hover {
-  color: var(--white);
-  background-color: var(--black);
-  border: var(--white) solid 0.1rem;
-}}
-
-*/
