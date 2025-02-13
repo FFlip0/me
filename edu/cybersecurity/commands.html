@@ -28,7 +28,7 @@
             </div>-->
             <h1>commands</h1>
                 <h2>windows</h2>
-                    <h2>General</h2>
+                    <h3>General</h3>
                         <p id="p4">cipher</p>
                         <p>Wipes Free Space and Encrypts Data</p>
                         <p id="p4">cls</p>
@@ -67,13 +67,13 @@
                         <p id="p4">vol</p>
                         <p>Shows drive's serial number.</p>
 
-                    <h2>Folders</h2>
+                    <h3>Folders</h3>
                         <p id="p4">copy [source] [destination]</p>
                         <p>Copies files.</p>
                         <p id="p4">xcopy [source] [destination] [options]</p>
-                        <p>xcopy > copy</p>
+                        <p>Xcopy > copy</p>
                         <p id="p4">robocopy [source] [destination] [file(s)] [options]</p>
-                        <p>robocopy > xcopy</p>
+                        <p>Robocopy > xcopy</p>
                         <p id="p4">cd</p>
                         <p>Go to the next directory</p>
                         <p id="p4">cd .. or cd \\</p>
@@ -103,7 +103,7 @@
                         <p id="p4">C:\\>dir "C:\\*.bat*" /s /p</p>
                         <p>Search for a file type.</p>
 
-                    <h2>Networking</h2>
+                    <h3>Networking</h3>
                         <p id="p4">tracert [ip]</p>
                         <p>Trace the path of packets.</p>
                         <p id="p4">ipconfig</p>
@@ -139,13 +139,13 @@
                         <p id="p4">netstat -s</p>
                         <p>Shows connection statistics.</p>
 
-                    <h2>Controls</h2>
+                    <h3>Controls</h3>
                         <p id="p4">Control + C</p>
                         <p>Stops running command.</p>
 
-                    <h2>Pipes</h2>
+                    <h3>Pipes</h3>
                         <p id="p4">| clip</p>
-                        <p>copies to clipboard</p>
+                        <p>Copies to clipboard</p>
                         <p id="p4">| find [string]</p>
                         <p>Filters the output of a command to display only the lines that match a specific string. (Capitals Matter)</p>
                         <p id="p4">| findstr [string]</p>
@@ -155,7 +155,7 @@
                         <p id="p4">| type</p>
                         <p>Displays content of a file</p>
 
-                    <h2>Batch</h2>
+                    <h3>Batch</h3>
                         <p id="p4">&</p> 
                         <p>Runs two commands sequentially.</p>
                         <p id="p4">&&</p>
@@ -171,15 +171,111 @@
 
 
                 <h2>linux</h2>
-
-                    <h3>ping</h3>
-                    <p id="p4">ping (target)</p><br>
-                    <a target="_blank" href="https://linux.die.net/man/8/ping">linux man page</a><br>
-                    <p>(target) is an ip/domain</p>
+                    <h3>General</h3>
+                        <p id="p4"><code>echo hello world</code></p>
+                        <p>Outputs “Hello World”</p>
+                        <p id="p4"><code>date</code></p>
+                        <p>Displays date and system time.</p>
+                        <p id="p4"><code>cal</code></p>
+                        <p>Displays calendar</p>
+                        <p id="p4"><code>cd [directory]</code></p>
+                        <p>Changed directory.</p>
+                        <p id="p4"><code>pwd</code></p>
+                        <p>Displays current directory.</p>
+                        <p id="p4"><code>ls</code></p>
+                        <p>Displays files and directories in current.</p>
+                        <p id="p4"><code>clear</code> or <code>CTRL + L</code></p>
+                        <p>Clears terminal</p>
+                        <p id="p4"><code>whoami</code></p>
+                        <p>Displays users name</p>
+                        <p id="p4"><code>sudo [cmd]</code></p>
+                        <p>Runs cmd as admin</p>
+                        <p id="p4"><code>cp [orignial-name] [copied-name]</code></p>
+                        <p>Copies a file/folder</p>
+                        <p id="p4"><code>rm</code></p>
+                        <p>Deletes a file</p>
+                        <p id="p4"><code>which [cmd]</code></p>
+                        <p>See where the command your running is located.</p>
+                        <p id="p4"><code>ps</code></p>
+                        <p>Shows running processes</p>
+                        <p id="p4"><code>man [cmd]</code></p>
+                        <p>Help on a command</p>
+                        <p id="p4"><code>netstat</code></p>
+                        <p>Status of network</p>
+                        <p id="p4"><code>id</code></p>
+                        <p>Shows info about you?</p>
+                        <p id="p4"><code>hostname</code></p>
+                        <p>Displays host name</p>
+                        <p id="p4"><code>uname</code></p>
+                        <p>Linux. (Sub commands required)</p>
+                        <p id="p4"><code>ifconfig</code></p>
+                        <p>“network stuff”</p>
+                        <p id="p4"><code>ip</code></p>
+                        <p>“more network stuff”</p>
+                        <p id="p4"><code>ss</code></p>
+                        <p>“session stuff”</p>
+                        <p id="p4"><code>who</code></p>
+                        <p>Displays who is logged in.</p>
+                        <p id="p4"><code>env</code></p>
+                        <p>Environment variables.</p>
+                        <p id="p4"><code>lsblk</code></p>
+                        <p>“Hardrive stuff”</p>
+                        <p id="p4"><code>lsusb</code></p>
+                        <p>Displays plugged in USBs</p>
+                        <p id="p4"><code>lsof</code></p>
+                        <p>Displays all open files on PC.</p>
+                        <p id="p4"><code>[cmd] -h</code> or <code>[cmd] --help</code></p>
+                        <p id="p4"><code>apropos [keyword]</code></p>
+                        <p>Searches commands via keyword.</p>
+                        <p id="p4"><code>chsh -s /bin/bash</code></p>
+                        <p>Changes shell to bash</p>
+                
+                    <h3>Controls</h3>
+                        <p id="p4"><code>CTRL + C</code></p>
+                        <p>Terminate a command</p>
                     
-                    <p>The ping command is used to check if a server is responding to traffic.</p>
+                    <h3>Users</h3>
+                        <p id="p4"><code>adduser [username]</code></p>
+                        <p>Adds a new profile and sets up default directories and config files.</p>
+                        <p id="p4"><code>useradd [username]</code></p>
+                        <p>Adds a new proflie but does not setup defualt config and does the minium.</p>
+                        <p id="p4"><code>userdel [username]</code></p>
+                        <p>Deletes user</p>
+                        <p id="p4"><code>sudo visudo</code></p>
+                        <p>Edits the “sudoers” file which controls who has sudo permissions</p>
+                        <p id="p4"><code>sudo su - [user]</code></p>
+                        <p>Switches to [user] profile</p>
+                        <p id="p4"><code>sudo su -</code></p>
+                        <p>Switches to root profile</p>
+                        <p id="p4"><code>CTRL + D</code></p>
+                        <p>Go to defualt profile</p>
+                        <p id="p4"><code>groupadd [group-name]</code></p>
+                        <p>Adds a group</p>
+                        <p id="p4"><code>groups</code></p>
+                        <p>Displays what groups you are in.</p>
+                        <p id="p4"><code>usermod -l [new-username] [old-username]</code></p>
+                        <p>Changes user’s name.</p>
+                        <p id="p4"><code>usermod -aG [group] [user]</code></p>
+                        <p>Adds [user] to [group], this makes it so that the user isnt removed from all other groups when this action is taken.</p>
+                        <p>But using -G instead of -aG will remove the [user] from all other groups and add it to this [group]</p>
+                        <p id="p4"><code>gpasswd -d [usse] [group]</code></p>
+                        <p>Removes [user] from [group]</p>
+                        <p id="p4"><code>groupdel [group]</code></p>
+                        <p>Deletes a group and the permissions within, not the users.</p>
+                
+                    <h3>Pipes</h3>
+                        <p id="p4"><code>| grep [name]</code></p>
+                        <p>Searches for [name] in a cmd</p>
                     
-
+                    <h3>Catz</h3>
+                        <p id="p4"><code>cat [file]</code></p>
+                        <p>Opens file in terminal.</p>
+                        <p id="p4"><code>cat /etc/passwd</code></p>
+                        <p>Displays all users</p>
+                        <p id="p4"><code>cat /bin/shells</code></p>
+                        <p>Displays all shells</p>
+                        <p id="p4"><code>cat /etc/group</code></p>
+                        <p>Displays groups.</p>
 
 
         </main>

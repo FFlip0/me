@@ -129,7 +129,13 @@ p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, ul, #p2, #p3, #p4, #theme
 
 
 /* To remove the list dots. */
-li {display: flex;}
+li {
+    display: flex;
+    margin: 0;
+} li::before {
+    content: "\00B7 ";
+
+}
 
 
 
@@ -158,8 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
   margin-right: 0.1rem;
-  font-size: 1rem;
-  content: "\2759";
+  font-size: 0.75rem;
 } 
 h1::before { content: "\2759"; }
 h2::before { content: "\2759\2759"; }
@@ -180,7 +185,6 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 }
 #p3 {
   color: var(--gray-50-50);
-  font-weight: bold;
 }#p4 {
     background-color: var(--n-code-bg);
     display: inline-block;
@@ -262,7 +266,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.25rem; }
     h5 { font-size: 1.125rem; }
     h6 { font-size: 1rem; }
-    p, a, button, math, li, th, td, #screenSupport::before { font-size: 0.875rem; }
+    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 0.875rem; }
 }
 
 /* Small devices (425px - 767px) */
@@ -273,7 +277,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.5rem; }
     h5 { font-size: 1.25rem; }
     h6 { font-size: 1.125rem; }
-    p, a, button, math, li, th, td, #screenSupport::before  { font-size: 1rem; }
+    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1rem; }
 }
 
 /* Medium devices (768px - 1023px) */
@@ -284,7 +288,7 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 1.75rem; }
     h5 { font-size: 1.5rem; }
     h6 { font-size: 1.25rem; }
-    p, a, button, math, li, th, td, #screenSupport::before  { font-size: 1.125rem; }
+    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1.125rem; }
 }
 
 /* Large devices (1024px and up) */
@@ -295,48 +299,8 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h4 { font-size: 2rem; }
     h5 { font-size: 1.75rem; }
     h6 { font-size: 1.5rem; }
-    p, a, button, math, li, th, td, #screenSupport::before  { font-size: 1.25rem; }
+    p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1.25rem; }
 }
-@media (min-width: 0px) {
-
-  p, a, button, #screenSupport::before {font-size: 0.7rem;}
-  math {font-size: 1.0rem;}
-  li {font-size: 0.7rem;}
-  #table1-th, #table1-td {font-size: 0.7rem;}
-  /*#img-example {width: 50%;}*/
-
-}
-@media (min-width: 425px) {
-
-  p, a, button, #screenSupport::before {font-size: 1rem;}
-  math {font-size: 1.3rem;}
-  li {font-size: 1rem;}
-  #table1-th, #table1-td {font-size: 1rem;}
-  /*#img-example {width: 22.5rem;}*/
-
-}
-@media (min-width: 768px) {
-
-  p, a, button, #screenSupport::before {font-size: 1.3rem;}
-  math {font-size: 1.6rem;}
-  li {font-size: 1.3rem;}
-  #table1-th, #table1-td {font-size: 1.3rem;}
-  /*#img-example {width: 40rem;}*/
-
-}
-@media (min-width: 1024px) {
-
-  p, a, button, #screenSupport::before {font-size: 1.6rem;}
-  math {font-size: 1.9rem;}
-  li {font-size: 1.3rem;}
-  #table1-th, #table1-td {font-size: 1.6rem;}
-  /*#img-example {width: 47.5rem}*/
-
-}
-
-
-/*  Hover and invert text and headings and stuff blah blah.  */
-
 
 
 
@@ -448,7 +412,7 @@ table {
 /* 
  Images ---------------------------------------------------------------------------- 
 */
-#img1, #img1-v2, #img1-v3, #img1-v4 {
+#img1, #img2, #img3, #img4 {
   background-color: var(--n-bg);
   padding: 2rem;
   margin: 1rem;
@@ -458,20 +422,20 @@ table {
   a image is larger than the width of the screen */
   max-width: 80%;  
   margin-right: auto;
-}#img1-v2 /* invert + yes padding */ { 
+}#img2 /* invert + yes padding */ { 
   filter: invert();
   background-color: #ffffff;
   border: #000000 solid 0.25rem;
-}#img1-v3 /* invert + no padding */ { 
+}#img3 /* invert + no padding */ { 
   background-color: #ffffff;
   padding: 0;
   border: #000000 solid 0.25rem;
   filter: invert();
-}#img1-v4 /* no invert + yes padding */ { 
+}#img4 /* no invert + yes padding */ { 
   background-color: #000000;
   border: #ffffff solid 0.25rem;
 }
-#img2 {
+#img5 {
   background-color: var(--n-bg);
   padding: 0rem;
   margin: 1rem;
