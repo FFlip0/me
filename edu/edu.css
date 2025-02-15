@@ -200,7 +200,12 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 #block {display: block;}
 #inline-block {display: inline-block;}
 
-#mathFracM {
+
+/* For <math> */
+#margin10 {
+    margin: 0.10rem;
+}
+#margin25 {
   margin: 0.25rem;
 }
 
@@ -300,6 +305,8 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h5 { font-size: 1.75rem; }
     h6 { font-size: 1.5rem; }
     p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1.25rem; }
+    
+    math {font-size: 1.75rem;}
 }
 
 
