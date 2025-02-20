@@ -58,13 +58,13 @@ body {
     }
 }
 
-#ref-home-container {
+#goHomeBox {
 
     margin: 0;
     margin-top: 10rem;
     
     
-    }#ref-home-button {
+    }#goHomeBtn {
         position: absolute;
         
         margin: 4rem;
@@ -84,7 +84,7 @@ body {
         max-width: 0;
         
         scale: 1.5;
-    }#ref-home-button:hover {
+    }#goHomeBtn:hover {
         min-width: fit-content;
         cursor: pointer;
         border: 1px solid #ffffff;

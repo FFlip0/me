@@ -234,10 +234,10 @@ Buttons ------------------------------------------------------------------------
 
 */
 
-#ref-home-container {
+#goHomeBox {
   display: flex;
   justify-content: center;
-}#ref-home-button {
+}#goHomeBtn {
   margin: 1rem;
   padding: 0.75rem;
   padding-left: 2rem;
@@ -249,7 +249,7 @@ Buttons ------------------------------------------------------------------------
   color: #ffffff;
   text-decoration: none;
   text-shadow: none;
-}#ref-home-button:hover {
+}#goHomeBtn:hover {
   min-width: fit-content;
   cursor: pointer;
   border: 1px solid #000000;
@@ -260,7 +260,7 @@ Buttons ------------------------------------------------------------------------
   text-decoration: none; 
   background-color: #ffffff00;
 
-}#ref-home-button:active {
+}#goHomeBtn:active {
   background-color: #000000;
   color: #ffffff;
 }

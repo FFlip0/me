@@ -83,6 +83,7 @@ body {
   font-family: "Roboto Mono", serif;
   font-family: "Ubuntu", serif;
   padding: 0.25rem;
+
 }
 
 @media (min-width: 1024px) {
@@ -104,7 +105,7 @@ main {padding: 3rem;}
 /* 
  Default Styles ---------------------------------------------------------------------------- 
 */
-s
+
 /* All */
 h1, h2, h3, h4, h5, h6, p, a, ul, button, #p2, #p3, #p4, #themeToggle  {
   display: flex;
@@ -124,39 +125,47 @@ p, a, li, b, i, table, h1, h2, h3, h4, h5, h6, button, ul, #p2, #p3, #p4, #theme
 
 
 
-/* (No Flex) */
 
 
-
-/* To remove the list dots. */
-li {
-    display: flex;
-    margin: 0;
-} li::before {
-    content: "\00B7 ";
-
+/* Lists */
+#li1::before {
+    content: "\2022\00A0";
+    margin-left: 0rem;
+}#li2::before {
+    content: "\26AC\00A0";
+    margin-left: 1rem;
+}#li3::before {
+    content: "\2043\00A0";
+    margin-left: 2rem;
+}#li4::before {
+    content: "\2022\00A0";
+    margin-left: 3rem;
+}#li5::before {
+    content: "\26AC\00A0";
+    margin-left: 4rem;
+}#li6::before {
+    content: "\2043\00A0";
+    margin-left: 5rem;
 }
 
 
 
-a {
-  font-weight: bold;
-}
-
-a:link      {text-decoration: none;             color: var(--n-link);
+a {font-weight: bold;
+  cursor: pointer;
+}a:link     {text-decoration: none;             color: var(--n-link);
 }a:visited  {text-decoration: none;             color: var(--n-link);
 }a:hover    {text-decoration: underline;        color: var(--n-link);
 }a:active   {text-decoration: underline;        color: var(--n-link);
 }
 
-#mathBox {
-  display: block;
-  margin: 0;
-  padding: 0;
-}math {
+math {
   font-family: "Times New Roman", Times, serif;  font-family: "Times New Roman", Times, serif;
   margin: 0.5rem;
   padding: 0.25rem;
+}#mathBox {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -211,29 +220,6 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #line1 {
   border: var(--gray-50-50) dashed 0.1rem;
   margin: 1rem;
@@ -243,15 +229,15 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
   margin: 1rem;
   display: block;
 }
-/* border1-v2 is just */
-#border1-v1, #border1-v2 {
+/* border2 is just */
+#border1, #border2 {
   border: var(--gray-50-50) dashed 0.1rem;
   margin: 0.5rem;
   padding: 1rem;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   display: block;
-}#border1-v2 {
+}#border2 {
   border: var(--red) dashed 0.1rem;
   margin: 0.5;
   padding: 0;
@@ -306,7 +292,8 @@ h6::before { content: "\2759\2759\2759\2759\2759\2759"; }
     h6 { font-size: 1.5rem; }
     p, a, button, math, li, th, td, #screenSupport::before, li:before { font-size: 1.25rem; }
     
-    math {font-size: 1.75rem;}
+    /* Only for 1024px and up */ 
+    math {font-size: 2rem;}
 }
 
 
