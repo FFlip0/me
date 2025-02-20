@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+/* Kaushan Script       */@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* Arvo                 */@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Pixelify Sans        */@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+/* Space Mono           */@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Inter                */@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Roboto               */@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Roboto Mono          */@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* Ubuntu               */@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+
 :root {
   /*Gradient 1*/
   --g1-1: #00DAF7;
@@ -21,41 +28,19 @@
   --transparent: #00000000;
 
 }
-body /* OLD BG */ {
-  
-/*
-      background-image: url(
-          "  data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E"
-      ), linear-gradient(64deg, #0029FF 0%, #00DAF7 100%);
-      
-      */
-      /*
-      Orignal(512x512): 
-      data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-      
-      Edited(80x80):
-      data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%2080%2080%20M%2080%200%20L%200%2080%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-      
-      Edited2? maybe 512x512? idk
-      data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22256%22%20height%3D%22256%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cpath%20d%3D%22M%200%200%20L%20512%20512%20M%20512%200%20L%200%20512%22%20stroke%3D%22rgba(0,0,0,0.314)%22%20stroke-width%3D%221.01px%22%20vector-effect%3D%22non-scaling-stroke%22%20stroke-linecap%3D%22square%22%20fill-rule%3D%22nonzero%22%20%2F%3E%3C%2Fsvg%3E
-      */
-      /*
-      background-attachment: fixed;
-  
-      background-position: center;
 
-*/
-opacity: 1; /* cuz i don't want that "error" on the file. */
-}
 
 
 body {
-  font-family: "Arvo", serif;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Arvo', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: "Space Mono", sans-serif;
+    font-family: "Inter", serif;
+    font-family: "Roboto", serif;
+    font-family: "Roboto Mono", serif;
+    font-family: "Ubuntu", serif;
+    
   background: linear-gradient(
     45deg,
     #ff0000, 
@@ -96,7 +81,6 @@ body::before {
 
 
 
-
 main {
   display: flex;
   justify-content: center;
@@ -106,11 +90,6 @@ main {
   z-index: 2;
 }
 
-#line {
-  border: 1px solid var(--white);
-  margin: 2rem;
-  width: 100%;
-}
 
 
 
@@ -122,7 +101,6 @@ main {
 
 
 p, a, h1, h2, h3, h4, h5, h6{
-  font-family: "Pixelify Sans", sans-serif;
   padding: 0rem;
   margin: 1rem;
   display: flex;
@@ -244,7 +222,6 @@ Buttons ------------------------------------------------------------------------
   padding-right: 2rem;
   background-color: #ffffff00;
   border: 1px solid #ffffff;
-  font-family: "Pixelify Sans", sans-serif;
   font-size: 2rem;
   color: #ffffff;
   text-decoration: none;
@@ -265,6 +242,15 @@ Buttons ------------------------------------------------------------------------
   color: #ffffff;
 }
 
+
+
+
+
+
+
+
+
+
 #btn-1-box {
   display: grid;
   justify-items: center;
@@ -281,7 +267,6 @@ Buttons ------------------------------------------------------------------------
   color: var(--white);
   text-decoration: none;
   border: 1px solid var(--white);
-  font-family: "Pixelify Sans", sans-serif;
   text-shadow: none;
 }#btn-1:hover {
   min-width: fit-content;
@@ -341,20 +326,3 @@ Scrollbar ----------------------------------------------------------------------
 
 
 
-/* 
-
-Device Warning ---------------------------------------------------------------------------- 
-
-*/
-
-#device-warning-1 {
-  color: var(--red);
-  background-color: #200000;
-  padding: 1rem;
-  text-align: center;
-  border: 0.25rem solid var(--red);
-  border-radius: 1rem;
-  margin: 0;
-  font-size: 1rem;
-  box-shadow: 0px 0px 20px 0px #00000083;
-}@media (pointer: fine) {#device-warning-1 {display: none;}}
