@@ -1,0 +1,42 @@
+#tpBox {
+    border: 0.25rem solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 10px; 
+}
+
+#tpImg {
+    max-width: 10rem;
+    border-radius: 1rem;
+    border: 0.25rem solid rgba(0, 0, 0, 0.25);  
+}
+
+
+
+
+#tpTitle {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+} #tpCredits {
+    text-align: left;
+    font-size: 1rem;
+}#tpDownload {
+    text-align: left;
+    font-size: 1rem;
+    /*border: 0.25rem solid rgba(0, 0, 0, 0.25);*/
+    padding: 0.75rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0;
+}#tpDownload:hover {
+    color: #0000ff;
+    transition: 400ms;
+}
