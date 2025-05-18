@@ -14,17 +14,6 @@ main {
     color: #ffffff;
 }
 
-#secret-btn {
-    opacity: 0;
-    cursor: pointer;
-    margin: 2rem;
-    font-size: 0.5rem;
-}
-#secret-btn:hover {
-    opacity: 1;
-    transition: 200ms;
-}
-
 
 
 
