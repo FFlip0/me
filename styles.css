@@ -16,6 +16,9 @@
 --black: #000000;
 --white: #ffffff;
 --transparent: #00000000;
+
+--bg : #121212;
+--scrollbar-thumb: #222222;
 }
 
 html, body { 
@@ -25,32 +28,10 @@ padding: 0;
 }
 
 body {
-font-family: "Ubuntu", serif;
-
-background: linear-gradient(
-    0deg,
-    #ff0000,
-    #0080ff,
-    #5424ff,
-    #25ff80,
-    #ff0000
-);
-background-size: 400% 400%;
-animation: moveGradient 10s ease infinite;
-min-height: 100vh; 
-position: relative; 
-}
-
-body::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-opacity: 0.2;
-pointer-events: none;
-z-index: 1;
+    font-family: "Ubuntu", serif;
+    background: var(--bg);
+    min-height: 100vh;
+    position: relative;
 }
 
 @keyframes moveGradient {
@@ -406,19 +387,16 @@ border: 1px solid var(--white);
 }
 
 ::-webkit-scrollbar {
-width: 1.5rem;
-height: 1.5em;
-border-radius: 100vw;
+width: 0.75rem;
+height: 0.75rem;
 }
 
 ::-webkit-scrollbar-track {
 margin: 0;
-background: var(--black);
-border: var(--white) 0.25rem solid;
+background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
 margin: 0;
-background: var(--white);
-border: var(--black) 0.25rem solid;
+background: var(--scrollbar-thumb);
 }

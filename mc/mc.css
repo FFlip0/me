@@ -1,22 +1,26 @@
 #tpBox {
-    border: 0.25rem solid rgba(0, 0, 0, 0.25);
-    background-color: rgba(0, 0, 0, 0.25);
+    border: 0.25rem solid #222222;
+    background-color: #171717;
     padding: 1rem;
     margin: 1rem;
-    border-radius: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     align-items: center;
     gap: 10px; 
 }
 
-#tpImg {
-    max-width: 10rem;
-    border-radius: 1rem;
-    border: 0.25rem solid rgba(0, 0, 0, 0.25);  
+#tpBox:hover {
+    background-color: #222222;
 }
 
-
+#tpImg {
+    width: 10rem;
+    height: 10rem;
+    border: 0.25rem solid #222222;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
 
 
 #tpTitle {
