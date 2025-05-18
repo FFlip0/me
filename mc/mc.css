@@ -32,15 +32,27 @@
     font-size: 1rem;
 }#tpDownload {
     text-align: left;
-    font-size: 1rem;
-    /*border: 0.25rem solid rgba(0, 0, 0, 0.25);*/
-    padding: 0.75rem;
-    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
     color: #ffffff;
-    text-decoration: underline;
-    display: inline-block;
+    text-decoration: none;
     margin: 0;
-}#tpDownload:hover {
-    color: #0000ff;
-    transition: 400ms;
+    transition: all 200ms ease;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#tpDownload:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #4160e8;
+    cursor: pointer;
+}
+
+#tpDownload .material-symbols-outlined {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
