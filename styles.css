@@ -124,7 +124,10 @@ a:active {
 }
 
 #btn-1-box {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 #btn1 {
